@@ -1,4 +1,4 @@
-#include "splitergoll.dtsi"
+#include "Splitergoll.dtsi"
 
 &default_transform {
     col-offset = <6>;
