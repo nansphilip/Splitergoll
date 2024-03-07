@@ -20,7 +20,7 @@
 //         ┗━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┛
 //                     ┃     W     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃  , or ?   ┃  . or !   ┃  ; or /   ┃  : or \   ┃
 //                     ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//                     ┃           ┃   CTRL    ┃    ALT    ┃    L2     ┃   SHIFT   ┃   ┃   SPACE   ┃    L1     ┃   ENTER   ┃    WIN    ┃           ┃
+//                     ┃    VOL-   ┃   CTRL    ┃    ALT    ┃    L2     ┃   SHIFT   ┃   ┃   SPACE   ┃    L1     ┃   ENTER   ┃    WIN    ┃   VOL+    ┃
 //                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
@@ -71,10 +71,10 @@
 
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
         bindings = <
-            &trans      &trans      &trans      &trans      &trans      &trans
-            &trans      &trans      &trans      &trans      &trans      &trans
-                        &trans      &trans      &trans      &trans      &trans
-                        &trans      &trans      &trans      &trans      &trans
+            &trans      &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans      &trans
+            &trans      &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans      &trans
+                        &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans
+                        &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans
         >;
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
         };
@@ -94,10 +94,10 @@
 
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
         bindings = <
-            &trans      &trans      &trans      &trans      &trans      &trans
-            &trans      &trans      &trans      &trans      &trans      &trans
-                        &trans      &trans      &trans      &trans      &trans
-                        &trans      &trans      &trans      &trans      &trans
+            &trans      &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans      &trans
+            &trans      &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans      &trans
+                        &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans
+                        &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans
         >;
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
         };

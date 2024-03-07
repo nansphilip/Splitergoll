@@ -1,4 +1,4 @@
-if SHIELD_SPLITERGOLL
+if SHIELD_SPLITERGOLL_LEFT
 
 config ZMK_KEYBOARD_NAME
     default "splitergoll"
