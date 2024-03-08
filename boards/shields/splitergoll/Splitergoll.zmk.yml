@@ -1,5 +1,5 @@
 file_format: "1"
-id: Splitergoll
+id: splitergoll
 name: Splitergoll
 type: shield
 url: https://github.com/nansphilip/zmk-Splitergoll
@@ -8,5 +8,5 @@ exposes: [i2c_oled]
 features:
   - keys
 siblings:
-  - Splitergoll_left
-  - Splitergoll_right
+  - splitergoll_left
+  - splitergoll_right

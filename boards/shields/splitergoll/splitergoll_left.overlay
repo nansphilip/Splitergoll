@@ -1,4 +1,4 @@
-#include "Splitergoll.dtsi"
+#include "splitergoll.dtsi"
 
 &kscan0 {
     col-gpios

@@ -19,6 +19,6 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: Splitergoll_left
+    shield: splitergoll_left
   - board: nice_nano_v2
-    shield: Splitergoll_right
+    shield: splitergoll_right
