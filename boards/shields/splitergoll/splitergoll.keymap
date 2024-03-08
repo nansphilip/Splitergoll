@@ -3,10 +3,10 @@
 #include <dt-bindings/zmk/bt.h>
 
 
-#define default_layer 0
-#define primary_layer 1
-#define secondary_layer 2
-#define tertiary_layer 3
+#define DEFAULT 0
+#define PRIMARY 1
+#define SECONDARY 2
+#define TERTIARY 3
 
 / {
     keymap {

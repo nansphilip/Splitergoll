@@ -2,12 +2,11 @@ file_format: "1"
 id: Splitergoll
 name: Splitergoll
 type: shield
-url: https://github.com/nansphilip/zmk-SplitErgoLL
+url: https://github.com/nansphilip/zmk-Splitergoll
 requires: [pro_micro]
 exposes: [i2c_oled]
 features:
   - keys
-  # - encoder
 siblings:
   - Splitergoll_left
   - Splitergoll_right
