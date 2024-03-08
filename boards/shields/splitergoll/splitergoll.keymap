@@ -31,7 +31,7 @@
 //                     ┃    VOL-   ┃   CTRL    ┃    ALT    ┃    L2     ┃   SHIFT   ┃   ┃   SPACE   ┃    L1     ┃   ENTER   ┃    WIN    ┃   VOL+    ┃
 //                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
-//         |                              LEFT HALF                               |   |                              RIGHT HALF                              |
+//         |                               LEFT HALF                               |   |                               RIGHT HALF                              |
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
         bindings = <
             &kp BSPC    &kp Q       &kp W       &kp E       &kp R       &kp T
@@ -45,7 +45,7 @@
 
         >;
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
-//         |                              LEFT HALF                               |   |                              RIGHT HALF                              |
+//         |                               LEFT HALF                               |   |                               RIGHT HALF                              |
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
@@ -63,14 +63,22 @@
 //                     ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃
 //                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
+//         |                               LEFT HALF                               |   |                               RIGHT HALF                              |
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
         bindings = <
-            &trans      &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans      &trans
-            &trans      &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans      &trans
-                        &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans
-                        &kp KP_N2   &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans
+            &trans      &trans      &trans      &trans      &trans      &trans
+            &trans      &trans      &trans      &trans      &trans      &trans
+                        &trans      &trans      &trans      &trans      &trans
+                        &kp KP_N2   &trans      &trans      &trans      &trans
+                                                                                        &trans      &trans      &trans      &trans      &trans      &trans
+                                                                                        &trans      &trans      &trans      &trans      &trans      &trans
+                                                                                        &trans      &trans      &trans      &trans      &trans
+                                                                                        &trans      &trans      &trans      &trans      &trans
         >;
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
+//         |                               LEFT HALF                               |   |                               RIGHT HALF                              |
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
 
@@ -86,14 +94,22 @@
 //                     ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃
 //                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
+//         |                               LEFT HALF                               |   |                               RIGHT HALF                              |
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
         bindings = <
-            &trans      &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans      &trans
-            &trans      &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans      &trans
-                        &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans
-                        &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans
+            &trans      &trans      &trans      &trans      &trans      &trans
+            &trans      &trans      &trans      &trans      &trans      &trans
+                        &trans      &trans      &trans      &trans      &trans
+                        &trans      &trans      &trans      &trans      &trans
+                                                                                        &trans      &trans      &trans      &trans      &trans      &trans
+                                                                                        &trans      &trans      &trans      &trans      &trans      &trans
+                                                                                        &trans      &trans      &trans      &trans      &trans
+                                                                                        &trans      &trans      &trans      &trans      &trans
         >;
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
+//         |                               LEFT HALF                               |   |                               RIGHT HALF                              |
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
 
@@ -109,14 +125,22 @@
 //                     ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃
 //                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
+//         |                               LEFT HALF                               |   |                               RIGHT HALF                              |
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
         bindings = <
-            &trans      &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans      &trans
-            &trans      &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans      &trans
-                        &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans
-                        &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans
+            &trans      &trans      &trans      &trans      &trans      &trans
+            &trans      &trans      &trans      &trans      &trans      &trans
+                        &trans      &trans      &trans      &trans      &trans
+                        &trans      &trans      &trans      &trans      &trans
+                                                                                        &trans      &trans      &trans      &trans      &trans      &trans
+                                                                                        &trans      &trans      &trans      &trans      &trans      &trans
+                                                                                        &trans      &trans      &trans      &trans      &trans
+                                                                                        &trans      &trans      &trans      &trans      &trans
         >;
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
+//         |                               LEFT HALF                               |   |                               RIGHT HALF                              |
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
