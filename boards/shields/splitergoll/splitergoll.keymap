@@ -33,10 +33,14 @@
 
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
         bindings = <
-            &kp BSPC    &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P       &kp ESC
-            &kp DEL     &kp A       &kp S       &kp D       &kp F       &kp G           &kp H       &kp J       &kp K       &kp L       &kp M       &kp TAB
-                        &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp QMARK   &kp EXCL    &kp LBKT    &kp RBKT
-                        &kp C_VOL_DN &kp LCTRL  &kp LALT    &mo 2       &kp LSHIFT      &kp SPACE   &mo 1       &kp ENTER   &kp LGUI    &kp C_VOL_UP
+            &kp BSPC    &kp Q       &kp W       &kp E       &kp R       &kp T
+            &kp DEL     &kp A       &kp S       &kp D       &kp F       &kp G
+                        &kp Z       &kp X       &kp C       &kp V       &kp B
+                        &kp C_VOL_DN &kp LCTRL  &kp LALT    &mo 2       &kp LSHIFT
+                                                                                        &kp Y       &kp U       &kp I       &kp O       &kp P       &kp ESC
+                                                                                        &kp H       &kp J       &kp K       &kp L       &kp M       &kp TAB
+                                                                                        &kp N       &kp QMARK   &kp EXCL    &kp LBKT    &kp RBKT
+                                                                                        &kp SPACE   &mo 1       &kp ENTER   &kp LGUI    &kp C_VOL_UP
         >;
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
         };
