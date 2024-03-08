@@ -31,18 +31,23 @@
 //                     ┃    VOL-   ┃   CTRL    ┃    ALT    ┃    L2     ┃   SHIFT   ┃   ┃   SPACE   ┃    L1     ┃   ENTER   ┃    WIN    ┃   VOL+    ┃
 //                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
+//         |                              LEFT HALF                               |   |                              RIGHT HALF                              |
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
         bindings = <
             &kp BSPC    &kp Q       &kp W       &kp E       &kp R       &kp T
             &kp DEL     &kp A       &kp S       &kp D       &kp F       &kp G
                         &kp Z       &kp X       &kp C       &kp V       &kp B
-                        &kp C_VOL_DN &kp LCTRL  &kp LALT    &mo 2       &kp LSHIFT
+                        &kp KP_N0   &kp LCTRL  &kp LALT    &mo 2       &kp LSHIFT
                                                                                         &kp Y       &kp U       &kp I       &kp O       &kp P       &kp ESC
                                                                                         &kp H       &kp J       &kp K       &kp L       &kp M       &kp TAB
                                                                                         &kp N       &kp QMARK   &kp EXCL    &kp LBKT    &kp RBKT
-                                                                                        &kp SPACE   &mo 1       &kp ENTER   &kp LGUI    &kp C_VOL_UP
+                                                                                        &kp SPACE   &mo 1       &kp ENTER   &kp LGUI    &kp KP_N1
+
         >;
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
+//         |                              LEFT HALF                               |   |                              RIGHT HALF                              |
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
 
@@ -63,7 +68,7 @@
             &trans      &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans      &trans
             &trans      &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans      &trans
                         &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans
-                        &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans
+                        &kp KP_N2   &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans
         >;
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
         };
