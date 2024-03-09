@@ -21,14 +21,14 @@
     behaviors {
 
         // Double or triple tap
-        ly-l: tap_dance_0 {
+        ly-l: tap_dance {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mo 2>, <&mo 1>, <&mo 3>;
         };
 
-        ly-r: tap_dance_0 {
+        ly-r: tap_dance {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
@@ -43,7 +43,7 @@
 
 
     keymap {
-        
+
         compatible = "zmk,keymap";
 
         DEFAULT_layer {
