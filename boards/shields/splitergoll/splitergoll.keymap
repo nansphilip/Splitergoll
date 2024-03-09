@@ -36,10 +36,9 @@
         // };
 
         // Hold tap duration
-    };
-
-    &mt {
-        tapping-term-ms = <300>;
+        &mt {
+            tapping-term-ms = <300>;
+        };
     };
 
     keymap {
