@@ -38,9 +38,9 @@
         // Hold tap duration
     };
 
-    &mt {
-        tapping-term-ms = <400>;
-    };
+    // &mt {
+    //     tapping-term-ms = <400>;
+    // };
 
     keymap {
 
