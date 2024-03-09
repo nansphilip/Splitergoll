@@ -34,10 +34,10 @@
 //         |                               LEFT HALF                               |   |                               RIGHT HALF                              |
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
         bindings = <
-            &kp DEL     &kp Q       &kp W       &kp E       &kp R       &kp T ,?
+            &kp DEL     &kp Q       &kp W       &kp E       &kp R       &kp T 
             &kp BSPC    &kp A       &kp S       &kp D       &kp F       &kp G
                         &kp Z       &kp X       &kp C       &kp V       &kp B
-                        &kp C_PP    &kp LCTRL  &kp LALT    &mo 2       &kp LSHIFT
+                        &kp C_PP    &kp LCTRL   &kp LALT    &mo 2       &kp LSHIFT
                                                                                         &kp Y       &kp U       &kp I       &kp O       &kp P       &kp ESC
                                                                                         &kp H       &kp J       &kp K       &kp L       &none       &kp TAB
                                                                                         &kp N       &none       &none       &none       &none
