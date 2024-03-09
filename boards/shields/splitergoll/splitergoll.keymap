@@ -47,8 +47,8 @@
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
 //         |                               LEFT HALF                               |   |                               RIGHT HALF                              |
 
-            // sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp K_SCROLL_UP C_AC_SCROLL_UP>;
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp K_SCROLL_UP C_AC_SCROLL_UP>;
+            // sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
 // 4684
@@ -99,8 +99,8 @@
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
         bindings = <
             &kp BSPC    &trans      &kp HOME    &trans      &kp END     &trans
-            &kp DEl     &trans      &kp LEFT    &kp UP      &kp RIGHT   &trans
-                        &trans     &kp LC(LEFT) &kp DOWN    &kp LC(RIGHT) &trans
+            &kp DEL     &trans      &kp LEFT    &kp UP      &kp RIGHT   &trans
+                        &trans     &kp LC(LEFT) &kp DOWN  &kp LC(RIGHT) &trans
                         &trans      &trans      &trans      &trans      &trans
                                                                                         &trans      &trans      &trans      &trans      &trans      &trans
                                                                                         &trans      &trans      &trans      &trans      &trans      &trans
