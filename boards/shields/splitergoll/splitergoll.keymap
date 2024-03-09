@@ -22,32 +22,32 @@
 
         DEFAULT_layer {
 //         ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//         ┃   BSPACE  ┃     A     ┃     Z     ┃     E     ┃     R     ┃     T     ┃   ┃     Y     ┃     U     ┃     I     ┃     O     ┃     P     ┃    ESC    ┃
+//         ┃    ESC    ┃     A     ┃     Z     ┃     E     ┃     R     ┃     T     ┃   ┃     Y     ┃     U     ┃     I     ┃     O     ┃     P     ┃   BSPACE  ┃
 //         ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//         ┃    DEL    ┃     Q     ┃     S     ┃     D     ┃     F     ┃     G     ┃   ┃     H     ┃     J     ┃     K     ┃     L     ┃           ┃    TAB    ┃
+//         ┃    TAB    ┃     Q     ┃     S     ┃     D     ┃     F     ┃     G     ┃   ┃     H     ┃     J     ┃     K     ┃     L     ┃     M     ┃    DEL    ┃
 //         ┗━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┛
 //                     ┃     W     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃           ┃           ┃           ┃           ┃
 //                     ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//                     ┃ Play/pause┃   CTRL    ┃    ALT    ┃    L2     ┃   SHIFT   ┃   ┃   SPACE   ┃    L1     ┃   ENTER   ┃    WIN    ┃           ┃
+//                     ┃ Play/pause┃   CTRL    ┃    ALT    ┃    L2     ┃   SPACE   ┃   ┃   SHIFT   ┃    L1     ┃   ENTER   ┃    WIN    ┃           ┃
 //                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
 //         |                               LEFT HALF                               |   |                               RIGHT HALF                              |
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
         bindings = <
-            &kp BSPC    &kp Q       &kp W       &kp E       &kp R       &kp T 
-            &kp DEL     &kp A       &kp S       &kp D       &kp F       &kp G
-                        &kp Z       &kp X       &kp C       &kp V       &kp B
-                        &kp C_PP    &kp LCTRL   &kp LALT    &mo 2       &kp LSHIFT
-                                                                                        &kp Y       &kp U       &kp I       &kp O       &kp P       &kp ESC
-                                                                                        &kp H       &kp J       &kp K       &kp L       &none       &kp TAB
+            &kp ESC     &kp A       &kp Z       &kp E       &kp R       &kp T 
+            &kp TAB     &kp Q       &kp S       &kp D       &kp F       &kp G
+                        &kp W       &kp X       &kp C       &kp V       &kp B
+                        &kp C_PP    &kp LCTRL   &kp LALT    &mo 2       &kp SPACE
+                                                                                        &kp Y       &kp U       &kp I       &kp O       &kp P       &kp BSPC
+                                                                                        &kp H       &kp J       &kp K       &kp L       &kp M       &kp DEL
                                                                                         &kp N       &none       &none       &none       &none
-                                                                                        &kp SPACE   &mo 1       &kp ENTER   &kp LGUI    &none
+                                                                                        &kp LSHIFT  &mo 1       &kp ENTER   &kp LGUI    &none
 
         >;
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
 //         |                               LEFT HALF                               |   |                               RIGHT HALF                              |
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp K_SCROLL_UP C_AC_SCROLL_UP>;
         };
 
 // 4684
@@ -78,16 +78,16 @@
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
 //         |                               LEFT HALF                               |   |                               RIGHT HALF                              |
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            // sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
 
 
         SECONDARY_layer {
 //         ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//         ┃           ┃    ESC    ┃   HOME    ┃    TAB    ┃    END    ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
+//         ┃   BSPACE  ┃           ┃   HOME    ┃           ┃    END    ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 //         ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//         ┃           ┃           ┃     ←     ┃     ↑     ┃     →     ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
+//         ┃    DEL    ┃           ┃     ←     ┃     ↑     ┃     →     ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 //         ┗━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┛
 //                     ┃           ┃  CTRL ←   ┃     ↓     ┃   CTRL →  ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃
 //                     ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
@@ -97,8 +97,8 @@
 //         |                               LEFT HALF                               |   |                               RIGHT HALF                              |
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
         bindings = <
-            &trans      &kp ESC     &kp HOME    &kp TAB     &kp END     &trans
-            &trans      &trans      &kp LEFT    &kp UP      &kp RIGHT   &trans
+            &kp BSPC    &trans      &kp HOME    &trans      &kp END     &trans
+            &kp DEl     &trans      &kp LEFT    &kp UP      &kp RIGHT   &trans
                         &trans     &kp LC(LEFT) &kp DOWN    &kp LC(RIGHT) &trans
                         &trans      &trans      &trans      &trans      &trans
                                                                                         &trans      &trans      &trans      &trans      &trans      &trans
