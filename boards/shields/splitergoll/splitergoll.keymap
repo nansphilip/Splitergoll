@@ -10,6 +10,7 @@
 
 / {
     conditional_layers {
+
         compatible = "zmk,conditional-layers";
         TERTIARY_layer {
             if-layers = <1 2>;
@@ -17,8 +18,9 @@
         };
     };
 
-    // Double or triple tap
     behaviors {
+
+        // Double or triple tap
         ly-l: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -32,14 +34,16 @@
             tapping-term-ms = <200>;
             bindings = <&mo 1>, <&mo 2>, <&mo 3>;
         };
+
+        // Hold tap duration
+        &mt {
+            tapping-term-ms = <400>;
+        };
     };
 
-    // Hold tap duration
-    &mt {
-        tapping-term-ms = <400>;
-    };
 
     keymap {
+        
         compatible = "zmk,keymap";
 
         DEFAULT_layer {
