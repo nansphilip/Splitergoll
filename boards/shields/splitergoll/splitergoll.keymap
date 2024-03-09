@@ -10,7 +10,7 @@
 
 // Hold tap duration
 &mt {
-    tapping-term-ms = <500>;
+    tapping-term-ms = <300>;
 };
 
 / {
@@ -25,7 +25,7 @@
 
     behaviors {
 
-        Double or triple tap
+        // Double or triple tap
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
