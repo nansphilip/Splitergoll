@@ -26,17 +26,17 @@
     behaviors {
 
         // Double or triple tap
-        td0: tap_dance_0 {
+        ls_left: layer_switch_left {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <500>;
+            tapping-term-ms = <300>;
             bindings = <&mo 2>, <&mo 1>, <&mo 3>;
         };
 
-        td1: tap_dance_1 {
+        ls_right: layer_switch_right {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <500>;
+            tapping-term-ms = <300>;
             bindings = <&mo 1>, <&mo 2>, <&mo 3>;
         };
     };
@@ -62,11 +62,11 @@
             &kp ESC     &kp A       &kp Z       &kp E       &kp R       &kp T 
             &kp TAB     &kp Q       &kp S       &kp D       &kp F       &kp G
                         &kp W       &kp X       &kp C       &kp V       &kp B
-                    &mt C_MUTE C_PP &kp LCTRL   &kp LALT    &td0        &kp SPACE
+                    &mt C_MUTE C_PP &kp LCTRL   &kp LALT    &ls_left    &kp SPACE
                                                                                         &kp Y       &kp U       &kp I       &kp O       &kp P       &kp BSPC
                                                                                         &kp H       &kp J       &kp K       &kp L       &kp M       &kp DEL
                                                                                         &kp N       &none       &none       &none       &none
-                                                                                        &kp LSHIFT  &td1      &kp ENTER   &kp LGUI    &none
+                                                                                        &kp LSHIFT  &ls_right   &kp ENTER   &kp LGUI    &none
 
         >;
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
@@ -154,7 +154,7 @@
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
         bindings = <
             &kp F1      &kp F2      &kp F3      &kp F4      &kp F5      &kp F6
-            &none       &none       &none       &kp Z       &none       &none
+            &none       &none       &kp Z       &kp Z       &kp Z       &none
                         &none       &none       &none       &none       &none
                         &trans      &trans      &trans      &trans      &trans
                                                                                         &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
