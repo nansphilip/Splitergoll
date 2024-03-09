@@ -104,7 +104,7 @@
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
 //         |                               LEFT HALF                               |   |                               RIGHT HALF                              |
 
-            sensor-bindings = <&inc_dec_none &inc_dec_none>;
+            // sensor-bindings = <&inc_dec_none &inc_dec_none>;
         };
 
 
@@ -166,7 +166,7 @@
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
 //         |                               LEFT HALF                               |   |                               RIGHT HALF                              |
 
-            sensor-bindings = <&inc_dec_none &inc_dec_none>;
+            // sensor-bindings = <&inc_dec_none &inc_dec_none>;
         };
     };
 };
