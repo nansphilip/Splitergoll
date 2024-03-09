@@ -1,7 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-
+#include <dt-bindings/zmk/mouse.h>
 
 #define DEFAULT 0
 #define PRIMARY 1
@@ -214,7 +214,7 @@
                         &none       &none       &none       &none       &none
                         &bootloader &trans      &trans      &trans      &trans
                                                                                         &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
-                                                                                        &none       &mkp LCLK   &mkp RCLK   &none       &none       &none 
+                                                                                        &none       &mkp MB1    &mkp MB2    &none       &none       &none 
                                                                                         &none       &none       &none       &none       &none
                                                                                         &trans      &trans      &trans      &trans      &trans
         >;
