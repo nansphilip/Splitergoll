@@ -8,6 +8,11 @@
 #define SECONDARY 2
 #define TERTIARY 3
 
+// Hold tap duration
+&mt {
+    tapping-term-ms = <500>;
+};
+
 / {
     conditional_layers {
 
@@ -34,11 +39,6 @@
         //     tapping-term-ms = <200>;
         //     bindings = <&mo 1>, <&mo 2>, <&mo 3>;
         // };
-
-        // Hold tap duration
-        &mt {
-            tapping-term-ms = <300>;
-        };
     };
 
     keymap {
