@@ -47,8 +47,7 @@
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
 //         |                               LEFT HALF                               |   |                               RIGHT HALF                              |
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp K_SCROLL_UP C_AC_SCROLL_UP>;
-            // sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;
         };
 
 // 4684
@@ -79,7 +78,7 @@
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
 //         |                               LEFT HALF                               |   |                               RIGHT HALF                              |
 
-            // sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT>;
         };
 
 
