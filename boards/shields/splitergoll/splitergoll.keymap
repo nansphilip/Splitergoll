@@ -29,14 +29,14 @@
         ls_left: layer_switch_left {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <800>;
             bindings = <&mo 2>, <&mo 1>, <&mo 3>; // Le layer 3 ne marche pas...
         };
 
         ls_right: layer_switch_right {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <800>;
             bindings = <&mo 1>, <&mo 2>, <&mo 3>; // Le layer 3 ne marche pas...
         };
     };
