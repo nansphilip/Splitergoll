@@ -61,18 +61,7 @@
 //    ┃ Play/pause or Mute (hold)┃ ┃   CTRL    ┃    ALT    ┃    L2     ┃   SPACE   ┃   ┃   SHIFT   ┃    L1     ┃   ENTER   ┃    WIN    ┃ ┃           ┃
 //                   ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛
 
-// DEFAULT_layer { bindings = <
-// &kp ESC     &kp A       &kp Z       &kp E       &kp R       &kp T 
-// &kp TAB     &kp Q       &kp S       &kp D       &kp F       &kp G
-//             &kp W       &kp X       &kp C       &kp V       &kp B
-//         &mt C_MUTE C_PP &kp LCTRL   &kp LALT    &mo 4       &kp SPACE
-//                                                                             &kp Y       &kp U       &kp I       &kp O       &kp P       &kp BSPC
-//                                                                             &kp H       &kp J       &kp K       &kp L       &kp M       &kp DEL
-//                                                                             &kp N       no___       no___       no___       no___
-//                                                                             &kp LSHIFT  &mo 3       &kp ENTER   &kp LGUI    no___
-// >; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
-
-LAYER(DEFAULT,
+DEFAULT_layer { bindings = <
 &kp ESC     &kp A       &kp Z       &kp E       &kp R       &kp T 
 &kp TAB     &kp Q       &kp S       &kp D       &kp F       &kp G
             &kp W       &kp X       &kp C       &kp V       &kp B
@@ -81,7 +70,7 @@ LAYER(DEFAULT,
                                                                             &kp H       &kp J       &kp K       &kp L       &kp M       &kp DEL
                                                                             &kp N       no___       no___       no___       no___
                                                                             &kp LSHIFT  &mo 3       &kp ENTER   &kp LGUI    no___
-, &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN)
+>; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 // ┃      Default - MacOS     ┃
