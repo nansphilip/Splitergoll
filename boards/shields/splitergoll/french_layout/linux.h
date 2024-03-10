@@ -137,7 +137,7 @@
 // Row 2
 #define FR_EURO  RA(FR_E)     // €
 #define FR_OE    RA(FR_O)     // œ
-#define FR_TILDD RA(FR_CARET) // ~ (dead)
+#define FR_TILD  RA(FR_CARET) // ~ (dead)
 // Row 3
 #define FR_APOS  RA(FR_G)     // ’
 #define FR_ACUTE RA(FR_UGRV)  // ' (dead)

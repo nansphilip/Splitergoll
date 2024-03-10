@@ -41,10 +41,23 @@
         };
     };
 
+    // Ponctuation
     MORPH_UP(comm_qmark, &kp FR_COMMA, &kp FR_QMARK)
     MORPH_UP(dot_excl, &kp FR_DOT, &kp FR_EXCL)
     MORPH_UP(semi_slsh, &kp FR_SEMI, &kp FR_SLSH)
     MORPH_UP(colon_bsls, &kp FR_COLON, &kp FR_BSLS)
+
+    // Accents
+    MORPH_UP(o_circ, &win_ocir, &win_ocir_up)
+    MORPH_UP(e_aigu, &kp FR_EACU, &win_eacu_up)
+    MORPH_UP(e_grav, &kp FR_EGRV, &win_egrv_up)
+    MORPH_UP(e_circ, &win_ecir, &win_ecir_up)
+    MORPH_UP(e_trem, &win_ecir, &win_ecir_up)
+    MORPH_UP(u_grav, &kp FR_UGRV, &win_ugrv_up)
+    MORPH_UP(c_cedi, &kp FR_CCED, &win_cced_up)
+    MORPH_UP(a_grav, &kp FR_AGRV, &win_agrv_up)
+    MORPH_UP(i_circ, &win_icir, &win_icir_up)
+    MORPH_UP(i_trem, &win_itre, &win_itre_up)
 
     keymap {
         compatible = "zmk,keymap";
@@ -83,14 +96,14 @@
 
 //         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
         MACOS_layer { bindings = <
-            no___       no___       no___       no___       no___       no___
-            no___       no___       no___       no___       no___       no___
-                        no___       no___       no___       no___       no___
-                        no___       trs__       trs__       trs__       trs__ 
-                                                                                        no___       no___       no___       no___       no___       no___ 
-                                                                                        no___       no___       no___       no___       no___       no___ 
-                                                                                        no___       no___       no___       no___       no___
-                                                                                        trs__       trs__       trs__       trs__       no___
+            trs__       trs__       trs__       trs__       trs__       trs__
+            trs__       trs__       trs__       trs__       trs__       trs__
+                        trs__       trs__       trs__       trs__       trs__
+                        trs__       trs__       trs__       trs__       trs__ 
+                                                                                        trs__       trs__       trs__       trs__       trs__       trs__
+                                                                                        trs__       trs__       trs__       trs__       trs__       trs__
+                                                                                        trs__       trs__       trs__       trs__       trs__
+                                                                                        trs__       trs__       trs__       trs__       trs__
         >; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
 //         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 
@@ -100,14 +113,14 @@
 
 //         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
         LINUX_layer { bindings = <
-            no___       no___       no___       no___       no___       no___
-            no___       no___       no___       no___       no___       no___
-                        no___       no___       no___       no___       no___
-                        no___       trs__       trs__       trs__       trs__ 
-                                                                                        no___       no___       no___       no___       no___       no___ 
-                                                                                        no___       no___       no___       no___       no___       no___ 
-                                                                                        no___       no___       no___       no___       no___
-                                                                                        trs__       trs__       trs__       trs__       no___
+            trs__       trs__       trs__       trs__       trs__       trs__
+            trs__       trs__       trs__       trs__       trs__       trs__
+                        trs__       trs__       trs__       trs__       trs__
+                        trs__       trs__       trs__       trs__       trs__ 
+                                                                                        trs__       trs__       trs__       trs__       trs__       trs__
+                                                                                        trs__       trs__       trs__       trs__       trs__       trs__
+                                                                                        trs__       trs__       trs__       trs__       trs__
+                                                                                        trs__       trs__       trs__       trs__       trs__
         >; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
 //         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 
@@ -119,9 +132,9 @@
 //         ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //         ┃           ┃     1     ┃     2     ┃     3     ┃     4     ┃     5     ┃   ┃     6     ┃     7     ┃     8     ┃     9     ┃     0     ┃           ┃
 //         ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
+//         ┃           ┃     Ô     ┃     É     ┃     È     ┃     Ê     ┃     Ë     ┃   ┃     Ù     ┃     Ç     ┃     À     ┃     Î     ┃     Ï     ┃           ┃
 //         ┗━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┛
-//                     ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃
+//                     ┃     ~     ┃     ˊ     ┃     `     ┃     ^     ┃     ¨     ┃   ┃     =     ┃     +     ┃     -     ┃     *     ┃     /     ┃
 //                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                   ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓
 //                   ┃           ┃ ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃ ┃           ┃
@@ -129,12 +142,12 @@
 
 //         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
         PRIMARY_layer { bindings = <
-            trs__       &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_N4   &kp KP_N5
-            trs__       no___       no___       no___       no___       no___
-                        no___       no___       no___       no___       no___
+            trs__       &kp FR_1    &kp FR_2    &kp FR_3    &kp FR_4    &kp FR_5
+            trs__       &o_circ     &e_aigu     &e_grav     &e_circ     &e_trem
+                        &WIN_TILD   &FR_ACUTE   &WIN_GRAVD  &FR_CARET   &FR_DIAE
                         no___       trs__       trs__       trs__       trs__ 
-                                                                                        &kp KP_N6   &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_N0   trs__ 
-                                                                                        no___       no___       no___       no___       no___       trs__ 
+                                                                                        &kp FR_6    &kp FR_7    &kp FR_8    &kp FR_9    &kp FR_0    trs__
+                                                                                        &u_grav     &c_cedi     &a_grav     &i_circ     &i_trem     trs__
                                                                                         no___       no___       no___       no___       no___
                                                                                         trs__       trs__       trs__       trs__       no___
         >; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
@@ -192,7 +205,7 @@
                         no___       no___       no___       no___       no___
                         &bootloader trs__       trs__       trs__       trs__ 
                                                                                         &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
-                                                                                        no___       &mkp MB1    &mkp MB2    no___       no___       no___ 
+                                                                                        no___       &mkp MB1    &mkp MB2    no___       no___       no___
                                                                                         no___       no___       no___       no___       no___
                                                                                         trs__       trs__       trs__       trs__       &bt BT_CLR_ALL
         >; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
@@ -220,8 +233,8 @@
             no___       no___       no___       no___       no___       no___
                         no___       no___       no___       no___       no___
                         no___       trs__       trs__       trs__       trs__ 
-                                                                                        no___       no___       no___       no___       no___       no___ 
-                                                                                        no___       no___       no___       no___       no___       no___ 
+                                                                                        no___       no___       no___       no___       no___       no___
+                                                                                        no___       no___       no___       no___       no___       no___
                                                                                         no___       no___       no___       no___       no___
                                                                                         trs__       trs__       trs__       trs__       no___
         >; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
