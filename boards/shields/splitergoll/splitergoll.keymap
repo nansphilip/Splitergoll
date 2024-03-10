@@ -3,24 +3,21 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/mouse.h>
-#include <dt-bindings/zmk/outputs.h>
 
 // Includes
 #include "french_layout/function.h"
-#include "french_layout/linux.h"
 #include "french_layout/windows.h"
-#include "french_layout/macos.h"
+// #include "french_layout/macos.h"
 
 // Layers
 #define DEFAULT 0
-#define WINDOWS 1
-#define MACOS 2
+#define MACOS 1
 
-#define PRIMARY 3
-#define SECONDARY 4
-#define TERTIARY 5
+#define PRIMARY 2
+#define SECONDARY 3
+#define TERTIARY 4
 
-#define GAMING 6
+#define GAMING 5
 
 #define no___ &none
 #define trs__  &trans
@@ -43,21 +40,21 @@
 
     // Ponctuation
     MORPH_UP(comm_qmark, &kp FR_COMMA, &kp FR_QMARK)
-    MORPH_UP(dot_excl, &kp FR_DOT, &kp FR_EXCL)
-    MORPH_UP(semi_slsh, &kp FR_SEMI, &kp FR_SLSH)
+    MORPH_UP(dot_excl,   &kp FR_DOT,   &kp FR_EXCL)
+    MORPH_UP(semi_slsh,  &kp FR_SEMI,  &kp FR_SLSH)
     MORPH_UP(colon_bsls, &kp FR_COLON, &kp FR_BSLS)
 
     // Accents
-    MORPH_UP(o_circ, &win_ocir, &win_ocir_up)
-    MORPH_UP(e_aigu, &win_eacu, &win_eacu_up)
-    MORPH_UP(e_grav, &win_egrv, &win_egrv_up)
-    MORPH_UP(e_circ, &win_ecir, &win_ecir_up)
-    MORPH_UP(e_trem, &win_ecir, &win_ecir_up)
-    MORPH_UP(u_grav, &win_ugrv, &win_ugrv_up)
-    MORPH_UP(c_cedi, &win_cced, &win_cced_up)
-    MORPH_UP(a_grav, &win_agrv, &win_agrv_up)
-    MORPH_UP(i_circ, &win_icir, &win_icir_up)
-    MORPH_UP(i_trem, &win_itre, &win_itre_up)
+    MORPH_UP(o_circ, &kp FR_o_CIR, &kp FR_O_CIR)
+    MORPH_UP(e_aigu, &kp FR_e_AGU, &kp FR_E_AGU)
+    MORPH_UP(e_grav, &kp FR_e_GRV, &kp FR_E_GRV)
+    MORPH_UP(e_circ, &kp FR_e_CIR, &kp FR_E_CIR)
+    MORPH_UP(e_trem, &kp FR_e_TRE, &kp FR_E_TRE)
+    MORPH_UP(u_grav, &kp FR_u_GRV, &kp FR_U_GRV)
+    MORPH_UP(c_cedi, &kp FR_c_CED, &kp FR_C_CED)
+    MORPH_UP(a_grav, &kp FR_a_GRV, &kp FR_A_GRV)
+    MORPH_UP(i_circ, &kp FR_i_CIR, &kp FR_I_CIR)
+    MORPH_UP(i_trem, &kp FR_i_TRE, &kp FR_I_TRE)
 
     keymap {
         compatible = "zmk,keymap";
@@ -82,13 +79,14 @@
             &kp ESC     &kp FR_A    &kp FR_Z    &kp FR_E    &kp FR_R    &kp FR_T 
             &kp TAB     &kp FR_Q    &kp FR_S    &kp FR_D    &kp FR_F    &kp FR_G
                         &kp FR_W    &kp FR_X    &kp FR_C    &kp FR_V    &kp FR_B
-                    &mt C_MUTE C_PP &kp LCTRL   &kp LALT    &mo 4       &kp SPACE
+                    &mt C_MUTE C_PP &kp LCTRL   &kp LALT    &mo 3       &kp SPACE
                                                                                         &kp FR_Y    &kp FR_U    &kp FR_I    &kp FR_O    &kp FR_P    &kp BSPC
                                                                                         &kp FR_H    &kp FR_J    &kp FR_K    &kp FR_L    &kp FR_M    &kp DEL
                                                                                         &kp FR_N    &comm_qmark &dot_excl   &semi_slsh  &colon_bsls
-                                                                                        &kp LSHIFT  &mo 3       &kp ENTER   &kp LGUI    no___
+                                                                                        &kp LSHIFT  &mo 2       &kp ENTER   &kp LGUI    no___
         >; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
 //         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
+
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 // ┃      Default - MacOS     ┃
@@ -96,23 +94,6 @@
 
 //         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
         MACOS_layer { bindings = <
-            trs__       trs__       trs__       trs__       trs__       trs__
-            trs__       trs__       trs__       trs__       trs__       trs__
-                        trs__       trs__       trs__       trs__       trs__
-                        trs__       trs__       trs__       trs__       trs__ 
-                                                                                        trs__       trs__       trs__       trs__       trs__       trs__
-                                                                                        trs__       trs__       trs__       trs__       trs__       trs__
-                                                                                        trs__       trs__       trs__       trs__       trs__
-                                                                                        trs__       trs__       trs__       trs__       trs__
-        >; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
-//         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
-
-// ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-// ┃     Default - Linux      ┃
-// ┗━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-
-//         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
-        LINUX_layer { bindings = <
             trs__       trs__       trs__       trs__       trs__       trs__
             trs__       trs__       trs__       trs__       trs__       trs__
                         trs__       trs__       trs__       trs__       trs__
@@ -144,7 +125,7 @@
         PRIMARY_layer { bindings = <
             trs__       &kp FR_1    &kp FR_2    &kp FR_3    &kp FR_4    &kp FR_5
             trs__       &o_circ     &e_aigu     &e_grav     &e_circ     &e_trem
-                        &kp WIN_TLD &kp WIN_AGU &kp WIN_GRV &kp WIN_CIR &kp WIN_TRE
+                        &kp W_TLD   &kp W_AGU   &kp W_GRV   &kp W_CIR   &kp W_TRE
                         no___       trs__       trs__       trs__       trs__ 
                                                                                         &kp FR_6    &kp FR_7    &kp FR_8    &kp FR_9    &kp FR_0    trs__
                                                                                         &u_grav     &c_cedi     &a_grav     &i_circ     &i_trem     trs__
