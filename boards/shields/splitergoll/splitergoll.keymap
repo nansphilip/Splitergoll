@@ -34,7 +34,8 @@
 
 
 
-
+    keymap {
+        compatible = "zmk,keymap";
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 // ┃     Default - Windows    ┃
@@ -51,7 +52,7 @@
 //    ┃ Play/pause or Mute (hold)┃ ┃   CTRL    ┃    ALT    ┃    L2     ┃   SPACE   ┃   ┃   SHIFT   ┃    L1     ┃   ENTER   ┃    WIN    ┃ ┃           ┃
 //                   ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛
 
-LAYER(DEFAULT,
+DEFAULT_layer { bindings = <
 &kp ESC     &kp A       &kp Z       &kp E       &kp R       &kp T 
 &kp TAB     &kp Q       &kp S       &kp D       &kp F       &kp G
             &kp W       &kp X       &kp C       &kp V       &kp B
@@ -60,13 +61,13 @@ LAYER(DEFAULT,
                                                                             &kp H       &kp J       &kp K       &kp L       &kp M       &kp DEL
                                                                             &kp N       no___       no___       no___       no___
                                                                             &kp LSHIFT  &mo 3       &kp ENTER   &kp LGUI    no___
-, &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN)
+>; sensors = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;}
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 // ┃      Default - MacOS     ┃
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
-LAYER(WINDOWS,
+MACOS_layer { bindings = <
 no___       no___       no___       no___       no___       no___
 no___       no___       no___       no___       no___       no___
             no___       no___       no___       no___       no___
@@ -75,13 +76,13 @@ no___       no___       no___       no___       no___       no___
                                                                             no___       no___       no___       no___       no___       no___ 
                                                                             no___       no___       no___       no___       no___
                                                                             trs__       trs__       trs__       trs__       no___
-, &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN)
+>; sensors = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;}
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 // ┃     Default - Linux      ┃
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
-LAYER(MACOS,
+LINUX_layer { bindings = <
 no___       no___       no___       no___       no___       no___
 no___       no___       no___       no___       no___       no___
             no___       no___       no___       no___       no___
@@ -90,10 +91,7 @@ no___       no___       no___       no___       no___       no___
                                                                             no___       no___       no___       no___       no___       no___ 
                                                                             no___       no___       no___       no___       no___
                                                                             trs__       trs__       trs__       trs__       no___
-, &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN)
-
-
-
+>; sensors = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;}
 
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -111,7 +109,7 @@ no___       no___       no___       no___       no___       no___
 //                   ┃           ┃ ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃ ┃           ┃
 //                   ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛
 
-LAYER(PRIMARY,
+PRIMARY_layer { bindings = <
 trs__       &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_N4   &kp KP_N5
 trs__       no___       no___       no___       no___       no___
             no___       no___       no___       no___       no___
@@ -120,7 +118,7 @@ trs__       no___       no___       no___       no___       no___
                                                                             no___       no___       no___       no___       no___       trs__ 
                                                                             no___       no___       no___       no___       no___
                                                                             trs__       trs__       trs__       trs__       no___
-, &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN)
+>; sensors = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;}
 
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -138,7 +136,7 @@ trs__       no___       no___       no___       no___       no___
 //                   ┃           ┃ ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃ ┃           ┃
 //                   ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛
 
-LAYER(SECONDARY,
+SECONDARY_layer { bindings = <
 &kp BSPC    no___       &kp HOME    no___       &kp END     no___
 &kp DEL     no___       &kp LEFT    &kp UP      &kp RIGHT   no___
             no___      &kp LC(LEFT) &kp DOWN  &kp LC(RIGHT) no___
@@ -147,7 +145,7 @@ LAYER(SECONDARY,
                                                                             no___       no___       no___       no___       no___       no___
                                                                             no___       no___       no___       no___       no___
                                                                             trs__       trs__       trs__       trs__       no___
-, &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN)
+>; sensors = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;}
 
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -165,7 +163,7 @@ LAYER(SECONDARY,
 //                   ┃ Bootloader┃ ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃ ┃Del BT link┃
 //                   ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛
 
-LAYER(TERTIARY,
+TERTIARY_layer { bindings = <
 &kp F1      &kp F2      &kp F3      &kp F4      &kp F5      &kp F6
 no___       no___       no___       no___       no___       no___
             no___       no___       no___       no___       no___
@@ -174,8 +172,7 @@ no___       no___       no___       no___       no___       no___
                                                                             no___       &mkp MB1    &mkp MB2    no___       no___       no___ 
                                                                             no___       no___       no___       no___       no___
                                                                             trs__       trs__       trs__       trs__       &bt BT_CLR_ALL
-, &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN)
-
+>; sensors = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;}
 
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -193,7 +190,7 @@ no___       no___       no___       no___       no___       no___
 //                   ┃           ┃ ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃ ┃           ┃
 //                   ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛
 
-LAYER(GAMING,
+GAMING_layer { bindings = <
 no___       no___       no___       no___       no___       no___
 no___       no___       no___       no___       no___       no___
             no___       no___       no___       no___       no___
@@ -202,6 +199,7 @@ no___       no___       no___       no___       no___       no___
                                                                             no___       no___       no___       no___       no___       no___ 
                                                                             no___       no___       no___       no___       no___
                                                                             trs__       trs__       trs__       trs__       no___
-, &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN)
+>; sensors = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;}
 
+    };
 };
