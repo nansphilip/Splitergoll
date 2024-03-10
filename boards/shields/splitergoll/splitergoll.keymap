@@ -3,7 +3,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/mouse.h>
 
-#include "function.h"
 
 #define DEFAULT 0
 #define WINDOWS 1
@@ -13,8 +12,8 @@
 #define TERTIARY 5
 #define GAMING 6
 
-#define n____ &none
-#define t____  &trans
+#define no___ &none
+#define trs__  &trans
 
 // Hold tap duration
 &mt {
@@ -55,8 +54,8 @@
                     &mt C_MUTE C_PP &kp LCTRL   &kp LALT    &mo 4       &kp SPACE
                                                                                         &kp Y       &kp U       &kp I       &kp O       &kp P       &kp BSPC
                                                                                         &kp H       &kp J       &kp K       &kp L       &kp M       &kp DEL
-                                                                                        &kp N       n____       n____       n____       n____
-                                                                                        &kp LSHIFT  &mo 3       &kp ENTER   &kp LGUI    n____
+                                                                                        &kp N       no___       no___       no___       no___
+                                                                                        &kp LSHIFT  &mo 3       &kp ENTER   &kp LGUI    no___
 
         >;
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
@@ -69,14 +68,14 @@
         WINDOWS_layer {
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
         bindings = <
-            n____       n____       n____       n____       n____       n____
-            n____       n____       n____       n____       n____       n____
-                        n____       n____       n____       n____       n____
-                        n____       t____       t____       t____       t____ 
-                                                                                        n____       n____       n____       n____       n____       n____ 
-                                                                                        n____       n____       n____       n____       n____       n____ 
-                                                                                        n____       n____       n____       n____       n____
-                                                                                        t____       t____       t____       t____       n____
+            no___       no___       no___       no___       no___       no___
+            no___       no___       no___       no___       no___       no___
+                        no___       no___       no___       no___       no___
+                        no___       trs__       trs__       trs__       trs__ 
+                                                                                        no___       no___       no___       no___       no___       no___ 
+                                                                                        no___       no___       no___       no___       no___       no___ 
+                                                                                        no___       no___       no___       no___       no___
+                                                                                        trs__       trs__       trs__       trs__       no___
         >;
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
 
@@ -86,14 +85,14 @@
         MACOS_layer {
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
         bindings = <
-            n____       n____       n____       n____       n____       n____
-            n____       n____       n____       n____       n____       n____
-                        n____       n____       n____       n____       n____
-                        n____       t____       t____       t____       t____ 
-                                                                                        n____       n____       n____       n____       n____       n____ 
-                                                                                        n____       n____       n____       n____       n____       n____ 
-                                                                                        n____       n____       n____       n____       n____
-                                                                                        t____       t____       t____       t____       n____
+            no___       no___       no___       no___       no___       no___
+            no___       no___       no___       no___       no___       no___
+                        no___       no___       no___       no___       no___
+                        no___       trs__       trs__       trs__       trs__ 
+                                                                                        no___       no___       no___       no___       no___       no___ 
+                                                                                        no___       no___       no___       no___       no___       no___ 
+                                                                                        no___       no___       no___       no___       no___
+                                                                                        trs__       trs__       trs__       trs__       no___
         >;
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
 
@@ -115,14 +114,14 @@
 
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
         bindings = <
-            t____       &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_N4   &kp KP_N5
-            t____       n____       n____       n____       n____       n____
-                        n____       n____       n____       n____       n____
-                        n____       t____       t____       t____       t____ 
-                                                                                        &kp KP_N6   &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_N0   t____ 
-                                                                                        n____       n____       n____       n____       n____       t____ 
-                                                                                        n____       n____       n____       n____       n____
-                                                                                        t____       t____       t____       t____       n____
+            trs__       &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_N4   &kp KP_N5
+            trs__       no___       no___       no___       no___       no___
+                        no___       no___       no___       no___       no___
+                        no___       trs__       trs__       trs__       trs__ 
+                                                                                        &kp KP_N6   &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_N0   trs__ 
+                                                                                        no___       no___       no___       no___       no___       trs__ 
+                                                                                        no___       no___       no___       no___       no___
+                                                                                        trs__       trs__       trs__       trs__       no___
         >;
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
 
@@ -145,14 +144,14 @@
 
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
         bindings = <
-            &kp BSPC    n____       &kp HOME    n____       &kp END     n____
-            &kp DEL     n____       &kp LEFT    &kp UP      &kp RIGHT   n____
-                        n____      &kp LC(LEFT) &kp DOWN  &kp LC(RIGHT) n____
-                        n____       t____       t____       t____       t____ 
-                                                                                        n____       n____       n____       n____       n____       n____
-                                                                                        n____       n____       n____       n____       n____       n____
-                                                                                        n____       n____       n____       n____       n____
-                                                                                        t____       t____       t____       t____       n____
+            &kp BSPC    no___       &kp HOME    no___       &kp END     no___
+            &kp DEL     no___       &kp LEFT    &kp UP      &kp RIGHT   no___
+                        no___      &kp LC(LEFT) &kp DOWN  &kp LC(RIGHT) no___
+                        no___       trs__       trs__       trs__       trs__ 
+                                                                                        no___       no___       no___       no___       no___       no___
+                                                                                        no___       no___       no___       no___       no___       no___
+                                                                                        no___       no___       no___       no___       no___
+                                                                                        trs__       trs__       trs__       trs__       no___
         >;
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
 
@@ -176,13 +175,13 @@
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
         bindings = <
             &kp F1      &kp F2      &kp F3      &kp F4      &kp F5      &kp F6
-            n____       n____       n____       n____       n____       n____
-                        n____       n____       n____       n____       n____
-                        &bootloader t____       t____       t____       t____ 
+            no___       no___       no___       no___       no___       no___
+                        no___       no___       no___       no___       no___
+                        &bootloader trs__       trs__       trs__       trs__ 
                                                                                         &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
-                                                                                        n____       &mkp MB1    &mkp MB2    n____       n____       n____ 
-                                                                                        n____       n____       n____       n____       n____
-                                                                                        t____       t____       t____       t____       &bt BT_CLR_ALL
+                                                                                        no___       &mkp MB1    &mkp MB2    no___       no___       no___ 
+                                                                                        no___       no___       no___       no___       no___
+                                                                                        trs__       trs__       trs__       trs__       &bt BT_CLR_ALL
         >;
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
 
@@ -205,14 +204,14 @@
 
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
         bindings = <
-            n____       n____       n____       n____       n____       n____
-            n____       n____       n____       n____       n____       n____
-                        n____       n____       n____       n____       n____
-                        n____       t____       t____       t____       t____ 
-                                                                                        n____       n____       n____       n____       n____       n____ 
-                                                                                        n____       n____       n____       n____       n____       n____ 
-                                                                                        n____       n____       n____       n____       n____
-                                                                                        t____       t____       t____       t____       n____
+            no___       no___       no___       no___       no___       no___
+            no___       no___       no___       no___       no___       no___
+                        no___       no___       no___       no___       no___
+                        no___       trs__       trs__       trs__       trs__ 
+                                                                                        no___       no___       no___       no___       no___       no___ 
+                                                                                        no___       no___       no___       no___       no___       no___ 
+                                                                                        no___       no___       no___       no___       no___
+                                                                                        trs__       trs__       trs__       trs__       no___
         >;
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
 
