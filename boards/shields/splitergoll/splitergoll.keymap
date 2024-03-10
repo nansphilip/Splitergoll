@@ -41,7 +41,10 @@
         };
     };
 
-
+    MORPH_UP(comm_qmark, &kp FR_COMMA, &kp FR_QMARK)
+    MORPH_UP(dot_excl, &kp FR_DOT, &kp FR_EXCL)
+    MORPH_UP(semi_slsh, &kp FR_SEMI, &kp FR_SLSH)
+    MORPH_UP(colon_bsls, &kp FR_COLON, &kp FR_BSLS)
 
     keymap {
         compatible = "zmk,keymap";
@@ -69,7 +72,7 @@
                     &mt C_MUTE C_PP &kp LCTRL   &kp LALT    &mo 4       &kp SPACE
                                                                                         &kp FR_Y    &kp FR_U    &kp FR_I    &kp FR_O    &kp FR_P    &kp BSPC
                                                                                         &kp FR_H    &kp FR_J    &kp FR_K    &kp FR_L    &kp FR_M    &kp DEL
-                                                                                        &kp FR_N    no___       no___       no___       no___
+                                                                                        &kp FR_N    &comm_qmark &dot_excl   &semi_slsh  &colon_bsls
                                                                                         &kp LSHIFT  &mo 3       &kp ENTER   &kp LGUI    no___
         >; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
 //         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
