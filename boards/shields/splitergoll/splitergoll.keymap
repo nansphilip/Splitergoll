@@ -52,7 +52,6 @@
 //                   ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛
 
 LAYER(DEFAULT,
-//         |           |           |           |           |           |   |           |           |           |           |           |           |
 &kp ESC     &kp A       &kp Z       &kp E       &kp R       &kp T 
 &kp TAB     &kp Q       &kp S       &kp D       &kp F       &kp G
             &kp W       &kp X       &kp C       &kp V       &kp B
@@ -61,7 +60,6 @@ LAYER(DEFAULT,
                                                                             &kp H       &kp J       &kp K       &kp L       &kp M       &kp DEL
                                                                             &kp N       no___       no___       no___       no___
                                                                             &kp LSHIFT  &mo 3       &kp ENTER   &kp LGUI    no___
-//         |           |           |           |           |           |   |           |           |           |           |           |           |
 , &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN)
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
