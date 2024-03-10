@@ -5,7 +5,10 @@
 #include <dt-bindings/zmk/mouse.h>
 
 // Includes
-#include "function.h"
+#include "french_layout/function.h"
+#include "french_layout/linux.h"
+#include "french_layout/macos.h"
+#include "french_layout/windows.h"
 
 // Layers
 #define DEFAULT 0
@@ -66,7 +69,7 @@ DEFAULT_layer { bindings = <
                                                                             &kp H       &kp J       &kp K       &kp L       &kp M       &kp DEL
                                                                             &kp N       no___       no___       no___       no___
                                                                             &kp LSHIFT  &mo 3       &kp ENTER   &kp LGUI    no___
->; sensors = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
+>; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 // ┃      Default - MacOS     ┃
@@ -81,7 +84,7 @@ no___       no___       no___       no___       no___       no___
                                                                             no___       no___       no___       no___       no___       no___ 
                                                                             no___       no___       no___       no___       no___
                                                                             trs__       trs__       trs__       trs__       no___
->; sensors = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
+>; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 // ┃     Default - Linux      ┃
@@ -96,7 +99,7 @@ no___       no___       no___       no___       no___       no___
                                                                             no___       no___       no___       no___       no___       no___ 
                                                                             no___       no___       no___       no___       no___
                                                                             trs__       trs__       trs__       trs__       no___
->; sensors = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
+>; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
 
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -123,7 +126,7 @@ trs__       no___       no___       no___       no___       no___
                                                                             no___       no___       no___       no___       no___       trs__ 
                                                                             no___       no___       no___       no___       no___
                                                                             trs__       trs__       trs__       trs__       no___
->; sensors = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
+>; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
 
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -150,7 +153,7 @@ SECONDARY_layer { bindings = <
                                                                             no___       no___       no___       no___       no___       no___
                                                                             no___       no___       no___       no___       no___
                                                                             trs__       trs__       trs__       trs__       no___
->; sensors = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
+>; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
 
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -177,7 +180,7 @@ no___       no___       no___       no___       no___       no___
                                                                             no___       &mkp MB1    &mkp MB2    no___       no___       no___ 
                                                                             no___       no___       no___       no___       no___
                                                                             trs__       trs__       trs__       trs__       &bt BT_CLR_ALL
->; sensors = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
+>; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
 
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -204,7 +207,7 @@ no___       no___       no___       no___       no___       no___
                                                                             no___       no___       no___       no___       no___       no___ 
                                                                             no___       no___       no___       no___       no___
                                                                             trs__       trs__       trs__       trs__       no___
->; sensors = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
+>; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
 
     };
 };
