@@ -58,49 +58,55 @@
 //                     ┃     W     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃  , ou ?   ┃  . ou !   ┃  ; ou /   ┃  : ou \   ┃
 //                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                   ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓
-//    ┃ Play/pause or Mute (hold)┃ ┃   CTRL    ┃    ALT    ┃    L2     ┃   SPACE   ┃   ┃   SHIFT   ┃    L1     ┃   ENTER   ┃    WIN    ┃ ┃           ┃
+//               ┃Play+Mute(hold)┃ ┃   CTRL    ┃    ALT    ┃    L2     ┃   SPACE   ┃   ┃   SHIFT   ┃    L1     ┃   ENTER   ┃    WIN    ┃ ┃           ┃
 //                   ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛
 
-DEFAULT_layer { bindings = <
-&kp ESC     &kp FR_A       &kp Z       &kp E       &kp R       &kp T 
-&kp TAB     &kp Q       &kp S       &kp D       &kp F       &kp G
-            &kp W       &kp X       &kp C       &kp V       &kp B
-        &mt C_MUTE C_PP &kp LCTRL   &kp LALT    &mo 4       &kp SPACE
-                                                                            &kp Y       &kp U       &kp I       &kp O       &kp P       &kp BSPC
-                                                                            &kp H       &kp J       &kp K       &kp L       &kp M       &kp DEL
-                                                                            &kp N       no___       no___       no___       no___
-                                                                            &kp LSHIFT  &mo 3       &kp ENTER   &kp LGUI    no___
->; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
+//         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
+        DEFAULT_layer { bindings = <
+            &kp ESC     &kp FR_A    &kp FR_Z    &kp FR_E    &kp FR_R    &kp FR_T 
+            &kp TAB     &kp FR_Q    &kp FR_S    &kp FR_D    &kp FR_F    &kp FR_G
+                        &kp FR_W    &kp FR_X    &kp FR_C    &kp FR_V    &kp FR_B
+                    &mt C_MUTE C_PP &kp LCTRL   &kp LALT    &mo 4       &kp SPACE
+                                                                                        &kp FR_Y    &kp FR_U    &kp FR_I    &kp FR_O    &kp FR_P    &kp BSPC
+                                                                                        &kp FR_H    &kp FR_J    &kp FR_K    &kp FR_L    &kp FR_M    &kp DEL
+                                                                                        &kp FR_N    no___       no___       no___       no___
+                                                                                        &kp LSHIFT  &mo 3       &kp ENTER   &kp LGUI    no___
+        >; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
+//         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 // ┃      Default - MacOS     ┃
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
-MACOS_layer { bindings = <
-no___       no___       no___       no___       no___       no___
-no___       no___       no___       no___       no___       no___
-            no___       no___       no___       no___       no___
-            no___       trs__       trs__       trs__       trs__ 
-                                                                            no___       no___       no___       no___       no___       no___ 
-                                                                            no___       no___       no___       no___       no___       no___ 
-                                                                            no___       no___       no___       no___       no___
-                                                                            trs__       trs__       trs__       trs__       no___
->; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
+//         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
+        MACOS_layer { bindings = <
+            no___       no___       no___       no___       no___       no___
+            no___       no___       no___       no___       no___       no___
+                        no___       no___       no___       no___       no___
+                        no___       trs__       trs__       trs__       trs__ 
+                                                                                        no___       no___       no___       no___       no___       no___ 
+                                                                                        no___       no___       no___       no___       no___       no___ 
+                                                                                        no___       no___       no___       no___       no___
+                                                                                        trs__       trs__       trs__       trs__       no___
+        >; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
+//         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 // ┃     Default - Linux      ┃
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
-LINUX_layer { bindings = <
-no___       no___       no___       no___       no___       no___
-no___       no___       no___       no___       no___       no___
-            no___       no___       no___       no___       no___
-            no___       trs__       trs__       trs__       trs__ 
-                                                                            no___       no___       no___       no___       no___       no___ 
-                                                                            no___       no___       no___       no___       no___       no___ 
-                                                                            no___       no___       no___       no___       no___
-                                                                            trs__       trs__       trs__       trs__       no___
->; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
+//         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
+        LINUX_layer { bindings = <
+            no___       no___       no___       no___       no___       no___
+            no___       no___       no___       no___       no___       no___
+                        no___       no___       no___       no___       no___
+                        no___       trs__       trs__       trs__       trs__ 
+                                                                                        no___       no___       no___       no___       no___       no___ 
+                                                                                        no___       no___       no___       no___       no___       no___ 
+                                                                                        no___       no___       no___       no___       no___
+                                                                                        trs__       trs__       trs__       trs__       no___
+        >; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
+//         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -118,16 +124,18 @@ no___       no___       no___       no___       no___       no___
 //                   ┃           ┃ ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃ ┃           ┃
 //                   ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛
 
-PRIMARY_layer { bindings = <
-trs__       &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_N4   &kp KP_N5
-trs__       no___       no___       no___       no___       no___
-            no___       no___       no___       no___       no___
-            no___       trs__       trs__       trs__       trs__ 
-                                                                            &kp KP_N6   &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_N0   trs__ 
-                                                                            no___       no___       no___       no___       no___       trs__ 
-                                                                            no___       no___       no___       no___       no___
-                                                                            trs__       trs__       trs__       trs__       no___
->; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
+//         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
+        PRIMARY_layer { bindings = <
+            trs__       &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_N4   &kp KP_N5
+            trs__       no___       no___       no___       no___       no___
+                        no___       no___       no___       no___       no___
+                        no___       trs__       trs__       trs__       trs__ 
+                                                                                        &kp KP_N6   &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_N0   trs__ 
+                                                                                        no___       no___       no___       no___       no___       trs__ 
+                                                                                        no___       no___       no___       no___       no___
+                                                                                        trs__       trs__       trs__       trs__       no___
+        >; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
+//         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -145,16 +153,18 @@ trs__       no___       no___       no___       no___       no___
 //                   ┃           ┃ ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃ ┃           ┃
 //                   ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛
 
-SECONDARY_layer { bindings = <
-&kp BSPC    no___       &kp HOME    no___       &kp END     no___
-&kp DEL     no___       &kp LEFT    &kp UP      &kp RIGHT   no___
-            no___      &kp LC(LEFT) &kp DOWN  &kp LC(RIGHT) no___
-            no___       trs__       trs__       trs__       trs__ 
-                                                                            no___       no___       no___       no___       no___       no___
-                                                                            no___       no___       no___       no___       no___       no___
-                                                                            no___       no___       no___       no___       no___
-                                                                            trs__       trs__       trs__       trs__       no___
->; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
+//         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
+        SECONDARY_layer { bindings = <
+            &kp BSPC    no___       &kp HOME    no___       &kp END     no___
+            &kp DEL     no___       &kp LEFT    &kp UP      &kp RIGHT   no___
+                        no___      &kp LC(LEFT) &kp DOWN  &kp LC(RIGHT) no___
+                        no___       trs__       trs__       trs__       trs__ 
+                                                                                        no___       no___       no___       no___       no___       no___
+                                                                                        no___       no___       no___       no___       no___       no___
+                                                                                        no___       no___       no___       no___       no___
+                                                                                        trs__       trs__       trs__       trs__       no___
+        >; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
+//         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -172,16 +182,18 @@ SECONDARY_layer { bindings = <
 //                   ┃ Bootloader┃ ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃ ┃Del BT link┃
 //                   ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛
 
-TERTIARY_layer { bindings = <
-&kp F1      &kp F2      &kp F3      &kp F4      &kp F5      &kp F6
-no___       no___       no___       no___       no___       no___
-            no___       no___       no___       no___       no___
-            &bootloader trs__       trs__       trs__       trs__ 
-                                                                            &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
-                                                                            no___       &mkp MB1    &mkp MB2    no___       no___       no___ 
-                                                                            no___       no___       no___       no___       no___
-                                                                            trs__       trs__       trs__       trs__       &bt BT_CLR_ALL
->; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
+//         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
+        TERTIARY_layer { bindings = <
+            &kp F1      &kp F2      &kp F3      &kp F4      &kp F5      &kp F6
+            no___       no___       no___       no___       no___       no___
+                        no___       no___       no___       no___       no___
+                        &bootloader trs__       trs__       trs__       trs__ 
+                                                                                        &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
+                                                                                        no___       &mkp MB1    &mkp MB2    no___       no___       no___ 
+                                                                                        no___       no___       no___       no___       no___
+                                                                                        trs__       trs__       trs__       trs__       &bt BT_CLR_ALL
+        >; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
+//         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -199,16 +211,18 @@ no___       no___       no___       no___       no___       no___
 //                   ┃           ┃ ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃ ┃           ┃
 //                   ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛
 
-GAMING_layer { bindings = <
-no___       no___       no___       no___       no___       no___
-no___       no___       no___       no___       no___       no___
-            no___       no___       no___       no___       no___
-            no___       trs__       trs__       trs__       trs__ 
-                                                                            no___       no___       no___       no___       no___       no___ 
-                                                                            no___       no___       no___       no___       no___       no___ 
-                                                                            no___       no___       no___       no___       no___
-                                                                            trs__       trs__       trs__       trs__       no___
->; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
+//         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
+        GAMING_layer { bindings = <
+            no___       no___       no___       no___       no___       no___
+            no___       no___       no___       no___       no___       no___
+                        no___       no___       no___       no___       no___
+                        no___       trs__       trs__       trs__       trs__ 
+                                                                                        no___       no___       no___       no___       no___       no___ 
+                                                                                        no___       no___       no___       no___       no___       no___ 
+                                                                                        no___       no___       no___       no___       no___
+                                                                                        trs__       trs__       trs__       trs__       no___
+        >; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
+//         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 
     };
 };
