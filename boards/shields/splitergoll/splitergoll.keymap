@@ -60,7 +60,7 @@
 //         |                               LEFT HALF                               |   |                               RIGHT HALF                              |
 //         |           |           |           |           |           |           |   |           |           |           |           |           |           |
         bindings = <
-            &kp ESC     &kp A       &kp Z       &kp E       &kp R       &kp T 
+            &kp ESC     &kp FR_A       &kp Z       &kp E       &kp R       &kp T 
             &kp TAB     &kp Q       &kp S       &kp D       &kp F       &kp G
                         &kp W       &kp X       &kp C       &kp V       &kp B
                     &mt C_MUTE C_PP &kp LCTRL   &kp LALT    &ls_left    &kp SPACE
