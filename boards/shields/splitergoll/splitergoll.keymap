@@ -49,13 +49,13 @@
 
     // Accents
     MORPH_UP(o_circ, &win_ocir, &win_ocir_up)
-    MORPH_UP(e_aigu, &kp FR_EACU, &win_eacu_up)
-    MORPH_UP(e_grav, &kp FR_EGRV, &win_egrv_up)
+    MORPH_UP(e_aigu, &win_eacu, &win_eacu_up)
+    MORPH_UP(e_grav, &win_egrv, &win_egrv_up)
     MORPH_UP(e_circ, &win_ecir, &win_ecir_up)
     MORPH_UP(e_trem, &win_ecir, &win_ecir_up)
-    MORPH_UP(u_grav, &kp FR_UGRV, &win_ugrv_up)
-    MORPH_UP(c_cedi, &kp FR_CCED, &win_cced_up)
-    MORPH_UP(a_grav, &kp FR_AGRV, &win_agrv_up)
+    MORPH_UP(u_grav, &win_ugrv, &win_ugrv_up)
+    MORPH_UP(c_cedi, &win_cced, &win_cced_up)
+    MORPH_UP(a_grav, &win_agrv, &win_agrv_up)
     MORPH_UP(i_circ, &win_icir, &win_icir_up)
     MORPH_UP(i_trem, &win_itre, &win_itre_up)
 
@@ -144,7 +144,7 @@
         PRIMARY_layer { bindings = <
             trs__       &kp FR_1    &kp FR_2    &kp FR_3    &kp FR_4    &kp FR_5
             trs__       &o_circ     &e_aigu     &e_grav     &e_circ     &e_trem
-                    &kp WIN_TILDD &kp FR_ACUTE &kp WIN_GRAVD &kp FR_CARET &kp FR_DIAE
+                        &kp WIN_TLD &kp WIN_AGU &kp WIN_GRV &kp WIN_CIR &kp WIN_TRE
                         no___       trs__       trs__       trs__       trs__ 
                                                                                         &kp FR_6    &kp FR_7    &kp FR_8    &kp FR_9    &kp FR_0    trs__
                                                                                         &u_grav     &c_cedi     &a_grav     &i_circ     &i_trem     trs__

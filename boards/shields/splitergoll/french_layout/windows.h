@@ -3,8 +3,11 @@
 #include "function.h"
 #include "linux.h"
 
-#define WIN_GRAVD RA(N7)  // ` (dead)
-#define WIN_TILDD RA(N2)  // ~ (dead)
+#define WIN_AGU RA(SQT)    // ' (dead)
+#define WIN_GRV RA(N7)     // ` (dead)
+#define WIN_CIR RA(N6)     // ^ (dead)
+#define WIN_TRE LS(RA(N6)) // ¨ (dead)
+#define WIN_TLD RA(N2)     // ~ (dead)
 
 
 /* Actions */
@@ -24,40 +27,32 @@ MACRO(name, \
     ; \
 )
 
-#define MACRO_ALT_CODE_PLUS(name, d1, d2, d3, d4) \
-MACRO(name, \
-  bindings \
-    = <&macro_press &kp LALT> \
-    , <&macro_tap &kp KP_N0 &kp KP_N##d1 &kp KP_N##d2 &kp KP_N##d3 &kp KP_N##d4> \
-    , <&macro_release &kp LALT> \
-    ; \
-)
+MACRO_ALT_CODE(win_agrv_up, 1, 8, 3) // À
+MACRO_ALT_CODE(win_agrv,    1, 3, 3) // à
 
-MACRO_ALT_CODE(win_agrv_up, 1, 9, 2) // À
-MACRO_ALT_CODE(win_cced_up, 1, 9, 9) // Ç
-MACRO_ALT_CODE(win_eacu_up, 2, 0, 1) // É
-MACRO_ALT_CODE(win_egrv_up, 2, 0, 0) // È
-MACRO_ALT_CODE(win_ecir_up, 2, 0, 2) // Ê
+MACRO_ALT_CODE(win_cced_up, 1, 2, 8) // Ç
+MACRO_ALT_CODE(win_cced,    1, 3, 5) // ç
+
+MACRO_ALT_CODE(win_ugrv_up, 2, 3, 5) // Ù
+MACRO_ALT_CODE(win_ugrv,    1, 5, 1) // ù
+
+MACRO_ALT_CODE(win_eacu_up, 1, 4, 4) // É
+MACRO_ALT_CODE(win_eacu,    1, 3, 0) // é
+
+MACRO_ALT_CODE(win_egrv_up, 2, 1, 2) // È
+MACRO_ALT_CODE(win_egrv,    1, 3, 8) // è
+
+MACRO_ALT_CODE(win_ecir_up, 2, 1, 0) // Ê
 MACRO_ALT_CODE(win_ecir,    1, 3, 6) // ê
-MACRO_ALT_CODE(win_etre_up, 2, 0, 3) // Ë
+
+MACRO_ALT_CODE(win_etre_up, 2, 1, 1) // Ë
 MACRO_ALT_CODE(win_etre,    1, 3, 7) // ë
-MACRO_ALT_CODE(win_ocir_up, 2, 1, 2) // Ô
+
+MACRO_ALT_CODE(win_icir_up, 2, 1, 5) // Î
+MACRO_ALT_CODE(win_icir,    1, 4, 0) // î
+
+MACRO_ALT_CODE(win_itre_up, 2, 1, 6) // Ï
+MACRO_ALT_CODE(win_itre,    1, 3, 9) // ï
+
+MACRO_ALT_CODE(win_ocir_up, 2, 2, 6) // Ô
 MACRO_ALT_CODE(win_ocir,    1, 4, 7) // ô
-MACRO_ALT_CODE(win_icir_up, 1, 4, 0) // î
-MACRO_ALT_CODE_PLUS(win_icir,    0, 2, 0, 6) // Î
-MACRO_ALT_CODE(win_itre_up, 1, 3, 9) // ï
-MACRO_ALT_CODE_PLUS(win_itre,    0, 2, 0, 7) // Ï
-MACRO_ALT_CODE_PLUS(win_ugrv_up, 0, 2, 1, 7) // Ù
-MACRO_ALT_CODE(win_oe_lo,   1, 5, 6) // œ
-MACRO_ALT_CODE(win_oe_up,   1, 4, 0) // Œ
-MACRO_ALT_CODE(win_grave,   0, 9, 6) // `
-MACRO_ALT_CODE(win_tild,    1, 2, 6) // ~
-MACRO_ALT_CODE(win_qml,     1, 7, 1) // «
-MACRO_ALT_CODE(win_qmr,     1, 8, 7) // »
-MACRO_ALT_CODE(win_apos,    1, 4, 6) // ’
-MACRO_ALT_CODE(win_emdash,  1, 5, 1) // —
-MACRO_ALT_CODE(win_ddd,     1, 3, 3) // …
-MACRO_ALT_CODE(win_iqm,     1, 9, 1) // ¿
-MACRO_ALT_CODE(win_iem,     1, 6, 1) // ¡
-MACRO_ALT_CODE(win_1up,     1, 8, 5) // ¹
-MACRO_ALT_CODE(win_3up,     1, 7, 9) // ³
