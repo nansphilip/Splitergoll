@@ -7,8 +7,8 @@
 // Includes
 #include "french_layout/function.h"
 #include "french_layout/linux.h"
-#include "french_layout/macos.h"
 #include "french_layout/windows.h"
+#include "french_layout/macos.h"
 
 // Layers
 #define DEFAULT 0
