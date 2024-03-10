@@ -4,7 +4,7 @@
 #include "linux.h"
 
 #define WIN_GRAVD RA(N7)  // ` (dead)
-#define WIN_TILD  RA(N2)  // ~ (dead)
+#define WIN_TILDD RA(N2)  // ~ (dead)
 
 
 /* Actions */

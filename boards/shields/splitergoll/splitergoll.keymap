@@ -144,7 +144,7 @@
         PRIMARY_layer { bindings = <
             trs__       &kp FR_1    &kp FR_2    &kp FR_3    &kp FR_4    &kp FR_5
             trs__       &o_circ     &e_aigu     &e_grav     &e_circ     &e_trem
-                        &WIN_TILD   &FR_ACUTE   &WIN_GRAVD  &FR_CARET   &FR_DIAE
+                    &kp WIN_TILDD &kp FR_ACUTE &kp WIN_GRAVD &kp FR_CARET &kp FR_DIAE
                         no___       trs__       trs__       trs__       trs__ 
                                                                                         &kp FR_6    &kp FR_7    &kp FR_8    &kp FR_9    &kp FR_0    trs__
                                                                                         &u_grav     &c_cedi     &a_grav     &i_circ     &i_trem     trs__
