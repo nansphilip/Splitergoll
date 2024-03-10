@@ -7,13 +7,13 @@
     }; \
 };
 
-#define LAYER(name, layout, sensor) \
+#define LAYER(name, layout, sensors) \
 / { \
     keymap { \
         compatible = "zmk,keymap"; \
         name##_layer { \
             bindings = <layout>; \
-            sensor-bindings = <sensor>; \
+            sensor-bindings = <sensors>; \
         }; \
     }; \
 };
