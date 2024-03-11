@@ -26,10 +26,10 @@
 };
 
 // Ponctuation
-MORPH(comm_qmark, &kp LSHIFT, &kp FR_COMMA, &kp FR_QMARK)    // , and ?
-MORPH(dot_excl, &kp LSHIFT, &kp FR_DOT, &kp FR_EXCL)         // . and !
-MORPH(semi_slsh, &kp LSHIFT, &kp FR_SEMI, &kp FR_SLASH)      // ; and /
-MORPH(colon_bsls, &kp LSHIFT, &kp FR_COLON, &kp FR_BSLASH)   // : and \
+MORPH(comm_qmark, LSFT, &kp FR_COMMA, &kp FR_QMARK)    // , and ?
+MORPH(dot_excl, LSFT, &kp FR_DOT, &kp FR_EXCL)         // . and !
+MORPH(semi_slsh, LSFT, &kp FR_SEMI, &kp FR_SLASH)      // ; and /
+MORPH(colon_bsls, LSFT, &kp FR_COLON, &kp FR_BSLASH)   // : and \
 
 / {
 
