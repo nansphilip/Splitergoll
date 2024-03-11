@@ -11,11 +11,10 @@
 
 // Layers
 #define DEFAULT 0
-#define MACOS 1
-#define PRIMARY 2
-#define SECONDARY 3
-#define TERTIARY 4
-#define GAMING 5
+#define PRIMARY 1
+#define SECONDARY 2
+#define TERTIARY 3
+#define GAMING 4
 
 // Visual transcriptions
 #define no___ &none
@@ -38,8 +37,8 @@ MORPH(colon_bsls, &kp LSHIFT, &kp FR_COLON, &kp FR_BSLASH)   // : and \
 
         compatible = "zmk,conditional-layers";
         TERTIARY_layer {
-            if-layers = <2 3>;
-            then-layer = <4>;
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 
@@ -71,29 +70,11 @@ MORPH(colon_bsls, &kp LSHIFT, &kp FR_COLON, &kp FR_BSLASH)   // : and \
             &kp ESC     &kp FR_A    &kp FR_Z    &kp FR_E    &kp FR_R    &kp FR_T 
             &kp TAB     &kp FR_Q    &kp FR_S    &kp FR_D    &kp FR_F    &kp FR_G
                         &kp FR_W    &kp FR_X    &kp FR_C    &kp FR_V    &kp FR_B
-                    &mt C_MUTE C_PP &kp LCTRL   &kp LALT    &mo 3       &kp SPACE
+                    &mt C_MUTE C_PP &kp LCTRL   &kp LALT    &mo 2       &kp SPACE
                                                                                         &kp FR_Y    &kp FR_U    &kp FR_I    &kp FR_O    &kp FR_P    &kp BSPC
                                                                                         &kp FR_H    &kp FR_J    &kp FR_K    &kp FR_L    &kp FR_M    &kp DEL
                                                                                         &kp FR_N    &comm_qmark &dot_excl   &semi_slsh  &colon_bsls
-                                                                                        &kp LSHIFT  &mo 2       &kp ENTER   &kp LGUI    no___
-        >; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
-//         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
-
-
-// ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-// ┃      Default - MacOS     ┃
-// ┗━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-
-//         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
-        MACOS_layer { bindings = <
-            trs__       trs__       trs__       trs__       trs__       trs__
-            trs__       trs__       trs__       trs__       trs__       trs__
-                        trs__       trs__       trs__       trs__       trs__
-                        trs__       trs__       trs__       trs__       trs__ 
-                                                                                        trs__       trs__       trs__       trs__       trs__       trs__
-                                                                                        trs__       trs__       trs__       trs__       trs__       trs__
-                                                                                        trs__       trs__       trs__       trs__       trs__
-                                                                                        trs__       trs__       trs__       trs__       trs__
+                                                                                        &kp LSHIFT  &mo 1       &kp ENTER   &kp LGUI    no___
         >; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
 //         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 
@@ -165,7 +146,7 @@ MORPH(colon_bsls, &kp LSHIFT, &kp FR_COLON, &kp FR_BSLASH)   // : and \
 //         ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //         ┃           ┃     Ô     ┃     É     ┃     È     ┃     Ê     ┃     Ë     ┃   ┃     Ù     ┃     Ç     ┃     À     ┃     Î     ┃     Ï     ┃           ┃
 //         ┗━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┛
-//                     ┃           ┃           ┃           ┃           ┃   To L5   ┃   ┃           ┃           ┃           ┃           ┃           ┃
+//                     ┃           ┃           ┃           ┃           ┃ To Gaming ┃   ┃           ┃           ┃           ┃           ┃           ┃
 //                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                   ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓
 //                   ┃ Bootloader┃ ┃           ┃           ┃     L3    ┃           ┃   ┃           ┃     L3    ┃           ┃           ┃ ┃Del BT link┃
@@ -175,7 +156,7 @@ MORPH(colon_bsls, &kp LSHIFT, &kp FR_COLON, &kp FR_BSLASH)   // : and \
         TERTIARY_layer { bindings = <
             &kp F1      &kp F2      &kp F3      &kp F4      &kp F5      &kp F6
             no___       &fr_ocu     &fr_eau     &fr_egu     &fr_ecu     &fr_etu
-                        no___       no___       no___       no___       &to 5
+                        no___       no___       no___       no___       &to 4
                         &bootloader no___       no___       trs__       no___ 
                                                                                         &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
                                                                                         &fr_ugu     &fr_ccu     &fr_agu     &fr_icu     &fr_itu     no___
@@ -190,22 +171,22 @@ MORPH(colon_bsls, &kp LSHIFT, &kp FR_COLON, &kp FR_BSLASH)   // : and \
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
 //         ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
+//         ┃           ┃           ┃     A     ┃           ┃     E     ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 //         ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//         ┃           ┃           ┃     Q     ┃     Z     ┃     D     ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
+//         ┃           ┃           ┃     Q     ┃     Z     ┃     D     ┃     F     ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 //         ┗━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┛
 //                     ┃           ┃           ┃     S     ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃
 //                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                   ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓
-//                   ┃   To L0   ┃ ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃ ┃           ┃
+//                   ┃ To Default┃ ┃           ┃           ┃           ┃   SPACE   ┃   ┃           ┃           ┃           ┃           ┃ ┃           ┃
 //                   ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛
 
 //         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
         GAMING_layer { bindings = <
-            no___       no___       no___       no___       &kp FR_E    no___
+            no___       no___       &kp FR_A    no___       &kp FR_E    no___
             no___       no___       &kp FR_Q    &kp FR_Z    &kp FR_D    &kp FR_F
                         no___       no___       &kp FR_S    no___       no___
-                        &to 0       no___       no___       no___       no___ 
+                        &to 0       no___       no___       no___       &kp SPACE
                                                                                         no___       no___       no___       no___       no___       no___
                                                                                         no___       no___       no___       no___       no___       no___
                                                                                         no___       no___       no___       no___       no___

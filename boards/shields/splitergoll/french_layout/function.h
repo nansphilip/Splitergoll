@@ -2,7 +2,7 @@
 
 
 
-#define MORPH(name, k1, mod, k2) \
+#define MORPH(name, mod, k1, k2) \
 / { \
     behaviors { \
         name: name { \
