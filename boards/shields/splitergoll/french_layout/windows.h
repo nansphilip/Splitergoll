@@ -5,11 +5,8 @@
 #define MACRO_DOUBLE(name, d1, d2) MACRO(name, bindings \
 = <&macro_tap &kp KP_N##d1 &kp KP_N##d2>;)
 
-#define MACRO_DOUBLE_SHIT(name, d1, d2) MACRO(name, bindings \
-= <&macro_tap &kp KP_N##d1>, \
-<&macro_press &kp LSFT>, \
-<&macro_tap &kp KP_N##d2>, \
-<&macro_release &kp LSFT>;)
+#define MACRO_DOUBLE_SHIFT(name, d1, d2) MACRO(name, bindings \
+= <&macro_tap &kp KP_N##d1 &kp LS(KP_N##d2)>;)
 
 // Lettres
 #define    FR_A    Q       // A
