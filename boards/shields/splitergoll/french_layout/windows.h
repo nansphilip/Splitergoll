@@ -38,26 +38,26 @@
 #define    FR_TLD    LS(GRAVE)    // ~ (dead)
 
 // Lettres with accents
-#define    FR_A_GRV_UP    MACRO_DOUBLE(fr_a_grv_up, FR_GRV, LS(FR_A))    // À
-#define    FR_A_GRV       MACRO_DOUBLE(fr_a_grv, FR_GRV, FR_A)           // À
-#define    FR_C_CED_UP    MACRO_DOUBLE(fr_c_ced_up, FR_AGU, LS(FR_C))    // Ç
-#define    FR_C_CED       MACRO_DOUBLE(fr_c_ced, FR_AGU, FR_C)           // Ç
-#define    FR_E_AGU_UP    MACRO_DOUBLE(fr_e_agu_up, FR_AGU, LS(FR_E))    // É
-#define    FR_E_AGU       MACRO_DOUBLE(fr_e_agu, FR_AGU, FR_E)           // É
-#define    FR_E_GRV_UP    MACRO_DOUBLE(fr_e_grv_up, FR_GRV, LS(FR_E))    // È
-#define    FR_E_GRV       MACRO_DOUBLE(fr_e_grv, FR_GRV, FR_E)           // È
-#define    FR_E_CIR_UP    MACRO_DOUBLE(fr_e_cir_up, FR_CIR, LS(FR_E))    // Ê
-#define    FR_E_CIR       MACRO_DOUBLE(fr_e_cir, FR_CIR, FR_E)           // Ê
-#define    FR_E_TRE_UP    MACRO_DOUBLE(fr_e_tre_up, FR_TRE, LS(FR_E))    // Ë
-#define    FR_E_TRE       MACRO_DOUBLE(fr_e_tre, FR_TRE, FR_E)           // Ë
-#define    FR_I_CIR_UP    MACRO_DOUBLE(fr_i_cir_up, FR_CIR, LS(FR_I))    // Î
-#define    FR_I_CIR       MACRO_DOUBLE(fr_i_cir, FR_CIR, FR_I)           // Î
-#define    FR_I_TRE_UP    MACRO_DOUBLE(fr_i_tre_up, FR_TRE, LS(FR_I))    // Ï  
-#define    FR_I_TRE       MACRO_DOUBLE(fr_i_tre, FR_TRE, FR_I)           // Ï  
-#define    FR_O_CIR_UP    MACRO_DOUBLE(fr_o_cir_up, FR_CIR, LS(FR_O))    // Ô
-#define    FR_O_CIR       MACRO_DOUBLE(fr_o_cir, FR_CIR, FR_O)           // Ô
-#define    FR_U_GRV_UP    MACRO_DOUBLE(fr_u_grv_up, FR_GRV, LS(FR_U))    // Ù
-#define    FR_U_GRV       MACRO_DOUBLE(fr_u_grv, FR_GRV, FR_U)           // Ù
+MACRO_DOUBLE(fr_a_grv_up, FR_GRV, LS(FR_A))    // À
+MACRO_DOUBLE(fr_a_grv, FR_GRV, FR_A)           // À
+MACRO_DOUBLE(fr_c_ced_up, FR_AGU, LS(FR_C))    // Ç
+MACRO_DOUBLE(fr_c_ced, FR_AGU, FR_C)           // Ç
+MACRO_DOUBLE(fr_e_agu_up, FR_AGU, LS(FR_E))    // É
+MACRO_DOUBLE(fr_e_agu, FR_AGU, FR_E)           // É
+MACRO_DOUBLE(fr_e_grv_up, FR_GRV, LS(FR_E))    // È
+MACRO_DOUBLE(fr_e_grv, FR_GRV, FR_E)           // È
+MACRO_DOUBLE(fr_e_cir_up, FR_CIR, LS(FR_E))    // Ê
+MACRO_DOUBLE(fr_e_cir, FR_CIR, FR_E)           // Ê
+MACRO_DOUBLE(fr_e_tre_up, FR_TRE, LS(FR_E))    // Ë
+MACRO_DOUBLE(fr_e_tre, FR_TRE, FR_E)           // Ë
+MACRO_DOUBLE(fr_i_cir_up, FR_CIR, LS(FR_I))    // Î
+MACRO_DOUBLE(fr_i_cir, FR_CIR, FR_I)           // Î
+MACRO_DOUBLE(fr_i_tre_up, FR_TRE, LS(FR_I))    // Ï  
+MACRO_DOUBLE(fr_i_tre, FR_TRE, FR_I)           // Ï  
+MACRO_DOUBLE(fr_o_cir_up, FR_CIR, LS(FR_O))    // Ô
+MACRO_DOUBLE(fr_o_cir, FR_CIR, FR_O)           // Ô
+MACRO_DOUBLE(fr_u_grv_up, FR_GRV, LS(FR_U))    // Ù
+MACRO_DOUBLE(fr_u_grv, FR_GRV, FR_U)           // Ù
 
 // Numbers
 #define    FR_1    KP_N1     // 1
