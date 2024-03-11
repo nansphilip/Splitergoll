@@ -53,13 +53,8 @@ ALT_CODE_4(fr_oe, 0, 1, 5, 6)  // œ
 ALT_CODE_3(fr_agu, 1, 8, 3)    // À
 ALT_CODE_3(fr_ccu, 1, 2, 8)    // Ç
 ALT_CODE_3(fr_eau, 1, 4, 4)    // É
-ALT_CODE_3(fr_egu, 2, 1, 2)    // È
 ALT_CODE_3(fr_ecu, 2, 1, 0)    // Ê
-ALT_CODE_3(fr_etu, 2, 1, 1)    // Ë
-ALT_CODE_3(fr_icu, 2, 1, 5)    // Î
-ALT_CODE_3(fr_itu, 2, 1, 6)    // Ï
 ALT_CODE_3(fr_ocu, 2, 2, 6)    // Ô
-ALT_CODE_3(fr_ugu, 2, 3, 5)    // Ù
 ALT_CODE_4(fr_oeu, 0, 1, 4, 0) // Œ
 
 
@@ -109,6 +104,16 @@ ALT_CODE_4(fr_oeu, 0, 1, 4, 0) // Œ
 #define    FR_QUOT    N3     // "
 #define    FR_SQUO    N4     // '
 ALT_CODE_3(fr_grv, 0, 9, 6)     // `
+
+// Symbols
+#define    FR_AT       RA(N0)     // @
+#define    FR_HASH     RA(N3)     // #
+#define    FR_DOLR     RBKT       // $
+#define    FR_EURO     RA(E)      // €
+#define    FR_PERC     LS(SQT)    // %
+#define    FR_AND      N1         // &
+#define    FR_PIPE     RA(N6)     // |
+#define    FR_UDSC     N8         // _
 
 
 // Exposants
