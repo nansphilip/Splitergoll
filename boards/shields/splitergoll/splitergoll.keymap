@@ -85,7 +85,7 @@ LAYER(PRIMARY,
                 no___       no___       no___       trs__       no___ 
                                                                                 &kp FR_QUOT &kp FR_LPAR &kp FR_LPAR &kp FR_LCRO &kp FR_RCRO no___
                                                                                 &kp FR_SQUO &kp FR_LACC &kp FR_RACC &kp FR_LCHE &kp FR_RCHE no___
-                                                                                &kp FR_BQUO no___       no___       no___       no___       no___
+                                                                                &fr_grv     no___       no___       no___       no___       no___
                                                                                 no___       trs__       no___       no___       no___
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 , &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN)
