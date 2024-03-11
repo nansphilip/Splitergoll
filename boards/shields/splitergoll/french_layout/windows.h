@@ -38,16 +38,17 @@
 // #define    FR_TLD    RA(N2)       // ~ (dead)
 
 // Lettres with accents
-ALT_CODE(fr_ag, 1, 3, 3)      // à
-ALT_CODE(fr_cc, 1, 3, 5)      // ç
-ALT_CODE(fr_ea, 1, 3, 0)      // é
-ALT_CODE(fr_eg, 1, 3, 8)      // è
-ALT_CODE(fr_ec, 1, 3, 6)      // ê
-ALT_CODE(fr_et, 1, 3, 7)      // ë
-ALT_CODE(fr_ic, 1, 4, 0)      // î
-ALT_CODE(fr_it, 1, 3, 9)      // ï
-ALT_CODE(fr_oc, 1, 4, 7)      // ô
-ALT_CODE(fr_ug, 1, 5, 1)      // ù
+ALT_CODE(fr_ag, 1, 3, 3)     // à
+ALT_CODE(fr_cc, 1, 3, 5)     // ç
+ALT_CODE(fr_ea, 1, 3, 0)     // é
+ALT_CODE(fr_eg, 1, 3, 8)     // è
+ALT_CODE(fr_ec, 1, 3, 6)     // ê
+ALT_CODE(fr_et, 1, 3, 7)     // ë
+ALT_CODE(fr_ic, 1, 4, 0)     // î
+ALT_CODE(fr_it, 1, 3, 9)     // ï
+ALT_CODE(fr_oc, 1, 4, 7)     // ô
+ALT_CODE(fr_ug, 1, 5, 1)     // ù
+ALT_CODE(fr_oe, 1, 5, 6)     // œ
 
 ALT_CODE(fr_agu, 1, 8, 3)    // À
 ALT_CODE(fr_ccu, 1, 2, 8)    // Ç
@@ -59,6 +60,8 @@ ALT_CODE(fr_icu, 2, 1, 5)    // Î
 ALT_CODE(fr_itu, 2, 1, 6)    // Ï
 ALT_CODE(fr_ocu, 2, 2, 6)    // Ô
 ALT_CODE(fr_ugu, 2, 3, 5)    // Ù
+ALT_CODE(fr_oeu, 1, 4, 0)    // Œ
+
 
 // Numbers
 #define    FR_1    KP_N1     // 1
@@ -83,9 +86,28 @@ ALT_CODE(fr_ugu, 2, 3, 5)    // Ù
 #define    FR_BSLASH    RA(N8)       // backslash
 
 
-// Symbols
+// Calculs
 #define    FR_EQAL     EQUAL       // =
 #define    FR_PLUS     KP_PLUS     // +
 #define    FR_MINS     KP_MINUS    // -
 #define    FR_ASTR     KP_MULTIPLY // *
 #define    FR_DIVI     KP_SLASH    // /
+
+
+// Brackets
+#define    FR_LPAR     N5          // (
+#define    FR_RPAR     MINUS       // )
+#define    FR_LACC     RA(N4)      // {
+#define    FR_RACC     LS(EQUAL)   // }
+#define    FR_LCRO     RA(N5)      // [
+#define    FR_RCRO     RA(MINUS)   // ]
+#define    FR_LCHE     NUBS        // <
+#define    FR_RCHE     LS(NUBS)    // >
+
+
+// Arrows
+
+
+// Exposants
+// MACRO_ALT_CODE(win_1up,     1, 8, 5) // ¹
+// MACRO_ALT_CODE(win_3up,     1, 7, 9) // ³
