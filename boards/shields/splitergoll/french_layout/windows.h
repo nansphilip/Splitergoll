@@ -72,6 +72,15 @@
 #define    FR_0    KP_N0     // 0
 
 // Ponctuation
+#define    FR_COMMA     COMMA    // ,
+#define    FR_DOT       DOT      // .
+#define    FR_SEMI      SEMI     // ;
+#define    FR_COLON     COLON    // :
+#define    FR_EXCL      EXCL     // !
+#define    FR_QMARK     QMARK    // ?
+#define    FR_SLASH     SLASH    // slash
+#define    FR_BSLASH    BSLH     // backslash
+
 
 // Symbols
 #define    FR_EQUAL    EQUAL       // =

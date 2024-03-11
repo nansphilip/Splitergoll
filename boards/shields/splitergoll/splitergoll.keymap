@@ -40,9 +40,9 @@
 
     // Ponctuation
     MORPH_UP(comm_qmark, &kp FR_COMMA, &kp FR_QMARK)
-    MORPH_UP(dot_excl,   &kp FR_DOT,   &kp FR_EXCL)
-    MORPH_UP(semi_slsh,  &kp FR_SEMI,  &kp FR_SLSH)
-    MORPH_UP(colon_bsls, &kp FR_COLON, &kp FR_BSLS)
+    MORPH_UP(dot_excl, &kp FR_DOT, &kp FR_EXCL)
+    MORPH_UP(semi_slsh, &kp FR_SEMI, &kp FR_SLASH)
+    MORPH_UP(colon_bsls, &kp FR_COLON, &kp FR_BSLASH)
 
     // Accents
     MORPH_UP(o_circ, &kp FR_o_CIR, &kp FR_O_CIR)
