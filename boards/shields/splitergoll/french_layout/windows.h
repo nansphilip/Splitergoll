@@ -87,4 +87,4 @@
 #define    FR_PLUS     KP_PLUS     // +
 #define    FR_MINUS    KP_MINUS    // -
 #define    FR_ASTER    KP_MULTIPLY // *
-#define    FR_SLASH    KP_SLASH    // /
+#define    FR_DIV      KP_SLASH    // /

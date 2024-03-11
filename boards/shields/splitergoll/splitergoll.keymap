@@ -129,7 +129,7 @@
                         no___       trs__       trs__       trs__       trs__ 
                                                                                         &kp FR_6    &kp FR_7    &kp FR_8    &kp FR_9    &kp FR_0    trs__
                                                                                         &u_grav     &c_cedi     &a_grav     &i_circ     &i_trem     trs__
-                                                                                    &kp FR_EQUAL    &kp FR_PLUS &kp FR_MINUS &kp FR_ASTER &kp FR_SLASH
+                                                                                    &kp FR_EQUAL    &kp FR_PLUS &kp FR_MINUS &kp FR_ASTER &kp FR_DIV
                                                                                         trs__       trs__       trs__       trs__       no___
         >; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
 //         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
