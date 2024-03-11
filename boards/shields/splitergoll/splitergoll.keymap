@@ -181,18 +181,31 @@ MORPH(colon_bsls, LSFT, &kp FR_COLON, &kp FR_BSLASH)   // : and \
 //                   ┃ To Default┃ ┃           ┃           ┃           ┃   SPACE   ┃   ┃           ┃           ┃           ┃           ┃ ┃           ┃
 //                   ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛
 
-//         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
-        GAMING_layer { bindings = <
-            no___       no___       &kp FR_A    no___       &kp FR_E    no___
-            no___       no___       &kp FR_Q    &kp FR_Z    &kp FR_D    &kp FR_F
-                        no___       no___       &kp FR_S    no___       no___
-                        &to 0       no___       no___       no___       &kp SPACE
-                                                                                        no___       no___       no___       no___       no___       no___
-                                                                                        no___       no___       no___       no___       no___       no___
-                                                                                        no___       no___       no___       no___       no___
-                                                                                        no___       no___       no___       no___       no___
-        >; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
-//         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
+// //         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
+        // GAMING_layer { bindings = <
+        //     no___       no___       &kp FR_A    no___       &kp FR_E    no___
+        //     no___       no___       &kp FR_Q    &kp FR_Z    &kp FR_D    &kp FR_F
+        //                 no___       no___       &kp FR_S    no___       no___
+        //                 &to 0       no___       no___       no___       &kp SPACE
+        //                                                                                 no___       no___       no___       no___       no___       no___
+        //                                                                                 no___       no___       no___       no___       no___       no___
+        //                                                                                 no___       no___       no___       no___       no___
+        //                                                                                 no___       no___       no___       no___       no___
+        // >; sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;};
+// //         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 
     };
 };
+
+LAYER(GAMING,
+//         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
+no___       no___       &kp FR_A    no___       &kp FR_E    no___
+no___       no___       &kp FR_Q    &kp FR_Z    &kp FR_D    &kp FR_F
+            no___       no___       &kp FR_S    no___       no___
+            &to 0       no___       no___       no___       &kp SPACE
+                                                                            no___       no___       no___       no___       no___       no___
+                                                                            no___       no___       no___       no___       no___       no___
+                                                                            no___       no___       no___       no___       no___
+                                                                            no___       no___       no___       no___       no___
+//         ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
+, &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN)
