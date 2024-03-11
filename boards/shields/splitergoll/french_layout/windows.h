@@ -31,7 +31,7 @@
 #define    FR_Z    W       // Z
 
 // Dead accents
-#define    FR_AGU    RA(SQT)      // ' (doesn't work)
+// #define    FR_AGU    RA(SQT)      // ' (doesn't work)
 // #define    FR_GRV    RA(N7)       // ` (dead)
 // #define    FR_CIR    LBKT         // ^ (dead)
 // #define    FR_TRE    LBRC         // ¨ (dead)
@@ -105,7 +105,10 @@ ALT_CODE_4(fr_oeu, 0, 1, 4, 0) // Œ
 #define    FR_RCHE     LS(NUBS)    // >
 
 
-// Arrows
+// Quotes
+#define    FR_QUOT    N3                   // "
+#define    FR_SQUO    N4                   // '
+#define    FR_BQUO    DOUBLE(grv, 9, 6)    // `
 
 
 // Exposants
