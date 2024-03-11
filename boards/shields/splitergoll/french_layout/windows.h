@@ -58,7 +58,7 @@ ALT_CODE(fr_etu, 2, 1, 1)    // Ë
 ALT_CODE(fr_icu, 2, 1, 5)    // Î
 ALT_CODE(fr_itu, 2, 1, 6)    // Ï
 ALT_CODE(fr_ocu, 2, 2, 6)    // Ô
-ALT_CODE(fr_ogu, 2, 3, 5)    // Ù
+ALT_CODE(fr_ugu, 2, 3, 5)    // Ù
 
 // Numbers
 #define    FR_1    KP_N1     // 1
