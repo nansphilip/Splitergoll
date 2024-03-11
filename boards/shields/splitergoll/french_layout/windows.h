@@ -70,3 +70,12 @@
 #define    FR_8    KP_N8     // 8
 #define    FR_9    KP_N9     // 9
 #define    FR_0    KP_N0     // 0
+
+// Ponctuation
+
+// Symbols
+#define    FR_EQUAL    EQUAL       // =
+#define    FR_PLUS     KP_PLUS     // +
+#define    FR_MINUS    KP_MINUS    // -
+#define    FR_ASTER    KP_MULTIPLY // *
+#define    FR_SLASH    KP_SLASH    // /

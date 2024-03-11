@@ -20,4 +20,4 @@ behaviors { \
 };
 
 #define MACRO_DOUBLE(name, d1, d2) \
-MACRO(name, bindings = <&macro_tap &kp KP_N##d1 &kp KP_N##d2; )
+MACRO(name, bindings = <&macro_tap &kp KP_N##d1 &kp KP_N##d2>;)
