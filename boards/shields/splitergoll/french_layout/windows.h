@@ -73,14 +73,14 @@ ALT_CODE(fr_ugu, 2, 3, 5)    // Ù
 #define    FR_0    KP_N0     // 0
 
 // Ponctuation
-#define    FR_COMMA     COMMA    // ,
-#define    FR_DOT       DOT      // .
-#define    FR_SEMI      SEMI     // ;
-#define    FR_COLON     COLON    // :
-#define    FR_EXCL      EXCL     // !
-#define    FR_QMARK     QMARK    // ?
-#define    FR_SLASH     SLASH    // slash
-#define    FR_BSLASH    BSLH     // backslash
+#define    FR_COMMA     M        // ,
+#define    FR_DOT       LT       // .
+#define    FR_SEMI      COMMA    // ;
+#define    FR_COLON     DOT      // :
+#define    FR_EXCL      SLASH    // !
+#define    FR_QMARK     LS(M)    // ?
+#define    FR_SLASH     GT       // slash
+#define    FR_BSLASH    RA(N8)   // backslash
 
 
 // Symbols
