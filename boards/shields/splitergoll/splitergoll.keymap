@@ -81,7 +81,7 @@ LAYER(PRIMARY,
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
     trs__       &kp FR_1    &kp FR_2    &kp FR_3    &kp FR_4    &kp FR_5
     trs__       &fr_oc      &fr_ea      &fr_eg      &fr_ec      &fr_et
-                no___       no___       no___       no___       no___
+                no___       &kp FR_AGU  no___       no___       no___
                 no___       no___       no___       trs__       no___ 
                                                                                 &kp FR_6    &kp FR_7    &kp FR_8    &kp FR_9    &kp FR_0    trs__
                                                                                 &fr_ug      &fr_cc      &fr_ag      &fr_ic      &fr_it      trs__

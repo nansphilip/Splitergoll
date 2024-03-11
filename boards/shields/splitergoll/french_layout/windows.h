@@ -31,7 +31,7 @@
 #define    FR_Z    W       // Z
 
 // Dead accents
-// #define    FR_AGU    N4           // ' (doesn't work)
+#define    FR_AGU    RA(SQT)      // ' (doesn't work)
 // #define    FR_GRV    RA(N7)       // ` (dead)
 // #define    FR_CIR    LBKT         // ^ (dead)
 // #define    FR_TRE    LBRC         // ¨ (dead)
@@ -73,14 +73,14 @@ ALT_CODE(fr_ugu, 2, 3, 5)    // Ù
 #define    FR_0    KP_N0     // 0
 
 // Ponctuation
-#define    FR_COMMA     M        // ,
-#define    FR_DOT       LT       // .
-#define    FR_SEMI      COMMA    // ;
-#define    FR_COLON     DOT      // :
-#define    FR_EXCL      SLASH    // !
-#define    FR_QMARK     LS(M)    // ?
-#define    FR_SLASH     GT       // slash
-#define    FR_BSLASH    RA(N8)   // backslash
+#define    FR_COMMA     M            // ,
+#define    FR_DOT       LS(COMMA)    // .
+#define    FR_SEMI      COMMA        // ;
+#define    FR_COLON     DOT          // :
+#define    FR_EXCL      SLASH        // !
+#define    FR_QMARK     LS(M)        // ?
+#define    FR_SLASH     LS(DOT)      // slash
+#define    FR_BSLASH    RA(N8)       // backslash
 
 
 // Symbols
