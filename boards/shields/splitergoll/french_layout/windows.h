@@ -31,7 +31,7 @@
 #define    FR_Z    W       // Z
 
 // Dead accents
-#define    FR_AGU    N4           // ' (dead)
+#define    FR_AGU    N4           // '
 #define    FR_GRV    RA(N7)       // ` (dead)
 #define    FR_CIR    LBKT         // ^ (dead)
 #define    FR_TRE    LBRC         // ¨ (dead)
@@ -39,25 +39,25 @@
 
 // Lettres with accents
 MACRO_DOUBLE_SHIFT(fr_a_grv_up, FR_GRV, FR_A)    // À
-MACRO_DOUBLE(fr_a_grv, FR_GRV, FR_A)             // À
-MACRO_DOUBLE_SHIFT(fr_c_ced_up, FR_AGU, FR_C)    // Ç
-MACRO_DOUBLE(fr_c_ced, FR_AGU, FR_C)             // Ç
-MACRO_DOUBLE_SHIFT(fr_e_agu_up, FR_AGU, FR_E)    // É
-MACRO_DOUBLE(fr_e_agu, FR_AGU, FR_E)             // É
+MACRO_DOUBLE(fr_a_grv, FR_GRV, FR_A)             // à
+MACRO_ALT_CODE(fr_c_ced_up,      1, 2, 8)        // Ç
+MACRO_ALT_CODE(fr_c_ced,         1, 3, 5)        // ç
+MACRO_ALT_CODE(fr_e_agu_up,      1, 4, 4)        // É
+MACRO_ALT_CODE(fr_e_agu,         1, 3, 0)        // é
 MACRO_DOUBLE_SHIFT(fr_e_grv_up, FR_GRV, FR_E)    // È
-MACRO_DOUBLE(fr_e_grv, FR_GRV, FR_E)             // È
+MACRO_DOUBLE(fr_e_grv, FR_GRV, FR_E)             // è
 MACRO_DOUBLE_SHIFT(fr_e_cir_up, FR_CIR, FR_E)    // Ê
-MACRO_DOUBLE(fr_e_cir, FR_CIR, FR_E)             // Ê
+MACRO_DOUBLE(fr_e_cir, FR_CIR, FR_E)             // ê
 MACRO_DOUBLE_SHIFT(fr_e_tre_up, FR_TRE, FR_E)    // Ë
-MACRO_DOUBLE(fr_e_tre, FR_TRE, FR_E)             // Ë
+MACRO_DOUBLE(fr_e_tre, FR_TRE, FR_E)             // ë
 MACRO_DOUBLE_SHIFT(fr_i_cir_up, FR_CIR, FR_I)    // Î
-MACRO_DOUBLE(fr_i_cir, FR_CIR, FR_I)             // Î
+MACRO_DOUBLE(fr_i_cir, FR_CIR, FR_I)             // î
 MACRO_DOUBLE_SHIFT(fr_i_tre_up, FR_TRE, FR_I)    // Ï
-MACRO_DOUBLE(fr_i_tre, FR_TRE, FR_I)             // Ï
+MACRO_DOUBLE(fr_i_tre, FR_TRE, FR_I)             // ï
 MACRO_DOUBLE_SHIFT(fr_o_cir_up, FR_CIR, FR_O)    // Ô
-MACRO_DOUBLE(fr_o_cir, FR_CIR, FR_O)             // Ô
+MACRO_DOUBLE(fr_o_cir, FR_CIR, FR_O)             // ô
 MACRO_DOUBLE_SHIFT(fr_u_grv_up, FR_GRV, FR_U)    // Ù
-MACRO_DOUBLE(fr_u_grv, FR_GRV, FR_U)             // Ù
+MACRO_DOUBLE(fr_u_grv, FR_GRV, FR_U)             // ù
 
 // Numbers
 #define    FR_1    KP_N1     // 1

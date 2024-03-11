@@ -19,12 +19,20 @@ behaviors { \
     }; \
 };
 
-#define MACRO_DOUBLE(name, d1, d2) MACRO(name, \
-    bindings = \
-        <&macro_tap &kp d1 &kp d2>; \
-)
+#define MACRO_DOUBLE(name, d1, d2) MACRO(name, bindings = \
+    <&macro_tap &kp d1> \
+    <&macro_tap &kp d2> \
+;)
 
-#define MACRO_DOUBLE_SHIFT(name, d1, d2) MACRO(name, \
-    bindings \
-        = <&macro_tap &kp d1 &kp LS(d2)> \
+#define MACRO_DOUBLE_SHIFT(name, d1, d2) MACRO(name, bindings = \
+    <&macro_tap &kp d1> \
+    <&macro_tap &kp LS(d2)> \
+;)
+
+#define MACRO_ALT_CODE(name, d1, d2, d3) MACRO(name, bindings = \
+    <&macro_press &kp LALT>, \
+    <&macro_tap &kp d1>, \
+    <&macro_tap &kp d2>, \
+    <&macro_tap &kp d3>, \
+    <&macro_release &kp LALT> \
 ;)
