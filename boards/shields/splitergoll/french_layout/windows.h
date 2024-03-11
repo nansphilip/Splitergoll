@@ -31,7 +31,7 @@
 #define    FR_Z    W       // Z
 
 // Dead accents
-#define    FR_AGU    SQT          // ' (dead)
+#define    FR_AGU    RA(N3)       // ' (dead)
 #define    FR_GRV    RA(N7)       // ` (dead)
 #define    FR_CIR    LBKT         // ^ (dead)
 #define    FR_TRE    LBRC         // ¨ (dead)
