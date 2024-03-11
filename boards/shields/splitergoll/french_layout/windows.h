@@ -38,26 +38,26 @@
 #define    FR_TLD    LS(GRAVE)    // ~ (dead)
 
 // Lettres with accents
-MACRO_DOUBLE(fr_a_grv_up, FR_GRV, LS(FR_A))    // À
-MACRO_DOUBLE(fr_a_grv, FR_GRV, FR_A)           // À
-MACRO_DOUBLE(fr_c_ced_up, FR_AGU, LS(FR_C))    // Ç
-MACRO_DOUBLE(fr_c_ced, FR_AGU, FR_C)           // Ç
-MACRO_DOUBLE(fr_e_agu_up, FR_AGU, LS(FR_E))    // É
-MACRO_DOUBLE(fr_e_agu, FR_AGU, FR_E)           // É
-MACRO_DOUBLE(fr_e_grv_up, FR_GRV, LS(FR_E))    // È
-MACRO_DOUBLE(fr_e_grv, FR_GRV, FR_E)           // È
-MACRO_DOUBLE(fr_e_cir_up, FR_CIR, LS(FR_E))    // Ê
-MACRO_DOUBLE(fr_e_cir, FR_CIR, FR_E)           // Ê
-MACRO_DOUBLE(fr_e_tre_up, FR_TRE, LS(FR_E))    // Ë
-MACRO_DOUBLE(fr_e_tre, FR_TRE, FR_E)           // Ë
-MACRO_DOUBLE(fr_i_cir_up, FR_CIR, LS(FR_I))    // Î
-MACRO_DOUBLE(fr_i_cir, FR_CIR, FR_I)           // Î
-MACRO_DOUBLE(fr_i_tre_up, FR_TRE, LS(FR_I))    // Ï  
-MACRO_DOUBLE(fr_i_tre, FR_TRE, FR_I)           // Ï  
-MACRO_DOUBLE(fr_o_cir_up, FR_CIR, LS(FR_O))    // Ô
-MACRO_DOUBLE(fr_o_cir, FR_CIR, FR_O)           // Ô
-MACRO_DOUBLE(fr_u_grv_up, FR_GRV, LS(FR_U))    // Ù
-MACRO_DOUBLE(fr_u_grv, FR_GRV, FR_U)           // Ù
+MACRO_DOUBLE_SHIFT(fr_a_grv_up, FR_GRV, FR_A)    // À
+MACRO_DOUBLE(fr_a_grv, FR_GRV, FR_A)             // À
+MACRO_DOUBLE_SHIFT(fr_c_ced_up, FR_AGU, FR_C)    // Ç
+MACRO_DOUBLE(fr_c_ced, FR_AGU, FR_C)             // Ç
+MACRO_DOUBLE_SHIFT(fr_e_agu_up, FR_AGU, FR_E)    // É
+MACRO_DOUBLE(fr_e_agu, FR_AGU, FR_E)             // É
+MACRO_DOUBLE_SHIFT(fr_e_grv_up, FR_GRV, FR_E)    // È
+MACRO_DOUBLE(fr_e_grv, FR_GRV, FR_E)             // È
+MACRO_DOUBLE_SHIFT(fr_e_cir_up, FR_CIR, FR_E)    // Ê
+MACRO_DOUBLE(fr_e_cir, FR_CIR, FR_E)             // Ê
+MACRO_DOUBLE_SHIFT(fr_e_tre_up, FR_TRE, FR_E)    // Ë
+MACRO_DOUBLE(fr_e_tre, FR_TRE, FR_E)             // Ë
+MACRO_DOUBLE_SHIFT(fr_i_cir_up, FR_CIR, FR_I)    // Î
+MACRO_DOUBLE(fr_i_cir, FR_CIR, FR_I)             // Î
+MACRO_DOUBLE_SHIFT(fr_i_tre_up, FR_TRE, FR_I)    // Ï
+MACRO_DOUBLE(fr_i_tre, FR_TRE, FR_I)             // Ï
+MACRO_DOUBLE_SHIFT(fr_o_cir_up, FR_CIR, FR_O)    // Ô
+MACRO_DOUBLE(fr_o_cir, FR_CIR, FR_O)             // Ô
+MACRO_DOUBLE_SHIFT(fr_u_grv_up, FR_GRV, FR_U)    // Ù
+MACRO_DOUBLE(fr_u_grv, FR_GRV, FR_U)             // Ù
 
 // Numbers
 #define    FR_1    KP_N1     // 1

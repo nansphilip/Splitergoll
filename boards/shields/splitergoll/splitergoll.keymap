@@ -39,22 +39,22 @@
     };
 
     // Ponctuation
-    MORPH_UP(comm_qmark, &kp FR_COMMA, &kp FR_QMARK)
-    MORPH_UP(dot_excl, &kp FR_DOT, &kp FR_EXCL)
-    MORPH_UP(semi_slsh, &kp FR_SEMI, &kp FR_SLASH)
-    MORPH_UP(colon_bsls, &kp FR_COLON, &kp FR_BSLASH)
+    MORPH_UP(comm_qmark, &kp FR_COMMA, &kp FR_QMARK)    // , and ?
+    MORPH_UP(dot_excl, &kp FR_DOT, &kp FR_EXCL)         // . and !
+    MORPH_UP(semi_slsh, &kp FR_SEMI, &kp FR_SLASH)      // ; and /
+    MORPH_UP(colon_bsls, &kp FR_COLON, &kp FR_BSLASH)   // : and \
 
     // Accents
-    MORPH_UP(o_circ, &fr_o_cir, &fr_o_cir_up)
-    MORPH_UP(e_aigu, &fr_e_agu, &fr_e_agu_up)
-    MORPH_UP(e_grav, &fr_e_grv, &fr_e_grv_up)
-    MORPH_UP(e_circ, &fr_e_cir, &fr_e_cir_up)
-    MORPH_UP(e_trem, &fr_e_tre, &fr_e_tre_up)
-    MORPH_UP(u_grav, &fr_u_grv, &fr_u_grv_up)
-    MORPH_UP(c_cedi, &fr_c_ced, &fr_c_ced_up)
-    MORPH_UP(a_grav, &fr_a_grv, &fr_a_grv_up)
-    MORPH_UP(i_circ, &fr_i_cir, &fr_i_cir_up)
-    MORPH_UP(i_trem, &fr_i_tre, &fr_i_tre_up)
+    MORPH_UP(o_circ, &fr_o_cir, &fr_o_cir_up) // ô and Ô
+    MORPH_UP(e_aigu, &fr_e_agu, &fr_e_agu_up) // é and É
+    MORPH_UP(e_grav, &fr_e_grv, &fr_e_grv_up) // è and È
+    MORPH_UP(e_circ, &fr_e_cir, &fr_e_cir_up) // ê and Ê
+    MORPH_UP(e_trem, &fr_e_tre, &fr_e_tre_up) // ë and Ë
+    MORPH_UP(u_grav, &fr_u_grv, &fr_u_grv_up) // ù and Ù
+    MORPH_UP(c_cedi, &fr_c_ced, &fr_c_ced_up) // ç and Ç
+    MORPH_UP(a_grav, &fr_a_grv, &fr_a_grv_up) // à and À
+    MORPH_UP(i_circ, &fr_i_cir, &fr_i_cir_up) // î and Î
+    MORPH_UP(i_trem, &fr_i_tre, &fr_i_tre_up) // ï and Ï
 
     keymap {
         compatible = "zmk,keymap";
