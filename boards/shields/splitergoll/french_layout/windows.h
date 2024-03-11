@@ -31,33 +31,34 @@
 #define    FR_Z    W       // Z
 
 // Dead accents
-#define    FR_AGU    N4           // '
-#define    FR_GRV    RA(N7)       // ` (dead)
-#define    FR_CIR    LBKT         // ^ (dead)
-#define    FR_TRE    LBRC         // ¨ (dead)
-#define    FR_TLD    RA(N2)       // ~ (dead)
+// #define    FR_AGU    N4           // ' (doesn't work)
+// #define    FR_GRV    RA(N7)       // ` (dead)
+// #define    FR_CIR    LBKT         // ^ (dead)
+// #define    FR_TRE    LBRC         // ¨ (dead)
+// #define    FR_TLD    RA(N2)       // ~ (dead)
 
 // Lettres with accents
-MACRO_DOUBLE_SHIFT(fr_a_grv_up, FR_GRV, FR_A)    // À
-MACRO_DOUBLE(fr_a_grv, FR_GRV, FR_A)             // à
-MACRO_ALT_CODE(fr_c_ced_up,      1, 2, 8)        // Ç
-MACRO_ALT_CODE(fr_c_ced,         1, 3, 5)        // ç
-MACRO_ALT_CODE(fr_e_agu_up,      1, 4, 4)        // É
-MACRO_ALT_CODE(fr_e_agu,         1, 3, 0)        // é
-MACRO_DOUBLE_SHIFT(fr_e_grv_up, FR_GRV, FR_E)    // È
-MACRO_DOUBLE(fr_e_grv, FR_GRV, FR_E)             // è
-MACRO_DOUBLE_SHIFT(fr_e_cir_up, FR_CIR, FR_E)    // Ê
-MACRO_DOUBLE(fr_e_cir, FR_CIR, FR_E)             // ê
-MACRO_DOUBLE_SHIFT(fr_e_tre_up, FR_TRE, FR_E)    // Ë
-MACRO_DOUBLE(fr_e_tre, FR_TRE, FR_E)             // ë
-MACRO_DOUBLE_SHIFT(fr_i_cir_up, FR_CIR, FR_I)    // Î
-MACRO_DOUBLE(fr_i_cir, FR_CIR, FR_I)             // î
-MACRO_DOUBLE_SHIFT(fr_i_tre_up, FR_TRE, FR_I)    // Ï
-MACRO_DOUBLE(fr_i_tre, FR_TRE, FR_I)             // ï
-MACRO_DOUBLE_SHIFT(fr_o_cir_up, FR_CIR, FR_O)    // Ô
-MACRO_DOUBLE(fr_o_cir, FR_CIR, FR_O)             // ô
-MACRO_DOUBLE_SHIFT(fr_u_grv_up, FR_GRV, FR_U)    // Ù
-MACRO_DOUBLE(fr_u_grv, FR_GRV, FR_U)             // ù
+ALT_CODE(fr_ag, 1, 3, 3)      // à
+ALT_CODE(fr_cc, 1, 3, 5)      // ç
+ALT_CODE(fr_ea, 1, 3, 0)      // é
+ALT_CODE(fr_eg, 1, 3, 8)      // è
+ALT_CODE(fr_ec, 1, 3, 6)      // ê
+ALT_CODE(fr_et, 1, 3, 7)      // ë
+ALT_CODE(fr_ic, 1, 4, 0)      // î
+ALT_CODE(fr_it, 1, 3, 9)      // ï
+ALT_CODE(fr_oc, 1, 4, 7)      // ô
+ALT_CODE(fr_ug, 1, 5, 1)      // ù
+
+ALT_CODE(fr_agu, 1, 8, 3)    // À
+ALT_CODE(fr_ccu, 1, 2, 8)    // Ç
+ALT_CODE(fr_eau, 1, 4, 4)    // É
+ALT_CODE(fr_egu, 2, 1, 2)    // È
+ALT_CODE(fr_ecu, 2, 1, 0)    // Ê
+ALT_CODE(fr_etu, 2, 1, 1)    // Ë
+ALT_CODE(fr_icu, 2, 1, 5)    // Î
+ALT_CODE(fr_itu, 2, 1, 6)    // Ï
+ALT_CODE(fr_ocu, 2, 2, 6)    // Ô
+ALT_CODE(fr_ogu, 2, 3, 5)    // Ù
 
 // Numbers
 #define    FR_1    KP_N1     // 1
@@ -83,8 +84,8 @@ MACRO_DOUBLE(fr_u_grv, FR_GRV, FR_U)             // ù
 
 
 // Symbols
-#define    FR_EQUAL    EQUAL       // =
+#define    FR_EQAL     EQUAL       // =
 #define    FR_PLUS     KP_PLUS     // +
-#define    FR_MINUS    KP_MINUS    // -
-#define    FR_ASTER    KP_MULTIPLY // *
-#define    FR_DIV      KP_SLASH    // /
+#define    FR_MINS     KP_MINUS    // -
+#define    FR_ASTR     KP_MULTIPLY // *
+#define    FR_DIVI     KP_SLASH    // /
