@@ -45,16 +45,16 @@
     MORPH_UP(colon_bsls, &kp FR_COLON, &kp FR_BSLASH)
 
     // Accents
-    MORPH_UP(o_circ, &kp FR_o_CIR, &kp FR_O_CIR)
-    MORPH_UP(e_aigu, &kp FR_e_AGU, &kp FR_E_AGU)
-    MORPH_UP(e_grav, &kp FR_e_GRV, &kp FR_E_GRV)
-    MORPH_UP(e_circ, &kp FR_e_CIR, &kp FR_E_CIR)
-    MORPH_UP(e_trem, &kp FR_e_TRE, &kp FR_E_TRE)
-    MORPH_UP(u_grav, &kp FR_u_GRV, &kp FR_U_GRV)
-    MORPH_UP(c_cedi, &kp FR_c_CED, &kp FR_C_CED)
-    MORPH_UP(a_grav, &kp FR_a_GRV, &kp FR_A_GRV)
-    MORPH_UP(i_circ, &kp FR_i_CIR, &kp FR_I_CIR)
-    MORPH_UP(i_trem, &kp FR_i_TRE, &kp FR_I_TRE)
+    MORPH_UP(o_circ, &kp FR_O_CIR, &kp FR_O_CIR_UP)
+    MORPH_UP(e_aigu, &kp FR_E_AGU, &kp FR_E_AGU_UP)
+    MORPH_UP(e_grav, &kp FR_E_GRV, &kp FR_E_GRV_UP)
+    MORPH_UP(e_circ, &kp FR_E_CIR, &kp FR_E_CIR_UP)
+    MORPH_UP(e_trem, &kp FR_E_TRE, &kp FR_E_TRE_UP)
+    MORPH_UP(u_grav, &kp FR_U_GRV, &kp FR_U_GRV_UP)
+    MORPH_UP(c_cedi, &kp FR_C_CED, &kp FR_C_CED_UP)
+    MORPH_UP(a_grav, &kp FR_A_GRV, &kp FR_A_GRV_UP)
+    MORPH_UP(i_circ, &kp FR_I_CIR, &kp FR_I_CIR_UP)
+    MORPH_UP(i_trem, &kp FR_I_TRE, &kp FR_I_TRE_UP)
 
     keymap {
         compatible = "zmk,keymap";
