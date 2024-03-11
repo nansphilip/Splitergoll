@@ -32,10 +32,10 @@
 
 // Dead accents
 #define    FR_AGU    SQT          // ' (dead)
-#define    FR_GRV    GRAVE        // ` (dead)
+#define    FR_GRV    RA(N7)       // ` (dead)
 #define    FR_CIR    LS(N6)       // ^ (dead)
 #define    FR_TRE    DQT          // ¨ (dead)
-#define    FR_TLD    LS(GRAVE)    // ~ (dead)
+#define    FR_TLD    RA(N2)       // ~ (dead)
 
 // Lettres with accents
 MACRO_DOUBLE_SHIFT(fr_a_grv_up, FR_GRV, FR_A)    // À
