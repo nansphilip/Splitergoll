@@ -44,9 +44,9 @@
 #define    FR_TLD    LS(GRAVE)    // ~ (dead)
 
 // Lettres with accents
-MACRO_DOUBLE_SHIFT(fr_a_grv_up, FR_GRV, FR_A)    // À
-MACRO_DOUBLE(fr_a_grv, FR_GRV, FR_A)             // À
-MACRO_DOUBLE_SHIFT(fr_c_ced_up, FR_AGU, FR_C)    // Ç
+MACRO_DOUBLE_SHIFT(frAGrvUp, FR_GRV, FR_A)    // À
+MACRO_DOUBLE(FrAGrv, FR_GRV, FR_A)             // À
+MACRO_DOUBLE_SHIFT(frCCedUp, FR_AGU, FR_C)    // Ç
 MACRO_DOUBLE(fr_c_ced, FR_AGU, FR_C)             // Ç
 MACRO_DOUBLE_SHIFT(fr_e_agu_up, FR_AGU, FR_E)    // É
 MACRO_DOUBLE(fr_e_agu, FR_AGU, FR_E)             // É
