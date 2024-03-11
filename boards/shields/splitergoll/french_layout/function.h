@@ -11,13 +11,13 @@
     }; \
 };
 
-#define COND_LAYER(cond1, cond2, then) \
+#define COND_LAYER(cond1, cond2, cond3) \
 / { \
     conditional_layers { \
         compatible = "zmk,conditional-layers"; \
         TERTIARY_layer { \
             if-layers = <cond1 cond2>; \
-            then-layer = <then>; \
+            then-layer = <cond3>; \
         }; \
     }; \
 };
