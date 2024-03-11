@@ -51,7 +51,15 @@
     , <&macro_tap &kp LS(d2)> \
 ;)
 
-#define ALT_CODE(name, d1, d2, d3) MACRO(name, bindings \
+#define ALT_CODE_3(name, d1, d2, d3) MACRO(name, bindings \
+    = <&macro_press &kp LALT> \
+    , <&macro_tap &kp KP_N##d1> \
+    , <&macro_tap &kp KP_N##d2> \
+    , <&macro_tap &kp KP_N##d3> \
+    , <&macro_release &kp LALT> \
+;)
+
+#define ALT_CODE_4(name, d1, d2, d3) MACRO(name, bindings \
     = <&macro_press &kp LALT> \
     , <&macro_tap &kp KP_N##d1> \
     , <&macro_tap &kp KP_N##d2> \

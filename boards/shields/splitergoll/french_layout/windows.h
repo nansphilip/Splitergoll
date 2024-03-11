@@ -38,29 +38,29 @@
 // #define    FR_TLD    RA(N2)       // ~ (dead)
 
 // Lettres with accents
-ALT_CODE(fr_ag, 1, 3, 3)     // à
-ALT_CODE(fr_cc, 1, 3, 5)     // ç
-ALT_CODE(fr_ea, 1, 3, 0)     // é
-ALT_CODE(fr_eg, 1, 3, 8)     // è
-ALT_CODE(fr_ec, 1, 3, 6)     // ê
-ALT_CODE(fr_et, 1, 3, 7)     // ë
-ALT_CODE(fr_ic, 1, 4, 0)     // î
-ALT_CODE(fr_it, 1, 3, 9)     // ï
-ALT_CODE(fr_oc, 1, 4, 7)     // ô
-ALT_CODE(fr_ug, 1, 5, 1)     // ù
-ALT_CODE(fr_oe, 1, 5, 6)     // œ
+ALT_CODE_3(fr_ag, 1, 3, 3)     // à
+ALT_CODE_3(fr_cc, 1, 3, 5)     // ç
+ALT_CODE_3(fr_ea, 1, 3, 0)     // é
+ALT_CODE_3(fr_eg, 1, 3, 8)     // è
+ALT_CODE_3(fr_ec, 1, 3, 6)     // ê
+ALT_CODE_3(fr_et, 1, 3, 7)     // ë
+ALT_CODE_3(fr_ic, 1, 4, 0)     // î
+ALT_CODE_3(fr_it, 1, 3, 9)     // ï
+ALT_CODE_3(fr_oc, 1, 4, 7)     // ô
+ALT_CODE_3(fr_ug, 1, 5, 1)     // ù
+ALT_CODE_4(fr_oe, 0, 1, 5, 6)  // œ
 
-ALT_CODE(fr_agu, 1, 8, 3)    // À
-ALT_CODE(fr_ccu, 1, 2, 8)    // Ç
-ALT_CODE(fr_eau, 1, 4, 4)    // É
-ALT_CODE(fr_egu, 2, 1, 2)    // È
-ALT_CODE(fr_ecu, 2, 1, 0)    // Ê
-ALT_CODE(fr_etu, 2, 1, 1)    // Ë
-ALT_CODE(fr_icu, 2, 1, 5)    // Î
-ALT_CODE(fr_itu, 2, 1, 6)    // Ï
-ALT_CODE(fr_ocu, 2, 2, 6)    // Ô
-ALT_CODE(fr_ugu, 2, 3, 5)    // Ù
-ALT_CODE(fr_oeu, 1, 4, 0)    // Œ
+ALT_CODE_3(fr_agu, 1, 8, 3)    // À
+ALT_CODE_3(fr_ccu, 1, 2, 8)    // Ç
+ALT_CODE_3(fr_eau, 1, 4, 4)    // É
+ALT_CODE_3(fr_egu, 2, 1, 2)    // È
+ALT_CODE_3(fr_ecu, 2, 1, 0)    // Ê
+ALT_CODE_3(fr_etu, 2, 1, 1)    // Ë
+ALT_CODE_3(fr_icu, 2, 1, 5)    // Î
+ALT_CODE_3(fr_itu, 2, 1, 6)    // Ï
+ALT_CODE_3(fr_ocu, 2, 2, 6)    // Ô
+ALT_CODE_3(fr_ugu, 2, 3, 5)    // Ù
+ALT_CODE_4(fr_oeu, 0, 1, 4, 0) // Œ
 
 
 // Numbers
@@ -109,5 +109,5 @@ ALT_CODE(fr_oeu, 1, 4, 0)    // Œ
 
 
 // Exposants
-// MACRO_ALT_CODE(win_1up,     1, 8, 5) // ¹
-// MACRO_ALT_CODE(win_3up,     1, 7, 9) // ³
+// ALT_CODE_3(win_1up,     1, 8, 5) // ¹
+// ALT_CODE_3(win_3up,     1, 7, 9) // ³
