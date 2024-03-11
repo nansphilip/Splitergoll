@@ -87,22 +87,22 @@ ALT_CODE_4(fr_oeu, 0, 1, 4, 0) // Œ
 
 
 // Calculs
-#define    FR_EQAL     EQUAL       // =
-#define    FR_PLUS     KP_PLUS     // +
-#define    FR_MINS     KP_MINUS    // -
-#define    FR_ASTR     KP_MULTIPLY // *
-#define    FR_DIVI     KP_SLASH    // /
+#define    FR_EQAL    EQUAL       // =
+#define    FR_PLUS    KP_PLUS     // +
+#define    FR_MINS    KP_MINUS    // -
+#define    FR_ASTR    KP_MULTIPLY // *
+#define    FR_DIVI    KP_SLASH    // /
 
 
 // Brackets
-#define    FR_LPAR     N5          // (
-#define    FR_RPAR     MINUS       // )
-#define    FR_LACC     RA(N4)      // {
-#define    FR_RACC     LS(EQUAL)   // }
-#define    FR_LCRO     RA(N5)      // [
-#define    FR_RCRO     RA(MINUS)   // ]
-#define    FR_LCHE     NUBS        // <
-#define    FR_RCHE     LS(NUBS)    // >
+#define    FR_LPAR    N5          // (
+#define    FR_RPAR    MINUS       // )
+#define    FR_LACC    RA(N4)      // {
+#define    FR_RACC    RA(EQUAL)   // }
+#define    FR_LCRO    RA(N5)      // [
+#define    FR_RCRO    RA(MINUS)   // ]
+#define    FR_LCHE    NUBS        // <
+#define    FR_RCHE    LS(NUBS)    // >
 
 
 // Quotes
