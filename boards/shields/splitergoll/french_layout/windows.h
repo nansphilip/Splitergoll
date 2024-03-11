@@ -106,9 +106,10 @@ ALT_CODE_4(fr_oeu, 0, 1, 4, 0) // Œ
 
 
 // Quotes
-#define    FR_QUOT    N3                   // "
-#define    FR_SQUO    N4                   // '
-#define    FR_BQUO    DOUBLE(grv, 9, 6)    // `
+ALT_CODE_3(grv, 0, 9, 6)
+#define    FR_QUOT    N3     // "
+#define    FR_SQUO    N4     // '
+#define    FR_BQUO    grv    // `
 
 
 // Exposants
