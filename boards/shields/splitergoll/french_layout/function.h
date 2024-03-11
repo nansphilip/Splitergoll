@@ -11,6 +11,17 @@
     }; \
 };
 
+#define COND_LAYER(cond1, cond2, then) \
+/ { \
+    conditional_layers { \
+        compatible = "zmk,conditional-layers"; \
+        TERTIARY_layer { \
+            if-layers = <cond1 cond2>; \
+            then-layer = <then>; \
+        }; \
+    }; \
+};
+
 #define MORPH(name, mod, k1, k2) \
 / { \
     behaviors { \
