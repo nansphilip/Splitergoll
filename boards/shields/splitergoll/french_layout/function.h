@@ -31,8 +31,8 @@ behaviors { \
 
 #define MACRO_ALT_CODE(name, d1, d2, d3) MACRO(name, bindings \
     = <&macro_press &kp LALT> \
-    , <&macro_tap &kp d1> \
-    , <&macro_tap &kp d2> \
-    , <&macro_tap &kp d3> \
+    , <&macro_tap &kp KP_N##d1> \
+    , <&macro_tap &kp KP_N##d2> \
+    , <&macro_tap &kp KP_N##d3> \
     , <&macro_release &kp LALT> \
 ;)
