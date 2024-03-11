@@ -2,12 +2,6 @@
 
 #include "function.h"
 
-#define MACRO_DOUBLE(name, d1, d2) MACRO(name, bindings \
-= <&macro_tap &kp KP_N##d1 &kp KP_N##d2>;)
-
-#define MACRO_DOUBLE_SHIFT(name, d1, d2) MACRO(name, bindings \
-= <&macro_tap &kp KP_N##d1 &kp LS(KP_N##d2)>;)
-
 // Lettres
 #define    FR_A    Q       // A
 #define    FR_B    B       // B
@@ -44,9 +38,9 @@
 #define    FR_TLD    LS(GRAVE)    // ~ (dead)
 
 // Lettres with accents
-MACRO_DOUBLE_SHIFT(frAGrvUp, FR_GRV, FR_A)    // À
-MACRO_DOUBLE(FrAGrv, FR_GRV, FR_A)             // À
-MACRO_DOUBLE_SHIFT(frCCedUp, FR_AGU, FR_C)    // Ç
+MACRO_DOUBLE(fr_a_grv, FR_GRV, FR_A)             // À
+MACRO_DOUBLE_SHIFT(fr_a_grv_up, FR_GRV, FR_A)    // À
+MACRO_DOUBLE_SHIFT(fr_c_ced_up, FR_AGU, FR_C)    // Ç
 MACRO_DOUBLE(fr_c_ced, FR_AGU, FR_C)             // Ç
 MACRO_DOUBLE_SHIFT(fr_e_agu_up, FR_AGU, FR_E)    // É
 MACRO_DOUBLE(fr_e_agu, FR_AGU, FR_E)             // É
