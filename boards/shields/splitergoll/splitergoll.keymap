@@ -118,7 +118,7 @@ LAYER(SECONDARY,
                                                                                 &fr_ug      &kp FR_AND  &kp FR_PIPE &kp FR_DOLR &kp FR_EURO
                                                                                 no___       trs__       no___       no___       no___
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
-, &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT)
+, &inc_dec_kp LEFT RIGHT &inc_dec_kp LEFT RIGHT)
 
 
 
