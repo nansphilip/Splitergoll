@@ -90,7 +90,7 @@ LAYER(PRIMARY,
                                                                                 &fr_grv     &kp FR_HASH &kp FR_UDSC &kp FR_AT   &kp FR_PERC
                                                                                 trs__       trs__       trs__       trs__       no___
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
-, &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN)
+, &inc_dec_kp LEFT RIGHT &inc_dec_kp UP DOWN)
 
 
 
@@ -142,7 +142,7 @@ LAYER(TERTIARY,
                 &fr_oeu     no___       no___       no___       no___
                 &bootloader no___       no___       trs__       no___ 
                                                                                 &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
-                                                                                &kp RA(F4)  no___       no___       no___       no___       no___
+                                                                                &kp LA(F4)  no___       no___       no___       no___       no___
                                                                                 &to 4       no___       no___       no___       no___
                                                                                 no___       trs__       no___       no___       &bt BT_CLR_ALL
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃

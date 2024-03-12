@@ -6,3 +6,4 @@
 - Gaming layer ?
 
 - Tester le = avec maj. Est-ce que ça fait un + ?
+- Alt F4
