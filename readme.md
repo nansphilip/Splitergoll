@@ -4,6 +4,6 @@
 - Mode repos ?
 - Switch Bluetooth ?
 - Afficher la batterie des deux parties
-- Tap dance
+- Tap dance layer et caps lock
 
 - CONFIG_BT_CTLR_TX_PWR_PLUS_8=n ?
