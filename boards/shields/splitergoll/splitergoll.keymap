@@ -35,10 +35,10 @@ MORPH(semi_slsh, LSFT, &kp FR_SEMI, &kp FR_SLASH)      // ; and /
 MORPH(colon_bsls, LSFT, &kp FR_COLON, &kp FR_BSLASH)   // : and \
 
 // Tap dance
-TAP(sftnlock, &kp LSHIFT, &kp CAPS)
-TAP(layer_1, &mo 1, &mo 2)
-TAP(layer_2, &mo 2, &mo 1)
-TAP(test, &fr_ea, &fr_ec)
+TAP2(sftnlock, &kp LSHIFT, &kp CAPS)
+TAP2(layer_1, &mo 1, &mo 2)
+TAP2(layer_2, &mo 2, &mo 1)
+TAP4(test, &fr_ea, &fr_ec, &fr_eg, &fr_et)
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 // ┃     Default - Windows    ┃
