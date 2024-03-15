@@ -36,6 +36,8 @@ MORPH(colon_bsls, LSFT, &kp FR_COLON, &kp FR_BSLASH)   // : and \
 
 // Tap dance
 TAP(sftnlock, LSHIFT, CAPS)
+TAP(lay_1, &mo 1, &mo 2)
+TAP(lay_2, &mo 2, &mo 1)
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 // ┃     Default - Windows    ┃
@@ -55,11 +57,11 @@ LAYER(DEFAULT,
     &kp ESC     &kp FR_A    &kp FR_Z    &kp FR_E    &kp FR_R    &kp FR_T 
     &kp TAB     &kp FR_Q    &kp FR_S    &kp FR_D    &kp FR_F    &kp FR_G
                 &kp FR_W    &kp FR_X    &kp FR_C    &kp FR_V    &kp FR_B
-            &mt C_MUTE C_PP &kp LCTRL   &kp LALT    &mo 2       &kp SPACE
+            &mt C_MUTE C_PP &kp LCTRL   &kp LALT    &lay_2      &kp SPACE
                                                                                 &kp FR_Y    &kp FR_U    &kp FR_I    &kp FR_O    &kp FR_P    &kp BSPC
                                                                                 &kp FR_H    &kp FR_J    &kp FR_K    &kp FR_L    &kp FR_M    &kp DEL
                                                                                 &kp FR_N    &comm_qmark &dot_excl   &semi_slsh  &colon_bsls
-                                                                                &sftnlock   &mo 1       &kp ENTER   &kp LGUI    no___
+                                                                                &sftnlock   &lay_1      &kp ENTER   &kp LGUI    no___
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 , &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN)
 
