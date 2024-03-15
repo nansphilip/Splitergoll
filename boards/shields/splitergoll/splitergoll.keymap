@@ -34,12 +34,13 @@ MORPH(dot_excl, LSFT, &kp FR_DOT, &kp FR_EXCL)         // . and !
 MORPH(semi_slsh, LSFT, &kp FR_SEMI, &kp FR_SLASH)      // ; and /
 MORPH(colon_bsls, LSFT, &kp FR_COLON, &kp FR_BSLASH)   // : and \
 
-// Tap dance
-TAP2(sftnlock, &kp LSHIFT, &kp CAPS)
-TAP2(layer_1, &mo 1, &mo 2)
-TAP2(layer_2, &mo 2, &mo 1)
-TAP4(fr_ea_eg, &fr_ea, &fr_eg)
-TAP4(fr_ec_et, &fr_ec, &fr_et)
+// Tap dance                            |   1 tap   |   2 taps   |
+//                                      |-----------|------------|
+TAP2(sftnlock, &kp LSHIFT, &kp CAPS) // | Shift     | Caps lock  |
+TAP2(layer_1, &mo 1, &mo 2)          // | Layer 1   | Layer 2    |
+TAP2(layer_2, &mo 2, &mo 1)          // | Layer 2   | Layer 1    |
+TAP2(fr_ea_eg, &fr_ea, &fr_eg)       // | é         | è          |
+TAP2(fr_ec_et, &fr_ec, &fr_et)       // | ê         | ë          |
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 // ┃     Default - Windows    ┃
@@ -116,7 +117,7 @@ LAYER(SECONDARY,
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
     &kp BSPC    &kp FR_1    &kp FR_2    &kp FR_3    &kp FR_4    &kp FR_5
     &kp DEL     &fr_oc      &fr_ea_eg   &fr_ec_et   &fr_cc      &fr_ag
-                &fr_oe      no___       no___      &fr_ic      &fr_it
+                &fr_oe      no___       no___       &fr_ic      &fr_it
                 no___       no___       no___       trs__       no___ 
                                                                                 &kp FR_6    &kp FR_7    &kp FR_8    &kp FR_9    &kp FR_0    trs__
                                                                                 &kp FR_EQAL &kp FR_PLUS &kp FR_MINS &kp FR_ASTR &kp FR_DIVI trs__
