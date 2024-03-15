@@ -38,6 +38,7 @@ MORPH(colon_bsls, LSFT, &kp FR_COLON, &kp FR_BSLASH)   // : and \
 TAP(sftnlock, &kp LSHIFT, &kp CAPS)
 TAP(layer_1, &mo 1, &mo 2)
 TAP(layer_2, &mo 2, &mo 1)
+TAP(test, &fr_ea, &fr_ec)
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 // ┃     Default - Windows    ┃
@@ -50,7 +51,7 @@ TAP(layer_2, &mo 2, &mo 1)
 //             ┃     W     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃  , ou ?   ┃  . ou !   ┃  ; ou /   ┃  : ou \   ┃
 //             ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //           ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓
-//       ┃Play+Mute(hold)┃ ┃   CTRL    ┃    ALT    ┃    L2     ┃   SPACE   ┃   ┃SHIFT+CAPS(x2)┃ L1     ┃   ENTER   ┃    WIN    ┃ ┃           ┃
+//       ┃Play+Mute(hold)┃ ┃   CTRL    ┃    ALT    ┃ L2+L1(x2) ┃   SPACE   ┃┃SHIFT+CAPS(x2)┃ L1+L2(x2) ┃   ENTER   ┃    WIN    ┃ ┃           ┃
 //           ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛
 LAYER(DEFAULT,
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
@@ -145,7 +146,7 @@ LAYER(TERTIARY,
                 &fr_oeu     no___       no___       no___       no___
                 &bootloader no___       no___       trs__       no___ 
                                                                                 &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
-                                                                                &kp LA(F4)  no___       no___       no___       no___       no___
+                                                                                &kp LA(F4)  no___       &test       no___       no___       no___
                                                                                 &to 4       no___       no___       no___       no___
                                                                                 no___       trs__       no___       no___       &bt BT_CLR_ALL
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
