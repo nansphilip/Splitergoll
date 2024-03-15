@@ -1,5 +1,6 @@
 #pragma once
 
+// Layers
 #define LAYER(name, layout, sensors) \
 / { \
     keymap { \
@@ -22,6 +23,8 @@
     }; \
 };
 
+
+// Behaviors
 #define MORPH(name, mod, k1, k2) \
 / { \
     behaviors { \
@@ -34,6 +37,20 @@
     }; \
 };
 
+#define TAP(name, k1, k2) \
+/ { \
+    behaviors { \
+        name: name { \
+            compatible = "zmk,behavior-tap-dance"; \
+            #binding-cells = <0>; \
+            tapping-term-ms = <300>; \
+            bindings = <&kp k1>, <&kp k2>; \
+        }; \
+    }; \
+};
+
+
+// Macros
 #define MACRO(...) \
 / { \
     macros { \

@@ -34,7 +34,8 @@ MORPH(dot_excl, LSFT, &kp FR_DOT, &kp FR_EXCL)         // . and !
 MORPH(semi_slsh, LSFT, &kp FR_SEMI, &kp FR_SLASH)      // ; and /
 MORPH(colon_bsls, LSFT, &kp FR_COLON, &kp FR_BSLASH)   // : and \
 
-
+// Tap dance
+TAP(sftnlock, LSHIFT, CAPS)
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 // ┃     Default - Windows    ┃
@@ -47,7 +48,7 @@ MORPH(colon_bsls, LSFT, &kp FR_COLON, &kp FR_BSLASH)   // : and \
 //             ┃     W     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃  , ou ?   ┃  . ou !   ┃  ; ou /   ┃  : ou \   ┃
 //             ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //           ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓
-//       ┃Play+Mute(hold)┃ ┃   CTRL    ┃    ALT    ┃    L2     ┃   SPACE   ┃   ┃   SHIFT   ┃    L1     ┃   ENTER   ┃    WIN    ┃ ┃           ┃
+//       ┃Play+Mute(hold)┃ ┃   CTRL    ┃    ALT    ┃    L2     ┃   SPACE   ┃   ┃SHIFT+CAPS(x2)┃ L1     ┃   ENTER   ┃    WIN    ┃ ┃           ┃
 //           ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛
 LAYER(DEFAULT,
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
@@ -58,7 +59,7 @@ LAYER(DEFAULT,
                                                                                 &kp FR_Y    &kp FR_U    &kp FR_I    &kp FR_O    &kp FR_P    &kp BSPC
                                                                                 &kp FR_H    &kp FR_J    &kp FR_K    &kp FR_L    &kp FR_M    &kp DEL
                                                                                 &kp FR_N    &comm_qmark &dot_excl   &semi_slsh  &colon_bsls
-                                                                                &kp LSHIFT  &mo 1       &kp ENTER   &kp LGUI    no___
+                                                                                &sftnlock   &mo 1       &kp ENTER   &kp LGUI    no___
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 , &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN)
 
@@ -161,7 +162,7 @@ LAYER(TERTIARY,
 //             ┃           ┃           ┃     S     ┃           ┃     C     ┃   ┃           ┃           ┃           ┃           ┃           ┃
 //             ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //           ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓
-//           ┃ To Default┃ ┃           ┃     W     ┃     V     ┃   SPACE   ┃   ┃           ┃           ┃           ┃           ┃ ┃           ┃
+//           ┃ To Default┃ ┃           ┃     W     ┃     V     ┃   SPACE   ┃   ┃           ┃           ┃           ┃    WIN    ┃ ┃           ┃
 //           ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛
 LAYER(GAMING,
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
@@ -172,6 +173,6 @@ LAYER(GAMING,
                                                                                 no___       no___       no___       no___       no___       no___
                                                                                 no___       no___       no___       no___       no___       no___
                                                                                 no___       no___       no___       no___       no___
-                                                                                no___       no___       no___       no___       no___
+                                                                                no___       no___       no___       &kp LGUI    no___
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 , &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN)
