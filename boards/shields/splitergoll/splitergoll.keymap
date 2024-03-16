@@ -157,7 +157,7 @@ LAYER(TERTIARY,
 
 
 // Ctrl and Shift layer
-MORPH(no_esc, LCTRL, &none, &kp ESC)   // " " and Escape
+MORPH(no_esc, LCTL, &none, &kp ESC)   // " " and Escape
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 // ┃         Gaming           ┃
