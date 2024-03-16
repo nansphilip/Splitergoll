@@ -1,9 +1,14 @@
-# Todo
+# Splitergoll
 
-- Switch layer Linux / Windows / MacOS : combo pour rédiger le nom du layer sélectionné
-- Mode repos ?
-- Switch Bluetooth ?
+- split: split keyboard, one part for each hand
+- ergo: ergonomic keyboard, column staggered layout
+- ll: low latency, needs a dongle to improve battery life and Bluetooth latency
+
+## Branches Git
+
+- [main](https://github.com/nansphilip/Splitergoll/tree/main): clavier wireless en Bluetooth (fonctionnel)
+- [dongle](https://github.com/nansphilip/Splitergoll/tree/dongle): clavier wireless avec dongle (non fonctionnel)
+
+## Todo
+
 - Afficher la batterie des deux parties
-- Tap dance layer et caps lock
-
-- CONFIG_BT_CTLR_TX_PWR_PLUS_8=n ?
