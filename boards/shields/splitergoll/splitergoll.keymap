@@ -181,6 +181,6 @@ LAYER(GAMING,
                                                                                 &kp FR_Y    no___       no___       no___       no___       no___
                                                                                 &kp FR_M    no___       no___       no___       no___       no___
                                                                                 &kp FR_L    no___       no___       no___       no___
-                                                                                no___       no___       no___       &kp LGUI    no___
+                                                                                no___       no___       &kp LA(TAB) &kp LGUI    no___
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 , &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN)
