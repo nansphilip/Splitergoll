@@ -23,11 +23,6 @@ COND_LAYER(1, 2, 3)
 #define no___ &none
 #define trs__  &trans
 
-// Hold tap duration
-&mt {
-    tapping-term-ms = <300>;
-};
-
 // Ponctuation
 MORPH(comm_qmark, LSFT, &kp FR_COMMA, &kp FR_QMARK)    // , and ?
 MORPH(dot_excl, LSFT, &kp FR_DOT, &kp FR_EXCL)         // . and !
@@ -39,8 +34,13 @@ MORPH(colon_bsls, LSFT, &kp FR_COLON, &kp FR_BSLASH)   // : and \
 TAP2(sftnlock, &kp LSHIFT, &kp CAPS) // | Shift     | Caps lock  |
 TAP2(layer_1, &mo 1, &mo 2)          // | Layer 1   | Layer 2    |
 TAP2(layer_2, &mo 2, &mo 1)          // | Layer 2   | Layer 1    |
+TAP2(fr_ag_ac, &fr_ag, &fr_ac)       // | à         | â          |
 TAP2(fr_ea_eg, &fr_ea, &fr_eg)       // | é         | è          |
 TAP2(fr_ec_et, &fr_ec, &fr_et)       // | ê         | ë          |
+TAP2(fr_ic_it, &fr_ic, &fr_it)       // | î         | ï          |
+TAP2(fr_oc_oe, &fr_oc, &fr_oe)       // | ô         | œ          |
+TAP2(fr_cc_ug, &fr_cc, &fr_ug)       // | ç         | ù          |
+TAP2(fr_ocu_oeu, &fr_ocu, &fr_oeu)   // | Ô         | Œ          |
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 // ┃     Default - Windows    ┃
@@ -106,9 +106,9 @@ LAYER(PRIMARY,
 // ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 // ┃   BSPACE  ┃     1     ┃     2     ┃     3     ┃     4     ┃     5     ┃   ┃     6     ┃     7     ┃     8     ┃     9     ┃     0     ┃           ┃
 // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-// ┃    DEL    ┃     ô     ┃    é+è    ┃    ê+ë    ┃     ç     ┃     à     ┃   ┃     =     ┃     +     ┃     -     ┃     *     ┃     /     ┃           ┃
+// ┃    DEL    ┃    ô+œ    ┃    é+è    ┃    ê+ë    ┃    ç+ù    ┃    à+â    ┃   ┃     =     ┃     +     ┃     -     ┃     *     ┃     /     ┃           ┃
 // ┗━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┛
-//             ┃     œ     ┃           ┃           ┃     î     ┃     ï     ┃   ┃     ù     ┃     &     ┃     |     ┃     $     ┃     €     ┃
+//             ┃           ┃           ┃           ┃           ┃    î+ï    ┃   ┃           ┃     &     ┃     |     ┃     $     ┃     €     ┃
 //             ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //           ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓
 //           ┃           ┃ ┃           ┃           ┃     L2    ┃           ┃   ┃           ┃           ┃           ┃           ┃ ┃           ┃
@@ -116,13 +116,13 @@ LAYER(PRIMARY,
 LAYER(SECONDARY,
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
     &kp BSPC    &kp FR_1    &kp FR_2    &kp FR_3    &kp FR_4    &kp FR_5
-    &kp DEL     &fr_oc      &fr_ea_eg   &fr_ec_et   &fr_cc      &fr_ag
-                &fr_oe      no___       no___       &fr_ic      &fr_it
-                no___       no___       no___       trs__       no___ 
+    &kp DEL     &fr_oc_oe   &fr_ea_eg   &fr_ec_et   &fr_cc_ug   &fr_ag_ac
+                no___       no___       no___       no___       &fr_ic_it
+                no___       trs__       trs__       trs__       trs__ 
                                                                                 &kp FR_6    &kp FR_7    &kp FR_8    &kp FR_9    &kp FR_0    trs__
                                                                                 &kp FR_EQAL &kp FR_PLUS &kp FR_MINS &kp FR_ASTR &kp FR_DIVI trs__
-                                                                                &fr_ug      &kp FR_AND  &kp FR_PIPE &kp FR_DOLR &kp FR_EURO
-                                                                                no___       trs__       no___       no___       no___
+                                                                                no___       &kp FR_AND  &kp FR_PIPE &kp FR_DOLR &kp FR_EURO
+                                                                                trs__       trs__       trs__       trs__       no___
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 , &inc_dec_kp LEFT RIGHT &inc_dec_kp LEFT RIGHT)
 
@@ -134,9 +134,9 @@ LAYER(SECONDARY,
 // ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 // ┃    F1     ┃    F2     ┃    F3     ┃    F4     ┃    F5     ┃    F6     ┃   ┃    F7     ┃    F8     ┃    F9     ┃    F10    ┃    F11    ┃    F12    ┃
 // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-// ┃           ┃     Ô     ┃     É     ┃     Ê     ┃     Ç     ┃     À     ┃   ┃ ALT + F4  ┃           ┃           ┃           ┃           ┃           ┃
+// ┃           ┃    Ô+Œ    ┃     É     ┃     Ê     ┃     Ç     ┃     À     ┃   ┃ ALT + F4  ┃           ┃           ┃           ┃           ┃           ┃
 // ┗━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┛
-//             ┃     Œ     ┃           ┃           ┃           ┃           ┃   ┃ To Gaming ┃           ┃           ┃           ┃           ┃
+//             ┃           ┃           ┃           ┃           ┃           ┃   ┃ To Gaming ┃           ┃           ┃           ┃           ┃
 //             ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //           ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓
 //           ┃ Bootloader┃ ┃           ┃           ┃     L3    ┃           ┃   ┃           ┃     L3    ┃           ┃           ┃ ┃Del BT link┃
@@ -144,13 +144,13 @@ LAYER(SECONDARY,
 LAYER(TERTIARY,
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
     &kp F1      &kp F2      &kp F3      &kp F4      &kp F5      &kp F6
-    no___       &fr_ocu     &fr_eau     &fr_ecu     &fr_ccu     &fr_agu
-                &fr_oeu     no___       no___       no___       no___
-                &bootloader no___       no___       trs__       no___ 
+    no___       &fr_ocu_oeu &fr_eau     &fr_ecu     &fr_ccu     &fr_agu
+                no___       no___       no___       no___       no___
+                &bootloader trs__       trs__       trs__       trs__ 
                                                                                 &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
                                                                                 &kp LA(F4)  no___       no___       no___       no___       no___
                                                                                 &to 4       no___       no___       no___       no___
-                                                                                no___       trs__       no___       no___       &bt BT_CLR_ALL
+                                                                                trs__       trs__       trs__       trs__       &bt BT_CLR_ALL
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 , &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN)
 

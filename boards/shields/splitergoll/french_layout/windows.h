@@ -39,6 +39,7 @@
 
 // Lettres with accents
 ALT_CODE_3(fr_ag, 1, 3, 3)     // à
+ALT_CODE_3(fr_ac, 1, 3, 1)     // â
 ALT_CODE_3(fr_cc, 1, 3, 5)     // ç
 ALT_CODE_3(fr_ea, 1, 3, 0)     // é
 ALT_CODE_3(fr_eg, 1, 3, 8)     // è
@@ -101,8 +102,8 @@ ALT_CODE_4(fr_oeu, 0, 1, 4, 0) // Œ
 
 
 // Quotes
-#define    FR_QUOT    N3     // "
-#define    FR_SQUO    N4     // '
+#define    FR_QUOT    N3        // "
+#define    FR_SQUO    N4        // '
 ALT_CODE_3(fr_grv, 0, 9, 6)     // `
 
 // Symbols

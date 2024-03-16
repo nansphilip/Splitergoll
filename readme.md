@@ -1,9 +1,15 @@
-# Todo
+# Splitergoll
 
-- Switch layer Linux / Windows / MacOS : combo pour rédiger le nom du layer sélectionné
-- Mode repos ?
-- Switch Bluetooth ?
-- Gaming layer ?
+- split: split keyboard, one part for each hand
+- ergo: ergonomic keyboard, column staggered layout
+- ll: low latency, needs a dongle to improve battery life and Bluetooth latency
 
-- Tester le = avec maj. Est-ce que ça fait un + ?
-- Alt F4
+## Branches Git
+
+- [main](https://github.com/nansphilip/Splitergoll/tree/main): clavier wireless en Bluetooth (fonctionnel)
+- [dongle](https://github.com/nansphilip/Splitergoll/tree/dongle): clavier wireless avec dongle (non fonctionnel)
+
+## Todo
+
+- Switch layer Windows / MacOS
+- Morph: `maj + é = É`
