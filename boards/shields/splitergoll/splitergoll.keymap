@@ -132,8 +132,8 @@ TAP2(cc_ccu_ug, &cc_ccu_h, &fr_ug)     // | ç         | ù          | Ç       
 LAYER(SECONDARY,
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
     &kp BSPC    no___       no___       &kp FR_UDSC &kp FR_MINS &kp FR_PLUS
-    &kp DEL     no___       &oc_ocu_oe  &ag_agu_ac  &ea_eau_eg  &kp FR_ASTR
-                no___       &ic_oeu_it  &cc_ccu_ug  &ec_ecu_et  &kp FR_DIVI
+    &kp DEL     no___       &oc_ocu_h  &ag_agu_h  &ea_eau_h  &kp FR_ASTR
+                no___       &ic_oeu_h  &cc_ccu_h  &ec_ecu_h  &kp FR_DIVI
                 no___       trs__       trs__       trs__       trs__
                                                                                 &kp FR_EQAL &kp FR_7    &kp FR_8    &kp FR_9    &kp FR_EURO trs__
                                                                                 &kp FR_0    &kp FR_4    &kp FR_5    &kp FR_6    &kp FR_DOLR trs__
