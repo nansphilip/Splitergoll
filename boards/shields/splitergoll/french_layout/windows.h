@@ -55,7 +55,7 @@ ALT_CODE_3(fr_agu, 1, 8, 3)    // À
 ALT_CODE_3(fr_ccu, 1, 2, 8)    // Ç
 ALT_CODE_3(fr_eau, 1, 4, 4)    // É
 ALT_CODE_3(fr_ecu, 2, 1, 0)    // Ê
-DOUBLE(fr_ocu, &kp FR_GRV, &kp LS(FR_O))    // Ô
+DOUBLE(fr_ocu, &kp FR_CIR, &kp LS(FR_O))    // Ô
 ALT_CODE_4(fr_oeu, 0, 1, 4, 0) // Œ
 
 
