@@ -63,36 +63,39 @@
 
 
 // Macros
-#define MACRO(...) \
+#define DOUBLE(name, d1, d2) \
 / { \
     macros { \
-        ZMK_MACRO(__VA_ARGS__) \
+        ZMK_MACRO(name, bindings \
+            = <&macro_tap d1> \
+            , <&macro_tap d2> \
+        ;) \
     }; \
 };
 
-#define DOUBLE(name, d1, d2) MACRO(name, bindings \
-    = <&macro_tap &kp d1> \
-    , <&macro_tap &kp d2> \
-;)
+#define ALT_CODE_3(name, d1, d2, d3) \
+/ { \
+    macros { \
+        ZMK_MACRO(name, bindings \
+            = <&macro_press &kp LALT> \
+            , <&macro_tap &kp KP_N##d1> \
+            , <&macro_tap &kp KP_N##d2> \
+            , <&macro_tap &kp KP_N##d3> \
+            , <&macro_release &kp LALT> \
+        ;) \
+    }; \
+};
 
-#define SHIFT(name, d1, d2) MACRO(name, bindings \
-    = <&macro_tap &kp d1> \
-    , <&macro_tap &kp LS(d2)> \
-;)
-
-#define ALT_CODE_3(name, d1, d2, d3) MACRO(name, bindings \
-    = <&macro_press &kp LALT> \
-    , <&macro_tap &kp KP_N##d1> \
-    , <&macro_tap &kp KP_N##d2> \
-    , <&macro_tap &kp KP_N##d3> \
-    , <&macro_release &kp LALT> \
-;)
-
-#define ALT_CODE_4(name, d1, d2, d3, d4) MACRO(name, bindings \
-    = <&macro_press &kp LALT> \
-    , <&macro_tap &kp KP_N##d1> \
-    , <&macro_tap &kp KP_N##d2> \
-    , <&macro_tap &kp KP_N##d3> \
-    , <&macro_tap &kp KP_N##d4> \
-    , <&macro_release &kp LALT> \
-;)
+#define ALT_CODE_4(name, d1, d2, d3, d4) \
+/ { \
+    macros { \
+        ZMK_MACRO(name, bindings \
+            = <&macro_press &kp LALT> \
+            , <&macro_tap &kp KP_N##d1> \
+            , <&macro_tap &kp KP_N##d2> \
+            , <&macro_tap &kp KP_N##d3> \
+            , <&macro_tap &kp KP_N##d4> \
+            , <&macro_release &kp LALT> \
+        ;) \
+    }; \
+};
