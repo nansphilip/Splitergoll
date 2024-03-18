@@ -100,12 +100,12 @@ LAYER(PRIMARY,
 
 // Tap dance                                        |   1 tap   |   2 taps   |    Hold    |
 // ------------------------------------------------ | --------- | ---------- | ---------- |
-TAP2(fr_ag_ac_m, &mt &fr_agu &fr_ag, &fr_ac)     // | à         | â          | À          |
-TAP2(fr_ea_eg_m, &mt &fr_eau &fr_ea, &fr_eg)     // | é         | è          | É          |
-TAP2(fr_ec_et_m, &mt &fr_ecu &fr_ec, &fr_et)     // | ê         | ë          | Ê          |
-TAP2(fr_ic_it_m, &mt &fr_oeu &fr_ic, &fr_it)     // | î         | ï          | Œ          |
-TAP2(fr_oc_oe_m, &mt &fr_ocu &fr_oc, &fr_oe)     // | ô         | œ          | Ô          |
-TAP2(fr_cc_ug_m, &mt &fr_ccu &fr_cc, &fr_ug)     // | ç         | ù          | Ç          |
+TAP2(fr_ag_ac_m, &mt fr_agu fr_ag, &fr_ac)     // | à         | â          | À          |
+TAP2(fr_ea_eg_m, &mt fr_eau fr_ea, &fr_eg)     // | é         | è          | É          |
+TAP2(fr_ec_et_m, &mt fr_ecu fr_ec, &fr_et)     // | ê         | ë          | Ê          |
+TAP2(fr_ic_it_m, &mt fr_oeu fr_ic, &fr_it)     // | î         | ï          | Œ          |
+TAP2(fr_oc_oe_m, &mt fr_ocu fr_oc, &fr_oe)     // | ô         | œ          | Ô          |
+TAP2(fr_cc_ug_m, &mt fr_ccu fr_cc, &fr_ug)     // | ç         | ù          | Ç          |
 
 // Letters with accents
 
