@@ -98,19 +98,6 @@ LAYER(PRIMARY,
 , &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT)
 
 
-/ {
-    behaviors {
-        htp: htp {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
-            bindings = <>, <>;
-        };
-    };
-};
-
 
 // Tap dance                                |   1 tap   |   2 taps   |   3 taps   |
 // ---------------------------------------- | --------- | ---------- | ---------- |
