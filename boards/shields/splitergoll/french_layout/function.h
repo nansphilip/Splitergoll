@@ -67,6 +67,7 @@
         name: name { \
             compatible = "zmk,behavior-hold-tap"; \
             #binding-cells = <2>; \
+            flavor = "tap-preferred"; \
             tapping-term-ms = <200>; \
             bindings = <k1>, <k2>; \
         }; \
