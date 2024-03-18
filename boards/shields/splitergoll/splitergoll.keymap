@@ -61,7 +61,7 @@ LAYER(DEFAULT,
                 &kp FR_W    &kp FR_X    &kp FR_C    &kp FR_V    &kp FR_B
             &mt C_MUTE C_PP &kp LCTRL   &kp LALT    &layer_2    &kp SPACE
                                                                                 &kp FR_Y    &kp FR_U    &kp FR_I    &kp FR_O    &kp FR_P    &kp BSPC
-                                                                                &kp FR_H    &kp FR_J    &kp FR_K    &kp FR_L    &kp FR_hm    &kp DEL
+                                                                                &kp FR_H    &kp FR_J    &kp FR_K    &kp FR_L    &kp FR_M    &kp DEL
                                                                                 &kp FR_N    &comm_qmark &dot_excl   &semi_slsh  &colon_bsls
                                                                                 &sftnlock   &layer_1    &kp ENTER   &kp LGUI    no___
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
@@ -100,21 +100,21 @@ LAYER(PRIMARY,
 
 
 // Hold tap
-HOLD_TAP(fr_ag_agu_h, &fr_agu, &fr_ag)
-HOLD_TAP(fr_ea_eau_h, &fr_eau, &fr_ea)
-HOLD_TAP(fr_ec_ecu_h, &fr_ecu, &fr_ec)
-HOLD_TAP(fr_ic_oeu_h, &fr_oeu, &fr_ic)
-HOLD_TAP(fr_oc_ocu_h, &fr_ocu, &fr_oc)
-HOLD_TAP(fr_cc_ccu_h, &fr_ccu, &fr_cc)
+HOLD_TAP(ag_agu_h, &fr_agu, &fr_ag)
+HOLD_TAP(ea_eau_h, &fr_eau, &fr_ea)
+HOLD_TAP(ec_ecu_h, &fr_ecu, &fr_ec)
+HOLD_TAP(ic_oeu_h, &fr_oeu, &fr_ic)
+HOLD_TAP(oc_ocu_h, &fr_ocu, &fr_oc)
+HOLD_TAP(cc_ccu_h, &fr_ccu, &fr_cc)
 
-// Tap dance                                      |   1 tap   |   2 taps   |    Hold    |
-// ---------------------------------------------- | --------- | ---------- | ---------- |
-TAP2(fr_ag_ac_hm, &fr_ag_agu_h , &fr_ac)     // | à         | â          | À          |
-TAP2(fr_ea_eg_hm, &fr_ea_eau_h , &fr_eg)     // | é         | è          | É          |
-TAP2(fr_ec_et_hm, &fr_ec_ecu_h , &fr_et)     // | ê         | ë          | Ê          |
-TAP2(fr_ic_it_hm, &fr_ic_oeu_h , &fr_it)     // | î         | ï          | Œ          |
-TAP2(fr_oc_oe_hm, &fr_oc_ocu_h , &fr_oe)     // | ô         | œ          | Ô          |
-TAP2(fr_cc_ug_hm, &fr_cc_ccu_h , &fr_ug)     // | ç         | ù          | Ç          |
+// Tap dance                              |   1 tap   |   2 taps   |    Hold    |
+// -------------------------------------- | --------- | ---------- | ---------- |
+TAP2(ag_agu_ac, &ag_agu_h, &fr_ac)     // | à         | â          | À          |
+TAP2(ea_eau_eg, &ea_eau_h, &fr_eg)     // | é         | è          | É          |
+TAP2(ec_ecu_et, &ec_ecu_h, &fr_et)     // | ê         | ë          | Ê          |
+TAP2(ic_oeu_it, &ic_oeu_h, &fr_it)     // | î         | ï          | Œ          |
+TAP2(oc_ocu_oe, &oc_ocu_h, &fr_oe)     // | ô         | œ          | Ô          |
+TAP2(cc_ccu_ug, &cc_ccu_h, &fr_ug)     // | ç         | ù          | Ç          |
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 // ┃         Secondary        ┃
@@ -131,9 +131,9 @@ TAP2(fr_cc_ug_hm, &fr_cc_ccu_h , &fr_ug)     // | ç         | ù          | Ç 
 //           ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛
 LAYER(SECONDARY,
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
-    &kp BSPC    no___       no___       &kp FR_UDSC &kp FR_hmINS &kp FR_PLUS
-    &kp DEL     no___       &fr_oc_oe_hm &fr_ag_ac_hm &fr_ea_eg_hm &kp FR_ASTR
-                no___       &fr_ic_it_hm &fr_cc_ug_hm &fr_ec_et_hm &kp FR_DIVI
+    &kp BSPC    no___       no___       &kp FR_UDSC &kp FR_MINS &kp FR_PLUS
+    &kp DEL     no___       &oc_ocu_oe  &ag_agu_ac  &ea_eau_eg  &kp FR_ASTR
+                no___       &ic_oeu_it  &cc_ccu_ug  &ec_ecu_et  &kp FR_DIVI
                 no___       trs__       trs__       trs__       trs__
                                                                                 &kp FR_EQAL &kp FR_7    &kp FR_8    &kp FR_9    &kp FR_EURO trs__
                                                                                 &kp FR_0    &kp FR_4    &kp FR_5    &kp FR_6    &kp FR_DOLR trs__
@@ -192,7 +192,7 @@ LAYER(GAMING,
                 &kp LCTRL   &kp FR_J    &kp FR_S    &kp FR_V    &kp FR_B
                 &to 0       &kp FR_C    &kp FR_W    &kp FR_X    &kp SPACE
                                                                                 &kp FR_Y    &kp FR_U    &kp FR_I    &kp FR_O    no___       no___
-                                                                                &kp FR_H    &kp FR_hm    &kp FR_K    &kp FR_L    no___       no___
+                                                                                &kp FR_H    &kp FR_M    &kp FR_K    &kp FR_L    no___       no___
                                                                                 &kp FR_N    &kp FR_P    no___       no___       no___
                                                                                 no___       no___       &kp LA(TAB) &kp LGUI    no___
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
