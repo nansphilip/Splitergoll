@@ -61,18 +61,6 @@
     }; \
 };
 
-#define HOLD_TAP(name, k1, k2) \
-/ { \
-    behaviors { \
-        name: name { \
-            compatible = "zmk,behavior-hold-tap"; \
-            #binding-cells = <2>; \
-            flavor = "tap-preferred"; \
-            tapping-term-ms = <200>; \
-            bindings = <k1>, <k2>; \
-        }; \
-    }; \
-};
 
 // Macros
 #define DOUBLE(name, d1, d2) \

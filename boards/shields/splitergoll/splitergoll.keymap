@@ -98,14 +98,26 @@ LAYER(PRIMARY,
 , &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT)
 
 
+/ { \
+    behaviors { \
+        htp: htp { \
+            compatible = "zmk,behavior-hold-tap"; \
+            #binding-cells = <2>; \
+            flavor = "tap-preferred"; \
+            tapping-term-ms = <200>; \
+            quick-tap-ms = <200>; \
+            bindings = <&>, <&>; \
+        }; \
+    }; \
+};
 
 // Hold tap
-HOLD_TAP(ag_agu_h, &fr_agu, &fr_ag)
-HOLD_TAP(ea_eau_h, &fr_eau, &fr_ea)
-HOLD_TAP(ec_ecu_h, &fr_ecu, &fr_ec)
-HOLD_TAP(ic_oeu_h, &fr_oeu, &fr_ic)
-HOLD_TAP(oc_ocu_h, &fr_ocu, &fr_oc)
-HOLD_TAP(cc_ccu_h, &fr_ccu, &fr_cc)
+#define ag_agu_h &htp fr_agu fr_ag
+#define ea_eau_h &htp fr_eau fr_ea
+#define ec_ecu_h &htp fr_ecu fr_ec
+#define ic_oeu_h &htp fr_oeu fr_ic
+#define oc_ocu_h &htp fr_ocu fr_oc
+#define cc_ccu_h &htp fr_ccu fr_cc
 
 // Tap dance                              |   1 tap   |   2 taps   |    Hold    |
 // -------------------------------------- | --------- | ---------- | ---------- |
