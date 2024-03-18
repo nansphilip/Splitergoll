@@ -34,15 +34,6 @@ MORPH(colon_bsls, LSFT, &kp FR_COLON, &kp FR_BSLASH)   // : and \
 TAP2(sftnlock, &kp LSHIFT, &kp CAPS) // | Shift     | Caps lock  |
 TAP2(layer_1, &mo 1, &mo 2)          // | Layer 1   | Layer 2    |
 TAP2(layer_2, &mo 2, &mo 1)          // | Layer 2   | Layer 1    |
-TAP2(fr_ag_ac, &fr_ag, &fr_ac)       // | à         | â          |
-TAP2(fr_ea_eg, &fr_ea, &fr_eg)       // | é         | è          |
-TAP2(fr_ec_et, &fr_ec, &fr_et)       // | ê         | ë          |
-TAP2(fr_ic_it, &fr_ic, &fr_it)       // | î         | ï          |
-TAP2(fr_oc_oe, &fr_oc, &fr_oe)       // | ô         | œ          |
-TAP2(fr_cc_ug, &fr_cc, &fr_ug)       // | ç         | ù          |
-TAP2(fr_ocu_oeu, &fr_ocu, &fr_oeu)   // | Ô         | Œ          |
-
-
 
 // Symbols signification
 // `+` means `double tap`
@@ -107,13 +98,28 @@ LAYER(PRIMARY,
 , &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT)
 
 
+// Tap dance                                        |   1 tap   |   2 taps   |    Hold    |
+// ------------------------------------------------ | --------- | ---------- | ---------- |
+TAP2(fr_ag_ac_m, &mt &fr_agu &fr_ag, &fr_ac)     // | à         | â          | À          |
+TAP2(fr_ea_eg_m, &mt &fr_eau &fr_ea, &fr_eg)     // | é         | è          | É          |
+TAP2(fr_ec_et_m, &mt &fr_ecu &fr_ec, &fr_et)     // | ê         | ë          | Ê          |
+TAP2(fr_ic_it_m, &mt &fr_oeu &fr_ic, &fr_it)     // | î         | ï          | Œ          |
+TAP2(fr_oc_oe_m, &mt &fr_ocu &fr_oc, &fr_oe)     // | ô         | œ          | Ô          |
+TAP2(fr_cc_ug_m, &mt &fr_ccu &fr_cc, &fr_ug)     // | ç         | ù          | Ç          |
 
 // Letters with accents
-MORPH(fr_ag_ac_m, LSFT, &fr_ag_ac, &fr_agu)       // à+â and À
-MORPH(fr_ea_eg_m, LSFT, &fr_ea_eg, &fr_eau)       // é+è and É
-MORPH(fr_ec_et_m, LSFT, &fr_ec_et, &fr_ecu)       // ê+ë and Ê
-MORPH(fr_oc_oe_m, LSFT, &fr_oc_oe, &fr_ocu_oeu)   // ô+œ and Ô+Œ
-MORPH(fr_cc_ug_m, LSFT, &fr_cc_ug, &fr_ccu)       // ç+ù and Ç
+
+
+
+
+
+
+
+// MORPH(fr_ag_ac_m, LSFT, &fr_ag_ac, &fr_agu)       // à+â and À
+// MORPH(fr_ea_eg_m, LSFT, &fr_ea_eg, &fr_eau)       // é+è and É
+// MORPH(fr_ec_et_m, LSFT, &fr_ec_et, &fr_ecu)       // ê+ë and Ê
+// MORPH(fr_oc_oe_m, LSFT, &fr_oc_oe, &fr_ocu_oeu)   // ô+œ and Ô+Œ
+// MORPH(fr_cc_ug_m, LSFT, &fr_cc_ug, &fr_ccu)       // ç+ù and Ç
 
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -122,9 +128,9 @@ MORPH(fr_cc_ug_m, LSFT, &fr_cc_ug, &fr_ccu)       // ç+ù and Ç
 // ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 // ┃   BSPACE  ┃           ┃           ┃     _     ┃     -     ┃     +     ┃   ┃     =     ┃     7     ┃     8     ┃     9     ┃     €     ┃           ┃
 // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-// ┃    DEL    ┃           ┃ô+œ ou Ô+Œ ┃ à+â ou À  ┃ é+è ou É  ┃     *     ┃   ┃     0     ┃     4     ┃     5     ┃     6     ┃     $     ┃           ┃
+// ┃    DEL    ┃           ┃  ô+œ -> Ô ┃ à+â -> À  ┃ é+è -> É  ┃     *     ┃   ┃     0     ┃     4     ┃     5     ┃     6     ┃     $     ┃           ┃
 // ┗━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┛
-//             ┃           ┃    î+ï    ┃ ç+ù ou Ç  ┃ ê+ë ou Ê  ┃     /     ┃   ┃     .     ┃     1     ┃     2     ┃     3     ┃     %     ┃
+//             ┃           ┃  î+ï -> Œ ┃ ç+ù -> Ç  ┃ ê+ë -> Ê  ┃     /     ┃   ┃     .     ┃     1     ┃     2     ┃     3     ┃     %     ┃
 //             ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //           ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓
 //           ┃           ┃ ┃           ┃           ┃     L2    ┃           ┃   ┃           ┃           ┃           ┃           ┃ ┃           ┃
@@ -133,7 +139,7 @@ LAYER(SECONDARY,
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
     &kp BSPC    no___       no___       &kp FR_UDSC &kp FR_MINS &kp FR_PLUS
     &kp DEL     no___       &fr_oc_oe_m &fr_ag_ac_m &fr_ea_eg_m &kp FR_ASTR
-                no___       &fr_ic_it   &fr_cc_ug_m &fr_ec_et_m &kp FR_DIVI
+                no___       &fr_ic_it_m &fr_cc_ug_m &fr_ec_et_m &kp FR_DIVI
                 no___       trs__       trs__       trs__       trs__
                                                                                 &kp FR_EQAL &kp FR_7    &kp FR_8    &kp FR_9    &kp FR_EURO trs__
                                                                                 &kp FR_0    &kp FR_4    &kp FR_5    &kp FR_6    &kp FR_DOLR trs__

@@ -32,10 +32,10 @@
 
 // Dead accents
 // #define    FR_AGU    RA(SQT)      // ' (doesn't work)
-#define    FR_GRV    RA(N7)       // ` (dead)
-#define    FR_CIR    LBKT         // ^ (dead)
-#define    FR_TRE    LBRC         // ¨ (dead)
-#define    FR_TLD    RA(N2)       // ~ (dead)
+// #define    FR_GRV    RA(N7)       // ` (dead)
+// #define    FR_CIR    LBKT         // ^ (dead)
+// #define    FR_TRE    LBRC         // ¨ (dead)
+// #define    FR_TLD    RA(N2)       // ~ (dead)
 
 // Lettres with accents
 ALT_CODE_3(fr_ag, 1, 3, 3)     // à
@@ -55,7 +55,7 @@ ALT_CODE_3(fr_agu, 1, 8, 3)    // À
 ALT_CODE_3(fr_ccu, 1, 2, 8)    // Ç
 ALT_CODE_3(fr_eau, 1, 4, 4)    // É
 ALT_CODE_3(fr_ecu, 2, 1, 0)    // Ê
-DOUBLE(fr_ocu, &kp FR_CIR, &kp LS(FR_O))    // Ô
+ALT_CODE_3(fr_ocu, 2, 2, 6)    // Ô
 ALT_CODE_4(fr_oeu, 0, 1, 4, 0) // Œ
 
 
