@@ -12,7 +12,3 @@
 ## Todo
 
 - Switch layer Windows / MacOS
-- Morph: `maj + é = É`
-- `j` key for `Gaming` layer
-- Move thumb keys for `Gaming` layer ?
-- Add screen capture and recording into `layer 3`
