@@ -113,21 +113,21 @@ LAYER(PRIMARY,
 
 
 // Hold tap
-HOLD_TAP(ag_agu_h, &fr_agu, &fr_ag)
-HOLD_TAP(ea_eau_h, &fr_eau, &fr_ea)
-HOLD_TAP(ec_ecu_h, &fr_ecu, &fr_ec)
-HOLD_TAP(ic_oeu_h, &fr_oeu, &fr_ic)
-HOLD_TAP(oc_ocu_h, &fr_ocu, &fr_oc)
-HOLD_TAP(cc_ccu_h, &fr_ccu, &fr_cc)
 
-// Tap dance                              |   1 tap   |   2 taps   |    Hold    |
-// -------------------------------------- | --------- | ---------- | ---------- |
-TAP2(ag_agu_ac, &ag_agu_h, &fr_ac)     // | à         | â          | À          |
-TAP2(ea_eau_eg, &ea_eau_h, &fr_eg)     // | é         | è          | É          |
-TAP2(ec_ecu_et, &ec_ecu_h, &fr_et)     // | ê         | ë          | Ê          |
-TAP2(ic_oeu_it, &ic_oeu_h, &fr_it)     // | î         | ï          | Œ          |
-TAP2(oc_ocu_oe, &oc_ocu_h, &fr_oe)     // | ô         | œ          | Ô          |
-TAP2(cc_ccu_ug, &cc_ccu_h, &fr_ug)     // | ç         | ù          | Ç          |
+
+
+
+
+
+
+// Tap dance                                |   1 tap   |   2 taps   |   3 taps   |
+// ---------------------------------------- | --------- | ---------- | ---------- |
+TAP3(ag_agu_ac, &fr_ag, &fr_ac, &fr_agu) // | à         | â          | À          |
+TAP3(ea_eau_eg, &fr_ea, &fr_eg, &fr_eau) // | é         | è          | É          |
+TAP3(ec_ecu_et, &fr_ec, &fr_et, &fr_ecu) // | ê         | ë          | Ê          |
+TAP3(ic_oeu_it, &fr_ic, &fr_it, &fr_oeu) // | î         | ï          | Œ          |
+TAP3(oc_ocu_oe, &fr_oc, &fr_oe, &fr_ocu) // | ô         | œ          | Ô          |
+TAP3(cc_ccu_ug, &fr_cc, &fr_ug, &fr_ccu) // | ç         | ù          | Ç          |
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 // ┃         Secondary        ┃
