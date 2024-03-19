@@ -32,8 +32,8 @@ MORPH(colon_bsls, LSFT, &kp FR_COLON, &kp FR_BSLASH)   // : and \
 // Tap dance                            |   1 tap   |   2 taps   |
 // ------------------------------------ | --------- | ---------- |
 TAP2(sftnlock, &kp LSHIFT, &kp CAPS) // | Shift     | Caps lock  |
-TAP3(layer_1, &mo 1, &mo 2)          // | Layer 1   | Layer 2    |
-TAP3(layer_2, &mo 2, &mo 1)          // | Layer 2   | Layer 1    |
+TAP2(layer_1, &mo 1, &mo 2)          // | Layer 1   | Layer 2    |
+TAP2(layer_2, &mo 2, &mo 1)          // | Layer 2   | Layer 1    |
 
 // Symbols signification
 // `+` means `double tap`
