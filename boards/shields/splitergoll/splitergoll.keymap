@@ -144,14 +144,14 @@ LAYER(SECONDARY,
             , <&macro_tap &kp V>
             , <&macro_release &kp LCTRL &kp LGUI>
             , <&macro_tap &kp UP &kp ENTER &kp ESC>
-        ;),
+        ;)
         // To headphones
         ZMK_MACRO(toHeadphones, bindings
             = <&macro_press &kp LCTRL &kp LGUI>
             , <&macro_tap &kp V>
             , <&macro_release &kp LCTRL &kp LGUI>
             , <&macro_tap &kp DOWN &kp ENTER &kp ESC>
-        ;),
+        ;)
 
         // To PC screen
         ZMK_MACRO(toTV, bindings
@@ -159,14 +159,14 @@ LAYER(SECONDARY,
             , <&macro_tap &kp P>
             , <&macro_release &kp LGUI>
             , <&macro_tap &kp DOWN &kp ENTER &kp ESC>
-        ;),
+        ;)
         // To TV screen
         ZMK_MACRO(toPC, bindings
             = <&macro_press &kp LGUI>
             , <&macro_tap &kp P>
             , <&macro_release &kp LGUI>
             , <&macro_tap &kp UP &kp ENTER &kp ESC>
-        ;),
+        ;)
     };
 };
 
