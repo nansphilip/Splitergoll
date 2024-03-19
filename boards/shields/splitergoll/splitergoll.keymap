@@ -143,18 +143,18 @@ LAYER(SECONDARY,
             = <&macro_press &kp LCTRL &kp LGUI>
             , <&macro_tap &kp V>
             , <&macro_release &kp LCTRL &kp LGUI>
-            , <&macro_wait_time 800>, <&macro_tap &kp UP>
-            , <&macro_wait_time 100>, <&macro_tap &kp ENTER>
-            , <&macro_wait_time 100>, <&macro_tap &kp ESC>
+            , <&macro_wait_time 1200>, <&macro_tap &kp UP>
+            , <&macro_wait_time 200>, <&macro_tap &kp ENTER>
+            , <&macro_wait_time 200>, <&macro_tap &kp ESC>
         ;)
         // To headphones
         ZMK_MACRO(toHeadphones, bindings
             = <&macro_press &kp LCTRL &kp LGUI>
             , <&macro_tap &kp V>
             , <&macro_release &kp LCTRL &kp LGUI>
-            , <&macro_wait_time 800>, <&macro_tap &kp DOWN>
-            , <&macro_wait_time 100>, <&macro_tap &kp ENTER>
-            , <&macro_wait_time 100>, <&macro_tap &kp ESC>
+            , <&macro_wait_time 1200>, <&macro_tap &kp DOWN>
+            , <&macro_wait_time 200>, <&macro_tap &kp ENTER>
+            , <&macro_wait_time 200>, <&macro_tap &kp ESC>
         ;)
 
         // To PC screen
@@ -162,18 +162,18 @@ LAYER(SECONDARY,
             = <&macro_press &kp LGUI>
             , <&macro_tap &kp P>
             , <&macro_release &kp LGUI>
-            , <&macro_wait_time 800>, <&macro_tap &kp DOWN>
-            , <&macro_wait_time 100>, <&macro_tap &kp ENTER>
-            , <&macro_wait_time 100>, <&macro_tap &kp ESC>
+            , <&macro_wait_time 1200>, <&macro_tap &kp DOWN>
+            , <&macro_wait_time 200>, <&macro_tap &kp ENTER>
+            , <&macro_wait_time 200>, <&macro_tap &kp ESC>
         ;)
         // To TV screen
         ZMK_MACRO(toPC, bindings
             = <&macro_press &kp LGUI>
             , <&macro_tap &kp P>
             , <&macro_release &kp LGUI>
-            , <&macro_wait_time 800>, <&macro_tap &kp UP>
-            , <&macro_wait_time 100>, <&macro_tap &kp ENTER>
-            , <&macro_wait_time 100>, <&macro_tap &kp ESC>
+            , <&macro_wait_time 1200>, <&macro_tap &kp UP>
+            , <&macro_wait_time 200>, <&macro_tap &kp ENTER>
+            , <&macro_wait_time 200>, <&macro_tap &kp ESC>
         ;)
     };
 };
