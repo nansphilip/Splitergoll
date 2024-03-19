@@ -141,8 +141,8 @@ LAYER(SECONDARY,
         // To speakers
         ZMK_MACRO(
             toSpeakers,
-            wait-ms = <50>,
-            tap-ms = <50>,
+            wait-ms = <50>;
+            tap-ms = <50>;
             bindings
             = <&macro_press &kp LCTRL &kp LGUI>
             , <&macro_tap &kp V>
@@ -153,8 +153,8 @@ LAYER(SECONDARY,
         // To headphones
         ZMK_MACRO(
             toHeadphones,
-            wait-ms = <50>,
-            tap-ms = <50>,
+            wait-ms = <50>;
+            tap-ms = <50>;
             bindings
             = <&macro_press &kp LCTRL &kp LGUI>
             , <&macro_tap &kp V>
@@ -166,8 +166,8 @@ LAYER(SECONDARY,
         // To PC screen
         ZMK_MACRO(
             toTV,
-            wait-ms = <50>,
-            tap-ms = <50>,
+            wait-ms = <50>;
+            tap-ms = <50>;
             bindings
             = <&macro_press &kp LGUI>
             , <&macro_tap &kp P>
@@ -178,8 +178,8 @@ LAYER(SECONDARY,
         // To TV screen
         ZMK_MACRO(
             toPC,
-            wait-ms = <50>,
-            tap-ms = <50>,
+            wait-ms = <50>;
+            tap-ms = <50>;
             bindings
             = <&macro_press &kp LGUI>
             , <&macro_tap &kp P>
