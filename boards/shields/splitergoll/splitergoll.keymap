@@ -140,50 +140,50 @@ LAYER(SECONDARY,
     macros {
         // To speakers
         ZMK_MACRO(toSpeakers,
-        wait-ms = <50>;
-        tap-ms = <50>;
+        wait-ms = <100>;
+        tap-ms = <100>;
         bindings
             = <&macro_press &kp LCTRL &kp LGUI>
             , <&macro_tap &kp V>
             , <&macro_release &kp LCTRL &kp LGUI>
-            , <&macro_wait_time 1200>, <&macro_tap &kp UP>
+            , <&macro_wait_time 1500>, <&macro_tap &kp UP>
             , <&macro_wait_time 200>, <&macro_tap &kp ENTER>
             , <&macro_wait_time 200>, <&macro_tap &kp ESC>
         ;)
         // To headphones
         ZMK_MACRO(toHeadphones,
-        wait-ms = <50>;
-        tap-ms = <50>;
+        wait-ms = <100>;
+        tap-ms = <100>;
         bindings
             = <&macro_press &kp LCTRL &kp LGUI>
             , <&macro_tap &kp V>
             , <&macro_release &kp LCTRL &kp LGUI>
-            , <&macro_wait_time 1200>, <&macro_tap &kp DOWN>
+            , <&macro_wait_time 1500>, <&macro_tap &kp DOWN>
             , <&macro_wait_time 200>, <&macro_tap &kp ENTER>
             , <&macro_wait_time 200>, <&macro_tap &kp ESC>
         ;)
 
         // To PC screen
         ZMK_MACRO(toTV,
-        wait-ms = <50>;
-        tap-ms = <50>;
+        wait-ms = <100>;
+        tap-ms = <100>;
         bindings
             = <&macro_press &kp LGUI>
             , <&macro_tap &kp P>
             , <&macro_release &kp LGUI>
-            , <&macro_wait_time 1200>, <&macro_tap &kp DOWN>
+            , <&macro_wait_time 1500>, <&macro_tap &kp DOWN>
             , <&macro_wait_time 200>, <&macro_tap &kp ENTER>
             , <&macro_wait_time 200>, <&macro_tap &kp ESC>
         ;)
         // To TV screen
         ZMK_MACRO(toPC,
-        wait-ms = <50>;
-        tap-ms = <50>;
+        wait-ms = <100>;
+        tap-ms = <100>;
         bindings
             = <&macro_press &kp LGUI>
             , <&macro_tap &kp P>
             , <&macro_release &kp LGUI>
-            , <&macro_wait_time 1200>, <&macro_tap &kp UP>
+            , <&macro_wait_time 1500>, <&macro_tap &kp UP>
             , <&macro_wait_time 200>, <&macro_tap &kp ENTER>
             , <&macro_wait_time 200>, <&macro_tap &kp ESC>
         ;)
