@@ -135,6 +135,44 @@ LAYER(SECONDARY,
 , &inc_dec_kp LEFT RIGHT &inc_dec_kp LEFT RIGHT)
 
 
+// Macros
+/ {
+    macros {
+        // To speakers
+        ZMK_MACRO(toSpeakers, bindings
+            = <&macro_press &kp LCTRL &kp LGUI>
+            , <&macro_tap &kp V>
+            , <&macro_release &kp LCTRL &kp LGUI>
+            , <&macro_tap &kp UP &kp ENTER &kp ESC>
+        ;),
+        // To headphones
+        ZMK_MACRO(toHeadphones, bindings
+            = <&macro_press &kp LCTRL &kp LGUI>
+            , <&macro_tap &kp V>
+            , <&macro_release &kp LCTRL &kp LGUI>
+            , <&macro_tap &kp DOWN &kp ENTER &kp ESC>
+        ;),
+
+        // To PC screen
+        ZMK_MACRO(toTV, bindings
+            = <&macro_press &kp LGUI>
+            , <&macro_tap &kp P>
+            , <&macro_release &kp LGUI>
+            , <&macro_tap &kp DOWN &kp ENTER &kp ESC>
+        ;),
+        // To TV screen
+        ZMK_MACRO(toPC, bindings
+            = <&macro_press &kp LGUI>
+            , <&macro_tap &kp P>
+            , <&macro_release &kp LGUI>
+            , <&macro_tap &kp UP &kp ENTER &kp ESC>
+        ;),
+    };
+};
+
+// Tap dance
+TAP2(switch_audio, &toSpeakers, &toHeadphones)
+TAP2(switch_screen, &toTV, &toPC)
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 // ┃         Tertiary         ┃
@@ -142,9 +180,9 @@ LAYER(SECONDARY,
 // ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 // ┃    F1     ┃    F2     ┃    F3     ┃    F4     ┃    F5     ┃    F6     ┃   ┃    F7     ┃    F8     ┃    F9     ┃    F10    ┃    F11    ┃    F12    ┃
 // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-// ┃           ┃           ┃           ┃           ┃Rec. Screen┃Capt Screen┃   ┃ ALT + F4  ┃           ┃           ┃           ┃           ┃           ┃
+// ┃           ┃           ┃           ┃           ┃ Sw. Audio ┃Rec. Screen┃   ┃ ALT + F4  ┃           ┃           ┃           ┃           ┃           ┃
 // ┗━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┛
-//             ┃           ┃           ┃           ┃           ┃           ┃   ┃ To Gaming ┃           ┃           ┃           ┃           ┃
+//             ┃           ┃           ┃           ┃ Sw. Screen┃Capt Screen┃   ┃ To Gaming ┃           ┃           ┃           ┃           ┃
 //             ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //           ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓
 //           ┃ Bootloader┃ ┃           ┃           ┃     L3    ┃           ┃   ┃           ┃     L3    ┃           ┃           ┃ ┃Del BT link┃
@@ -152,8 +190,8 @@ LAYER(SECONDARY,
 LAYER(TERTIARY,
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
     &kp F1      &kp F2      &kp F3      &kp F4      &kp F5      &kp F6
-    no___       no___       no___       no___       &kp LS(PSCRN) &kp LC(PSCRN)
-                no___       no___       no___       no___       no___
+    no___       no___       no___       no___     &switch_audio &kp LS(PSCRN) 
+                no___       no___       no___    &switch_screen &kp LC(PSCRN)
                 &bootloader trs__       trs__       trs__       trs__ 
                                                                                 &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
                                                                                 &kp LA(F4)  no___       no___       no___       no___       no___
@@ -164,6 +202,7 @@ LAYER(TERTIARY,
 
 
 
+// No -> ESC
 TAP2(no_esc, &none, &kp ESC)
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
