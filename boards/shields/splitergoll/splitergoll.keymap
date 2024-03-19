@@ -29,11 +29,11 @@ MORPH(dot_excl, LSFT, &kp FR_DOT, &kp FR_EXCL)         // . and !
 MORPH(semi_slsh, LSFT, &kp FR_SEMI, &kp FR_SLASH)      // ; and /
 MORPH(colon_bsls, LSFT, &kp FR_COLON, &kp FR_BSLASH)   // : and \
 
-// Tap dance                            |   1 tap   |   2 taps   |
-// ------------------------------------ | --------- | ---------- |
-TAP2(sftnlock, &kp LSHIFT, &kp CAPS) // | Shift     | Caps lock  |
-TAP2(layer_1, &mo 1, &mo 2)          // | Layer 1   | Layer 2    |
-TAP2(layer_2, &mo 2, &mo 1)          // | Layer 2   | Layer 1    |
+// Tap dance                            |   1 tap   |   2 taps   |   3 taps   |
+// ------------------------------------ | --------- | ---------- | ---------- |
+TAP2(sftnlock, &kp LSHIFT, &kp CAPS) // | Shift     | Caps lock  |            |
+TAP2(layer_1, &mo 1, &mo 2, &mo 3)   // | Layer 1   | Layer 2    | Layer 3    |
+TAP2(layer_2, &mo 2, &mo 1, &mo 3)   // | Layer 2   | Layer 1    | Layer 3    |
 
 // Symbols signification
 // `+` means `double tap`
@@ -52,7 +52,7 @@ TAP2(layer_2, &mo 2, &mo 1)          // | Layer 2   | Layer 1    |
 //             ┃     W     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃  , ou ?   ┃  . ou !   ┃  ; ou /   ┃  : ou \   ┃
 //             ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //           ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓
-//           ┃Play->Mute ┃ ┃   CTRL    ┃    ALT    ┃   L2+L1   ┃   SPACE   ┃   ┃SHIFT+CAPS ┃   L1+L2   ┃   ENTER   ┃    WIN    ┃ ┃           ┃
+//           ┃Play->Mute ┃ ┃   CTRL    ┃    ALT    ┃ L2 +L1 +L3┃   SPACE   ┃   ┃SHIFT+CAPS ┃ L1 +L2 +L3┃   ENTER   ┃    WIN    ┃ ┃           ┃
 //           ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛
 LAYER(DEFAULT,
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
@@ -132,7 +132,7 @@ LAYER(SECONDARY,
                                                                                 &kp KP_DOT  &kp FR_1    &kp FR_2    &kp FR_3    &kp FR_PERC
                                                                                 trs__       trs__       trs__       trs__       no___
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
-, &inc_dec_kp LEFT RIGHT &inc_dec_kp UP DOWN)
+, &inc_dec_kp LEFT RIGHT &inc_dec_kp LEFT RIGHT)
 
 
 
@@ -179,7 +179,7 @@ LAYER(TERTIARY,
 //           ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛
 LAYER(GAMING,
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
-    &mt ESC FR_L &kp FR_G    &kp FR_A    &kp FR_T    &kp FR_E    &kp FR_R
+    &mt ESC     &kp FR_G    &kp FR_A    &kp FR_T    &kp FR_E    &kp FR_R
     &kp TAB     &kp LSHIFT  &kp FR_Q    &kp FR_Z    &kp FR_D    &kp FR_F
                 &kp LCTRL   &kp FR_J    &kp FR_S    &kp FR_V    &kp FR_B
                 &to 0       &kp FR_C    &kp FR_W    &kp FR_X    &kp SPACE
