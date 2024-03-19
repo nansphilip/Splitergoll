@@ -179,7 +179,7 @@ LAYER(TERTIARY,
 //           ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛
 LAYER(GAMING,
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
-    &mt ESC     &kp FR_G    &kp FR_A    &kp FR_T    &kp FR_E    &kp FR_R
+    &mt ESC none &kp FR_G    &kp FR_A    &kp FR_T    &kp FR_E    &kp FR_R
     &kp TAB     &kp LSHIFT  &kp FR_Q    &kp FR_Z    &kp FR_D    &kp FR_F
                 &kp LCTRL   &kp FR_J    &kp FR_S    &kp FR_V    &kp FR_B
                 &to 0       &kp FR_C    &kp FR_W    &kp FR_X    &kp SPACE
