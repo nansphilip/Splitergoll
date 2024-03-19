@@ -29,11 +29,11 @@ MORPH(dot_excl, LSFT, &kp FR_DOT, &kp FR_EXCL)         // . and !
 MORPH(semi_slsh, LSFT, &kp FR_SEMI, &kp FR_SLASH)      // ; and /
 MORPH(colon_bsls, LSFT, &kp FR_COLON, &kp FR_BSLASH)   // : and \
 
-// Tap dance                            |   1 tap   |   2 taps   |   3 taps   |
-// ------------------------------------ | --------- | ---------- | ---------- |
-TAP2(sftnlock, &kp LSHIFT, &kp CAPS) // | Shift     | Caps lock  |            |
-TAP3(layer_1, &mo 1, &mo 2, &mo 3)   // | Layer 1   | Layer 2    | Layer 3    |
-TAP3(layer_2, &mo 2, &mo 1, &mo 3)   // | Layer 2   | Layer 1    | Layer 3    |
+// Tap dance                            |   1 tap   |   2 taps   |
+// ------------------------------------ | --------- | ---------- |
+TAP2(sftnlock, &kp LSHIFT, &kp CAPS) // | Shift     | Caps lock  |
+TAP3(layer_1, &mo 1, &mo 2)          // | Layer 1   | Layer 2    |
+TAP3(layer_2, &mo 2, &mo 1)          // | Layer 2   | Layer 1    |
 
 // Symbols signification
 // `+` means `double tap`
@@ -86,8 +86,8 @@ LAYER(DEFAULT,
 //           ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛
 LAYER(PRIMARY,
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
-    &kp BSPC    no___       &kp HOME    no___       &kp END     no___
-    &kp DEL     no___       &kp LEFT    &kp UP      &kp RIGHT   no___
+    no___       no___       &kp HOME    no___       &kp END     no___
+    no___       no___       &kp LEFT    &kp UP      &kp RIGHT   no___
                 no___       &kp CLEFT   &kp DOWN    &kp CRIGHT  no___
                 no___       trs__       trs__       trs__       &kp LSHIFT
                                                                                 &kp FR_QUOT &kp FR_LPAR &kp FR_RPAR &kp FR_LCRO &kp FR_RCRO trs__
@@ -143,7 +143,7 @@ LAYER(SECONDARY,
             = <&macro_press &kp LCTRL &kp LGUI>
             , <&macro_tap &kp V>
             , <&macro_release &kp LCTRL &kp LGUI>
-            , <&macro_wait_time 500>, <&macro_tap &kp UP>
+            , <&macro_wait_time 800>, <&macro_tap &kp UP>
             , <&macro_wait_time 100>, <&macro_tap &kp ENTER>
             , <&macro_wait_time 100>, <&macro_tap &kp ESC>
         ;)
@@ -152,7 +152,7 @@ LAYER(SECONDARY,
             = <&macro_press &kp LCTRL &kp LGUI>
             , <&macro_tap &kp V>
             , <&macro_release &kp LCTRL &kp LGUI>
-            , <&macro_wait_time 500>, <&macro_tap &kp DOWN>
+            , <&macro_wait_time 800>, <&macro_tap &kp DOWN>
             , <&macro_wait_time 100>, <&macro_tap &kp ENTER>
             , <&macro_wait_time 100>, <&macro_tap &kp ESC>
         ;)
@@ -162,7 +162,7 @@ LAYER(SECONDARY,
             = <&macro_press &kp LGUI>
             , <&macro_tap &kp P>
             , <&macro_release &kp LGUI>
-            , <&macro_wait_time 500>, <&macro_tap &kp DOWN>
+            , <&macro_wait_time 800>, <&macro_tap &kp DOWN>
             , <&macro_wait_time 100>, <&macro_tap &kp ENTER>
             , <&macro_wait_time 100>, <&macro_tap &kp ESC>
         ;)
@@ -171,7 +171,7 @@ LAYER(SECONDARY,
             = <&macro_press &kp LGUI>
             , <&macro_tap &kp P>
             , <&macro_release &kp LGUI>
-            , <&macro_wait_time 500>, <&macro_tap &kp UP>
+            , <&macro_wait_time 800>, <&macro_tap &kp UP>
             , <&macro_wait_time 100>, <&macro_tap &kp ENTER>
             , <&macro_wait_time 100>, <&macro_tap &kp ESC>
         ;)
