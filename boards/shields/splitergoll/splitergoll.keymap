@@ -143,7 +143,8 @@ LAYER(SECONDARY,
             = <&macro_press &kp LCTRL &kp LGUI>
             , <&macro_tap &kp V>
             , <&macro_release &kp LCTRL &kp LGUI>
-            , <&macro_wait_time 1500>
+            , <&macro_wait_time 2000>
+            , <&macro_tap_time 200>
             , <&macro_tap &kp UP &kp ENTER &kp ESC>
         ;)
         // To headphones
@@ -151,7 +152,8 @@ LAYER(SECONDARY,
             = <&macro_press &kp LCTRL &kp LGUI>
             , <&macro_tap &kp V>
             , <&macro_release &kp LCTRL &kp LGUI>
-            , <&macro_wait_time 1500>
+            , <&macro_wait_time 2000>
+            , <&macro_tap_time 200>
             , <&macro_tap &kp DOWN &kp ENTER &kp ESC>
         ;)
 
@@ -160,7 +162,8 @@ LAYER(SECONDARY,
             = <&macro_press &kp LGUI>
             , <&macro_tap &kp P>
             , <&macro_release &kp LGUI>
-            , <&macro_wait_time 1500>
+            , <&macro_wait_time 2000>
+            , <&macro_tap_time 200>
             , <&macro_tap &kp DOWN &kp ENTER &kp ESC>
         ;)
         // To TV screen
@@ -168,7 +171,8 @@ LAYER(SECONDARY,
             = <&macro_press &kp LGUI>
             , <&macro_tap &kp P>
             , <&macro_release &kp LGUI>
-            , <&macro_wait_time 1500>
+            , <&macro_wait_time 2000>
+            , <&macro_tap_time 200>
             , <&macro_tap &kp UP &kp ENTER &kp ESC>
         ;)
     };
