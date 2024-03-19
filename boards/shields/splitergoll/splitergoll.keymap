@@ -139,40 +139,52 @@ LAYER(SECONDARY,
 / {
     macros {
         // To speakers
-        ZMK_MACRO(toSpeakers, bindings
+        ZMK_MACRO(
+            toSpeakers,
+            wait-ms = <50>,
+            tap-ms = <50>,
+            bindings
             = <&macro_press &kp LCTRL &kp LGUI>
             , <&macro_tap &kp V>
             , <&macro_release &kp LCTRL &kp LGUI>
-            , <&macro_wait_time 2000>
-            , <&macro_tap_time 200>
+            , <&macro_wait_time 500>
             , <&macro_tap &kp UP &kp ENTER &kp ESC>
         ;)
         // To headphones
-        ZMK_MACRO(toHeadphones, bindings
+        ZMK_MACRO(
+            toHeadphones,
+            wait-ms = <50>,
+            tap-ms = <50>,
+            bindings
             = <&macro_press &kp LCTRL &kp LGUI>
             , <&macro_tap &kp V>
             , <&macro_release &kp LCTRL &kp LGUI>
-            , <&macro_wait_time 2000>
-            , <&macro_tap_time 200>
+            , <&macro_wait_time 500>
             , <&macro_tap &kp DOWN &kp ENTER &kp ESC>
         ;)
 
         // To PC screen
-        ZMK_MACRO(toTV, bindings
+        ZMK_MACRO(
+            toTV,
+            wait-ms = <50>,
+            tap-ms = <50>,
+            bindings
             = <&macro_press &kp LGUI>
             , <&macro_tap &kp P>
             , <&macro_release &kp LGUI>
-            , <&macro_wait_time 2000>
-            , <&macro_tap_time 200>
+            , <&macro_wait_time 500>
             , <&macro_tap &kp DOWN &kp ENTER &kp ESC>
         ;)
         // To TV screen
-        ZMK_MACRO(toPC, bindings
+        ZMK_MACRO(
+            toPC,
+            wait-ms = <50>,
+            tap-ms = <50>,
+            bindings
             = <&macro_press &kp LGUI>
             , <&macro_tap &kp P>
             , <&macro_release &kp LGUI>
-            , <&macro_wait_time 2000>
-            , <&macro_tap_time 200>
+            , <&macro_wait_time 500>
             , <&macro_tap &kp UP &kp ENTER &kp ESC>
         ;)
     };
