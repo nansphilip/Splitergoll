@@ -149,7 +149,10 @@ LAYER(SECONDARY,
                 , <&macro_tap &kp V>
                 , <&macro_release &kp LCTRL &kp LGUI>
                 , <&macro_wait_time 1500>
-                , <&macro_tap &kp KC_UP &kp ENTER &kp ESC>
+                , <&macro_press &kp LSHFT>
+                , <&macro_tap &kp FR_8>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp ENTER &kp ESC>
         ;};
         // To headphones
         toHeadphones: toHeadphones {
@@ -162,7 +165,10 @@ LAYER(SECONDARY,
                 , <&macro_tap &kp V>
                 , <&macro_release &kp LCTRL &kp LGUI>
                 , <&macro_wait_time 1500>
-                , <&macro_tap &kp KC_DOWN &kp ENTER &kp ESC>
+                , <&macro_press &kp LSHFT>
+                , <&macro_tap &kp FR_2>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp ENTER &kp ESC>
         ;};
 
         // To PC screen
@@ -176,7 +182,10 @@ LAYER(SECONDARY,
                 , <&macro_tap &kp P>
                 , <&macro_release &kp LGUI>
                 , <&macro_wait_time 1500>
-                , <&macro_tap &kp KC_DOWN &kp ENTER &kp ESC>
+                , <&macro_press &kp LSHFT>
+                , <&macro_tap &kp FR_2>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp ENTER &kp ESC>
         ;};
 
         // To TV screen
@@ -190,7 +199,10 @@ LAYER(SECONDARY,
                 , <&macro_tap &kp P>
                 , <&macro_release &kp LGUI>
                 , <&macro_wait_time 1500>
-                , <&macro_tap &kp KC_UP &kp ENTER &kp ESC>
+                , <&macro_press &kp LSHFT>
+                , <&macro_tap &kp FR_8>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp ENTER &kp ESC>
         ;};
 
 
