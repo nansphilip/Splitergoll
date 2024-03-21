@@ -238,8 +238,8 @@ TAP2(switch_screen, &toTV, &toPC)
 LAYER(TERTIARY,
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
     &kp F1      &kp F2      &kp F3      &kp F4      &kp F5      &kp F6
-    no___       no___       no___       no___     &switch_audio &kp LS(PSCRN) 
-                no___       no___       no___    &switch_screen &kp LC(PSCRN)
+    no___       no___       no___       &toSpeakers &toHeadphones &kp LS(PSCRN) 
+                no___       no___       &toTV       &toPC       &kp LC(PSCRN)
                 &bootloader trs__       trs__       trs__       trs__ 
                                                                                 &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
                                                                                 &kp LA(F4)  no___       no___       no___       no___       no___
