@@ -148,10 +148,7 @@ LAYER(SECONDARY,
                 = <&macro_press &kp LCTRL &kp LGUI>
                 , <&macro_tap &kp FR_V>
                 , <&macro_release &kp LCTRL &kp LGUI>
-
-                , <&macro_wait_time 500>
-                , <&macro_tap &kp FR_V>
-                , <&macro_tap &kp UP &kp ENTER &kp ESC>
+                , <&macro_tap &kp FR_V &kp UP &kp SPACE &kp ESC>
         ;};
         // To headphones
         toHeadphones: toHeadphones {
@@ -161,12 +158,9 @@ LAYER(SECONDARY,
             tap-ms = <40>;
             bindings
                 = <&macro_press &kp LCTRL &kp LGUI>
-                , <&macro_tap &none>
+                , <&macro_tap &kp FR_V>
                 , <&macro_release &kp LCTRL &kp LGUI>
-
-                , <&macro_wait_time 500>
-                , <&macro_tap &none>
-                , <&macro_tap &kp DOWN &kp ENTER &kp ESC>
+                , <&macro_tap &kp FR_V &kp DOWN &kp SPACE &kp ESC>
         ;};
 
         // To PC screen
@@ -177,12 +171,9 @@ LAYER(SECONDARY,
             tap-ms = <40>;
             bindings
                 = <&macro_press &kp LGUI>
-                , <&macro_tap &kp FR_P>
+                , <&macro_tap &kp FR_P &kp FR_P>
                 , <&macro_release &kp LGUI>
-
-                , <&macro_wait_time 500>
-                , <&macro_tap &none>
-                , <&macro_tap &kp DOWN &kp ENTER &kp ESC>
+                , <&macro_tap &kp ESC>
         ;};
 
         // To TV screen
@@ -193,12 +184,9 @@ LAYER(SECONDARY,
             tap-ms = <40>;
             bindings
                 = <&macro_press &kp LGUI>
-                , <&macro_tap &kp FR_P>
+                , <&macro_tap &kp FR_P &kp FR_P &kp FR_P &kp FR_P>
                 , <&macro_release &kp LGUI>
-
-                , <&macro_wait_time 500>
-                , <&macro_tap &none>
-                , <&macro_tap &kp UP &kp ENTER &kp ESC>
+                , <&macro_tap &kp ESC>
         ;};
 
 
