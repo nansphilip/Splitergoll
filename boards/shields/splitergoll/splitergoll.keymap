@@ -145,14 +145,7 @@ LAYER(SECONDARY,
             wait-ms = <20>;
             tap-ms = <20>;
             bindings
-                = <&macro_press &kp LCTRL &kp LGUI>
-                , <&macro_tap &kp V>
-                , <&macro_release &kp LCTRL &kp LGUI>
-                , <&macro_wait_time 1500>
-                , <&macro_press &kp LSHIFT>
-                , <&macro_tap &kp KP_N8>
-                , <&macro_release &kp LSHIFT>
-                , <&macro_tap &kp ENTER &kp ESC>
+                = <&kp ESC>
         ;};
         // To headphones
         toHeadphones: toHeadphones {
@@ -161,14 +154,7 @@ LAYER(SECONDARY,
             wait-ms = <20>;
             tap-ms = <20>;
             bindings
-                = <&macro_press &kp LCTRL &kp LGUI>
-                , <&macro_tap &kp V>
-                , <&macro_release &kp LCTRL &kp LGUI>
-                , <&macro_wait_time 1500>
-                , <&macro_press &kp LSHIFT>
-                , <&macro_tap &kp KP_N2>
-                , <&macro_release &kp LSHIFT>
-                , <&macro_tap &kp ENTER &kp ESC>
+                = <&kp ESC>
         ;};
 
         // To PC screen
@@ -178,14 +164,23 @@ LAYER(SECONDARY,
             wait-ms = <20>;
             tap-ms = <20>;
             bindings
-                = <&macro_press &kp LGUI>
-                , <&macro_tap &kp P>
-                , <&macro_release &kp LGUI>
-                , <&macro_wait_time 1500>
-                , <&macro_press &kp LSHIFT>
-                , <&macro_tap &kp KP_N2>
-                , <&macro_release &kp LSHIFT>
-                , <&macro_tap &kp ENTER &kp ESC>
+                = <&kp LGUI>
+                , <&kp FR_G &kp FR_I &kp FR_T>
+                , <&kp SPACE>
+                , <&kp FR_B &kp FR_A &kp FR_S &kp FR_H>
+                , <&kp ENTER>
+                , <&macro_wait_time 500>
+                , <&kp FR_D &kp FR_I &kp FR_S &kp FR_P &kp FR_L &kp FR_A &kp FR_Y>
+                , <&kp FR_S &kp FR_W &kp FR_I &kp FR_T &kp FR_C &kp FR_H>
+                , <&kp FR_DOT>
+                , <&kp FR_E &kp FR_X &kp FR_E>
+                , <&kp SPACE>
+                , <&kp FR_SLASH>
+                , <&kp FR_I &kp FR_N &kp FR_T &kp FR_E &kp FR_R &kp FR_N &kp FR_A &kp FR_L>
+                , <&kp ENTER>
+                , <&macro_wait_time 500>
+                , <&kp FR_E &kp FR_X &kp FR_I &kp FR_T>
+                , <&kp ENTER>
         ;};
 
         // To TV screen
@@ -195,15 +190,24 @@ LAYER(SECONDARY,
             wait-ms = <20>;
             tap-ms = <20>;
             bindings
-                = <&macro_press &kp LGUI>
-                , <&macro_tap &kp P>
-                , <&macro_release &kp LGUI>
-                , <&macro_wait_time 1500>
-                , <&macro_press &kp LSHIFT>
-                , <&macro_tap &kp KP_N8>
-                , <&macro_release &kp LSHIFT>
-                , <&macro_tap &kp ENTER &kp ESC>
-        ;};
+                = <&kp LGUI>
+                , <&kp FR_G &kp FR_I &kp FR_T>
+                , <&kp SPACE>
+                , <&kp FR_B &kp FR_A &kp FR_S &kp FR_H>
+                , <&kp ENTER>
+                , <&macro_wait_time 500>
+                , <&kp FR_D &kp FR_I &kp FR_S &kp FR_P &kp FR_L &kp FR_A &kp FR_Y>
+                , <&kp FR_S &kp FR_W &kp FR_I &kp FR_T &kp FR_C &kp FR_H>
+                , <&kp FR_DOT>
+                , <&kp FR_E &kp FR_X &kp FR_E>
+                , <&kp SPACE>
+                , <&kp FR_SLASH>
+                , <&kp FR_E &kp FR_X &kp FR_T &kp FR_E &kp FR_R &kp FR_N &kp FR_A &kp FR_L>
+                , <&kp ENTER>
+                , <&macro_wait_time 500>
+                , <&kp FR_E &kp FR_X &kp FR_I &kp FR_T>
+                , <&kp ENTER>
+            ;};
 
 
         // Open bash terminal
@@ -213,9 +217,11 @@ LAYER(SECONDARY,
             wait-ms = <20>;
             tap-ms = <20>;
             bindings
-                = <&kp LGUI &kp FR_G &kp FR_I &kp FR_T>
+                = <&kp LGUI>
+                , <&kp FR_G &kp FR_I &kp FR_T>
                 , <&kp SPACE>
-                , <&kp FR_B &kp FR_A &kp FR_S &kp FR_H &kp ENTER>
+                , <&kp FR_B &kp FR_A &kp FR_S &kp FR_H>
+                , <&kp ENTER>
         ;};
     };
 };
