@@ -149,9 +149,7 @@ LAYER(SECONDARY,
                 , <&macro_tap &kp V>
                 , <&macro_release &kp LCTRL &kp LGUI>
                 , <&macro_wait_time 1000>
-                , <KC_UP>
-                , <KC_ENTER>
-                , <KC_ESC>
+                , <&kp UP &kp ENTER &kp ESC>
         ;};
         // To headphones
         toHeadphones: toHeadphones {
@@ -164,9 +162,7 @@ LAYER(SECONDARY,
                 , <&macro_tap &kp V>
                 , <&macro_release &kp LCTRL &kp LGUI>
                 , <&macro_wait_time 1000>
-                , <KC_DOWN>
-                , <KC_ENTER>
-                , <KC_ESC>
+                , <&kp DOWN &kp ENTER &kp ESC>
         ;};
 
         // To PC screen
