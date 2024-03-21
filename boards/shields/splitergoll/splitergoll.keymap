@@ -142,8 +142,8 @@ LAYER(SECONDARY,
         toSpeakers: toSpeakers {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings
                 = <&macro_press &kp LCTRL &kp LGUI>
                 , <&macro_tap &kp FR_V>
@@ -157,8 +157,8 @@ LAYER(SECONDARY,
         toHeadphones: toHeadphones {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings
                 = <&macro_press &kp LCTRL &kp LGUI>
                 , <&macro_tap &kp FR_V>
@@ -173,8 +173,8 @@ LAYER(SECONDARY,
         toTV: toTV {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings
                 = <&macro_press &kp LGUI>
                 , <&macro_tap &kp FR_P>
@@ -189,8 +189,8 @@ LAYER(SECONDARY,
         toPC: toPC {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings
                 = <&macro_press &kp LGUI>
                 , <&macro_tap &kp FR_P>
@@ -206,8 +206,8 @@ LAYER(SECONDARY,
         gitBash: gitBash {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings
                 = <&kp LGUI>
                 , <&kp FR_G &kp FR_I &kp FR_T>
