@@ -176,8 +176,11 @@ LAYER(SECONDARY,
                 , <&macro_tap &kp P>
                 , <&macro_release &kp LGUI>
                 , <&macro_wait_time 1000>
-                , <&kp DOWN &kp ENTER &kp ESC>
-        ;};
+                , <&kp DOWN>
+                , <&kp ENTER>
+                , <&kp ESC>
+        };
+
         // To TV screen
         toPC: toPC {
             compatible = "zmk,behavior-macro";
@@ -189,8 +192,11 @@ LAYER(SECONDARY,
                 , <&macro_tap &kp P>
                 , <&macro_release &kp LGUI>
                 , <&macro_wait_time 1000>
-                , <&kp UP &kp ENTER &kp ESC>
-        ;};
+                , <&kp UP>
+                , <&kp ENTER>
+                , <&kp ESC>
+        };
+
 
         // Open bash terminal
         gitBash: gitBash {
