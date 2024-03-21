@@ -142,8 +142,8 @@ LAYER(SECONDARY,
         toSpeakers: toSpeakers {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <50>;
-            tap-ms = <50>;
+            wait-ms = <20>;
+            tap-ms = <20>;
             bindings
                 = <&macro_press &kp LCTRL &kp LGUI>
                 , <&macro_tap &kp V>
@@ -155,8 +155,8 @@ LAYER(SECONDARY,
         toHeadphones: toHeadphones {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <50>;
-            tap-ms = <50>;
+            wait-ms = <20>;
+            tap-ms = <20>;
             bindings
                 = <&macro_press &kp LCTRL &kp LGUI>
                 , <&macro_tap &kp V>
@@ -169,8 +169,8 @@ LAYER(SECONDARY,
         toTV: toTV {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <50>;
-            tap-ms = <50>;
+            wait-ms = <20>;
+            tap-ms = <20>;
             bindings
                 = <&macro_press &kp LGUI>
                 , <&macro_tap &kp P>
@@ -179,14 +179,14 @@ LAYER(SECONDARY,
                 , <&kp DOWN>
                 , <&kp ENTER>
                 , <&kp ESC>
-        };
+        ;};
 
         // To TV screen
         toPC: toPC {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <50>;
-            tap-ms = <50>;
+            wait-ms = <20>;
+            tap-ms = <20>;
             bindings
                 = <&macro_press &kp LGUI>
                 , <&macro_tap &kp P>
@@ -195,15 +195,15 @@ LAYER(SECONDARY,
                 , <&kp UP>
                 , <&kp ENTER>
                 , <&kp ESC>
-        };
+        ;};
 
 
         // Open bash terminal
         gitBash: gitBash {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <50>;
-            tap-ms = <50>;
+            wait-ms = <20>;
+            tap-ms = <20>;
             bindings
                 = <&kp LGUI &kp FR_G &kp FR_I &kp FR_T>
                 , <&kp SPACE>
