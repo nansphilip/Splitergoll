@@ -176,7 +176,7 @@ LAYER(SECONDARY,
                 , <&macro_tap &kp P>
                 , <&macro_release &kp LGUI>
                 , <&macro_wait_time 1000>
-                , <&macro_tap &kp DOWN_ARROW &kp ENTER &kp ESC>
+                , <&KC_DOWN &KC_ENTER &KC_ESC>
         ;};
 
         // To TV screen
@@ -190,7 +190,7 @@ LAYER(SECONDARY,
                 , <&macro_tap &kp P>
                 , <&macro_release &kp LGUI>
                 , <&macro_wait_time 1000>
-                , <&macro_tap &kp UP_ARROW &kp ENTER &kp ESC>
+                , <&KC_UP &KC_ENTER &KC_ESC>
         ;};
 
 
