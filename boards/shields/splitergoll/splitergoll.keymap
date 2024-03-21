@@ -135,6 +135,7 @@ LAYER(SECONDARY,
 , &inc_dec_kp LEFT RIGHT &inc_dec_kp LEFT RIGHT)
 
 
+
 // Macros
 / {
     macros {
@@ -153,10 +154,6 @@ LAYER(SECONDARY,
         ;};
     };
 };
-
-// Tap dance
-TAP2(switch_audio, &toSpeakers, &toHeadphones)
-TAP2(switch_screen, &toTV, &toPC)
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 // ┃         Tertiary         ┃
