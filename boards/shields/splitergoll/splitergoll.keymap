@@ -142,8 +142,8 @@ LAYER(SECONDARY,
         toSpeakers: toSpeakers {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <25>;
-            tap-ms = <25>;
+            wait-ms = <50>;
+            tap-ms = <50>;
             bindings
                 = <&macro_press &kp LCTRL &kp LGUI>
                 , <&macro_tap &kp V>
@@ -155,51 +155,53 @@ LAYER(SECONDARY,
         toHeadphones: toHeadphones {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <25>;
-            tap-ms = <25>;
+            wait-ms = <50>;
+            tap-ms = <50>;
             bindings
                 = <&macro_press &kp LCTRL &kp LGUI>
                 , <&macro_tap &kp V>
                 , <&macro_release &kp LCTRL &kp LGUI>
                 , <&macro_wait_time 1000>
-                , <&macro_tap &kp DOWN &kp ENTER &kp ESC>
+                , <&kp DOWN &kp ENTER &kp ESC>
         ;};
 
         // To PC screen
         toTV: toTV {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <25>;
-            tap-ms = <25>;
+            wait-ms = <50>;
+            tap-ms = <50>;
             bindings
                 = <&macro_press &kp LGUI>
                 , <&macro_tap &kp P>
                 , <&macro_release &kp LGUI>
                 , <&macro_wait_time 1000>
-                , <&macro_tap &kp DOWN &kp ENTER &kp ESC>
+                , <&kp DOWN &kp ENTER &kp ESC>
         ;};
         // To TV screen
         toPC: toPC {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <25>;
-            tap-ms = <25>;
+            wait-ms = <50>;
+            tap-ms = <50>;
             bindings
                 = <&macro_press &kp LGUI>
                 , <&macro_tap &kp P>
                 , <&macro_release &kp LGUI>
                 , <&macro_wait_time 1000>
-                , <&macro_tap &kp UP &kp ENTER &kp ESC>
+                , <&kp UP &kp ENTER &kp ESC>
         ;};
 
         // Open bash terminal
         gitBash: gitBash {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <25>;
-            tap-ms = <25>;
+            wait-ms = <50>;
+            tap-ms = <50>;
             bindings
-                = <&macro_tap &kp LGUI &kp FR_G &kp FR_I &kp FR_T &kp SPACE &kp FR_B &kp FR_A &kp FR_S &kp FR_H &kp ENTER>
+                = <&kp LGUI &kp FR_G &kp FR_I &kp FR_T>
+                , <&kp SPACE>
+                , <&kp FR_B &kp FR_A &kp FR_S &kp FR_H &kp ENTER>
         ;};
     };
 };
@@ -216,7 +218,7 @@ TAP2(switch_screen, &toTV, &toPC)
 // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 // ┃           ┃           ┃           ┃           ┃ Sw. Audio ┃Rec. Screen┃   ┃ ALT + F4  ┃           ┃           ┃           ┃           ┃           ┃
 // ┗━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┛
-//             ┃           ┃           ┃           ┃ Sw. Screen┃Capt Screen┃   ┃ To Gaming ┃           ┃           ┃           ┃           ┃
+//             ┃           ┃           ┃           ┃ Sw. Screen┃Capt Screen┃   ┃ To Gaming ┃ Git Bash  ┃           ┃           ┃           ┃
 //             ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //           ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓
 //           ┃ Bootloader┃ ┃           ┃           ┃     L3    ┃           ┃   ┃           ┃     L3    ┃           ┃           ┃ ┃Del BT link┃
@@ -229,7 +231,7 @@ LAYER(TERTIARY,
                 &bootloader trs__       trs__       trs__       trs__ 
                                                                                 &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
                                                                                 &kp LA(F4)  no___       no___       no___       no___       no___
-                                                                                &to 4       no___       no___       no___       no___
+                                                                                &to 4       &gitBash    no___       no___       no___
                                                                                 trs__       trs__       trs__       trs__       &bt BT_CLR_ALL
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 , &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN)
