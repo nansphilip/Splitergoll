@@ -145,9 +145,9 @@ LAYER(SECONDARY,
             wait-ms = <20>;
             tap-ms = <20>;
             bindings
-                = <&macro_press &kp LCTRL LGUI>
+                = <&macro_press &kp LCTRL &kp LGUI>
                 , <&macro_tap &kp V>
-                , <&macro_release &kp LCTRL LGUI>
+                , <&macro_release &kp LCTRL &kp LGUI>
                 , <&macro_wait_time 1000>
                 , <&macro_tap &kp SPACE>
                 , <&macro_tap &kp ENTER &kp ESC>
@@ -159,9 +159,9 @@ LAYER(SECONDARY,
             wait-ms = <20>;
             tap-ms = <20>;
             bindings
-                = <&macro_press &kp LCTRL LGUI>
+                = <&macro_press &kp LCTRL &kp LGUI>
                 , <&macro_tap &kp V>
-                , <&macro_release &kp LCTRL LGUI>
+                , <&macro_release &kp LCTRL &kp LGUI>
                 , <&macro_wait_time 1000>
                 , <&macro_tap &kp SPACE>
                 , <&macro_tap &kp DOWN &kp ENTER &kp ESC>
