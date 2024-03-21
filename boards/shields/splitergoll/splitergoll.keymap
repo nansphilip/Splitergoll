@@ -232,8 +232,8 @@ LAYER(TERTIARY,
                 no___       no___       no___    &switch_screen &kp LC(PSCRN)
                 &bootloader trs__       trs__       trs__       trs__ 
                                                                                 &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
-                                                                                &kp LA(F4)  no___       no___       no___       no___       no___
-                                                                                &to 4       &gitBash    no___       no___       no___
+                                                                                &kp LA(F4)  no___       &kp C_BRI_UP no___      no___       no___
+                                                                                &to 4       &gitBash    &kp C_BRI_DN no___      no___
                                                                                 trs__       trs__       trs__       trs__       &bt BT_CLR_ALL
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 , &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN)
