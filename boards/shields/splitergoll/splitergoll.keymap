@@ -138,58 +138,6 @@ LAYER(SECONDARY,
 // Macros
 / {
     macros {
-        // To speakers
-        toSpeakers: toSpeakers {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings
-                = <&macro_press &kp LCTRL &kp LGUI>
-                , <&macro_tap &kp FR_V>
-                , <&macro_release &kp LCTRL &kp LGUI>
-                , <&macro_tap &kp FR_V &kp UP &kp SPACE &kp ESC>
-        ;};
-        // To headphones
-        toHeadphones: toHeadphones {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings
-                = <&macro_press &kp LCTRL &kp LGUI>
-                , <&macro_tap &kp FR_V>
-                , <&macro_release &kp LCTRL &kp LGUI>
-                , <&macro_tap &kp FR_V &kp DOWN &kp SPACE &kp ESC>
-        ;};
-
-        // To PC screen
-        toTV: toTV {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings
-                = <&macro_press &kp LGUI>
-                , <&macro_tap &kp FR_P &kp FR_P>
-                , <&macro_release &kp LGUI>
-                , <&macro_tap &kp ESC>
-        ;};
-
-        // To TV screen
-        toPC: toPC {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings
-                = <&macro_press &kp LGUI>
-                , <&macro_tap &kp FR_P &kp FR_P &kp FR_P &kp FR_P>
-                , <&macro_release &kp LGUI>
-                , <&macro_tap &kp ESC>
-        ;};
-
-
         // Open bash terminal
         gitBash: gitBash {
             compatible = "zmk,behavior-macro";
@@ -216,9 +164,9 @@ TAP2(switch_screen, &toTV, &toPC)
 // ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 // ┃    F1     ┃    F2     ┃    F3     ┃    F4     ┃    F5     ┃    F6     ┃   ┃    F7     ┃    F8     ┃    F9     ┃    F10    ┃    F11    ┃    F12    ┃
 // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-// ┃           ┃           ┃           ┃           ┃ Sw. Audio ┃Rec. Screen┃   ┃ ALT + F4  ┃           ┃           ┃           ┃           ┃           ┃
+// ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃ ALT + F4  ┃           ┃           ┃           ┃           ┃           ┃
 // ┗━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┛
-//             ┃           ┃           ┃           ┃ Sw. Screen┃Capt Screen┃   ┃ To Gaming ┃ Git Bash  ┃           ┃           ┃           ┃
+//             ┃           ┃           ┃           ┃           ┃           ┃   ┃ To Gaming ┃ Git Bash  ┃           ┃           ┃           ┃
 //             ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //           ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓
 //           ┃ Bootloader┃ ┃           ┃           ┃     L3    ┃           ┃   ┃           ┃     L3    ┃           ┃           ┃ ┃Del BT link┃
@@ -226,15 +174,15 @@ TAP2(switch_screen, &toTV, &toPC)
 LAYER(TERTIARY,
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
     &kp F1      &kp F2      &kp F3      &kp F4      &kp F5      &kp F6
-    no___       no___       no___       &toSpeakers &toHeadphones &kp LS(PSCRN) 
-                no___       no___       &toTV       &toPC       &kp LC(PSCRN)
+    no___       no___       no___       no___       no___       &kp LS(PSCRN) 
+                no___       no___       no___       no___       &kp LC(PSCRN)
                 &bootloader trs__       trs__       trs__       trs__ 
                                                                                 &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
                                                                                 &kp LA(F4)  no___       no___       no___       no___       no___
                                                                                 &to 4       &gitBash    no___       no___       no___
                                                                                 trs__       trs__       trs__       trs__       &bt BT_CLR_ALL
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
-, &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_BRI_DN C_BRI_UP)
+, &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN)
 
 
 
