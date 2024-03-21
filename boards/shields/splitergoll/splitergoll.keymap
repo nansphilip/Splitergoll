@@ -145,7 +145,12 @@ LAYER(SECONDARY,
             wait-ms = <20>;
             tap-ms = <20>;
             bindings
-                = <&kp ESC>
+                = <&macro_press &kp LCTRL LGUI>
+                , <&macro_tap &kp V>
+                , <&macro_release &kp LCTRL LGUI>
+                , <&macro_wait_time 1000>
+                , <&macro_tap &kp SPACE>
+                , <&macro_tap &kp ENTER &kp ESC>
         ;};
         // To headphones
         toHeadphones: toHeadphones {
@@ -154,7 +159,12 @@ LAYER(SECONDARY,
             wait-ms = <20>;
             tap-ms = <20>;
             bindings
-                = <&kp ESC>
+                = <&macro_press &kp LCTRL LGUI>
+                , <&macro_tap &kp V>
+                , <&macro_release &kp LCTRL LGUI>
+                , <&macro_wait_time 1000>
+                , <&macro_tap &kp SPACE>
+                , <&macro_tap &kp DOWN &kp ENTER &kp ESC>
         ;};
 
         // To PC screen
@@ -164,23 +174,12 @@ LAYER(SECONDARY,
             wait-ms = <20>;
             tap-ms = <20>;
             bindings
-                = <&kp LGUI>
-                , <&kp FR_G &kp FR_I &kp FR_T>
-                , <&kp SPACE>
-                , <&kp FR_B &kp FR_A &kp FR_S &kp FR_H>
-                , <&kp ENTER>
-                , <&macro_wait_time 500>
-                , <&kp FR_D &kp FR_I &kp FR_S &kp FR_P &kp FR_L &kp FR_A &kp FR_Y>
-                , <&kp FR_S &kp FR_W &kp FR_I &kp FR_T &kp FR_C &kp FR_H>
-                , <&kp FR_DOT>
-                , <&kp FR_E &kp FR_X &kp FR_E>
-                , <&kp SPACE>
-                , <&kp FR_SLASH>
-                , <&kp FR_I &kp FR_N &kp FR_T &kp FR_E &kp FR_R &kp FR_N &kp FR_A &kp FR_L>
-                , <&kp ENTER>
-                , <&macro_wait_time 500>
-                , <&kp FR_E &kp FR_X &kp FR_I &kp FR_T>
-                , <&kp ENTER>
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp P>
+                , <&macro_release &kp LGUI>
+                , <&macro_wait_time 1000>
+                , <&macro_tap &kp SPACE>
+                , <&macro_tap &kp DOWN &kp ENTER &kp ESC>
         ;};
 
         // To TV screen
@@ -190,23 +189,12 @@ LAYER(SECONDARY,
             wait-ms = <20>;
             tap-ms = <20>;
             bindings
-                = <&kp LGUI>
-                , <&kp FR_G &kp FR_I &kp FR_T>
-                , <&kp SPACE>
-                , <&kp FR_B &kp FR_A &kp FR_S &kp FR_H>
-                , <&kp ENTER>
-                , <&macro_wait_time 500>
-                , <&kp FR_D &kp FR_I &kp FR_S &kp FR_P &kp FR_L &kp FR_A &kp FR_Y>
-                , <&kp FR_S &kp FR_W &kp FR_I &kp FR_T &kp FR_C &kp FR_H>
-                , <&kp FR_DOT>
-                , <&kp FR_E &kp FR_X &kp FR_E>
-                , <&kp SPACE>
-                , <&kp FR_SLASH>
-                , <&kp FR_E &kp FR_X &kp FR_T &kp FR_E &kp FR_R &kp FR_N &kp FR_A &kp FR_L>
-                , <&kp ENTER>
-                , <&macro_wait_time 500>
-                , <&kp FR_E &kp FR_X &kp FR_I &kp FR_T>
-                , <&kp ENTER>
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp P>
+                , <&macro_release &kp LGUI>
+                , <&macro_wait_time 1000>
+                , <&macro_tap &kp SPACE>
+                , <&macro_tap &kp UP &kp ENTER &kp ESC>
             ;};
 
 
@@ -250,11 +238,11 @@ LAYER(TERTIARY,
                 no___       no___       no___    &switch_screen &kp LC(PSCRN)
                 &bootloader trs__       trs__       trs__       trs__ 
                                                                                 &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
-                                                                                &kp LA(F4)  no___       &kp C_BRI_UP no___      no___       no___
-                                                                                &to 4       &gitBash    &kp C_BRI_DN no___      no___
+                                                                                &kp LA(F4)  no___       no___      no___      no___       no___
+                                                                                &to 4       &gitBash    no___      no___      no___
                                                                                 trs__       trs__       trs__       trs__       &bt BT_CLR_ALL
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
-, &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN)
+, &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_BRI_DN C_BRI_UP)
 
 
 
