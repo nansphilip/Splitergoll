@@ -13,3 +13,5 @@
 
 - Switch layer Windows / MacOS
 - Switch sound et video
+
+- NVidia

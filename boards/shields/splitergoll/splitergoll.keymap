@@ -142,58 +142,64 @@ LAYER(SECONDARY,
         toSpeakers: toSpeakers {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <100>;
-            tap-ms = <100>;
+            wait-ms = <25>;
+            tap-ms = <25>;
             bindings
                 = <&macro_press &kp LCTRL &kp LGUI>
                 , <&macro_tap &kp V>
                 , <&macro_release &kp LCTRL &kp LGUI>
-                , <&macro_wait_time 1500>, <&macro_tap &kp UP>
-                , <&macro_wait_time 200>, <&macro_tap &kp ENTER>
-                , <&macro_wait_time 200>, <&macro_tap &kp ESC>
+                , <&macro_wait_time 1000>
+                , <&kp UP &kp ENTER &kp ESC>
         ;};
         // To headphones
         toHeadphones: toHeadphones {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <100>;
-            tap-ms = <100>;
+            wait-ms = <25>;
+            tap-ms = <25>;
             bindings
                 = <&macro_press &kp LCTRL &kp LGUI>
                 , <&macro_tap &kp V>
                 , <&macro_release &kp LCTRL &kp LGUI>
-                , <&macro_wait_time 1500>, <&macro_tap &kp DOWN>
-                , <&macro_wait_time 200>, <&macro_tap &kp ENTER>
-                , <&macro_wait_time 200>, <&macro_tap &kp ESC>
+                , <&macro_wait_time 1000>
+                , <&macro_tap &kp DOWN &kp ENTER &kp ESC>
         ;};
 
         // To PC screen
         toTV: toTV {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <100>;
-            tap-ms = <100>;
+            wait-ms = <25>;
+            tap-ms = <25>;
             bindings
                 = <&macro_press &kp LGUI>
                 , <&macro_tap &kp P>
                 , <&macro_release &kp LGUI>
-                , <&macro_wait_time 1500>, <&macro_tap &kp DOWN>
-                , <&macro_wait_time 200>, <&macro_tap &kp ENTER>
-                , <&macro_wait_time 200>, <&macro_tap &kp ESC>
+                , <&macro_wait_time 1000>
+                , <&macro_tap &kp DOWN &kp ENTER &kp ESC>
         ;};
         // To TV screen
         toPC: toPC {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <100>;
-            tap-ms = <100>;
+            wait-ms = <25>;
+            tap-ms = <25>;
             bindings
                 = <&macro_press &kp LGUI>
                 , <&macro_tap &kp P>
                 , <&macro_release &kp LGUI>
-                , <&macro_wait_time 1500>, <&macro_tap &kp UP>
-                , <&macro_wait_time 200>, <&macro_tap &kp ENTER>
-                , <&macro_wait_time 200>, <&macro_tap &kp ESC>
+                , <&macro_wait_time 1000>
+                , <&macro_tap &kp UP &kp ENTER &kp ESC>
+        ;};
+
+        // Open bash terminal
+        gitBash: gitBash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <25>;
+            tap-ms = <25>;
+            bindings
+                = <&macro_tap &kp LGUI &kp FR_G &kp FR_I &kp FR_T &kp SPACE &kp FR_B &kp FR_A &kp FR_S &kp FR_H &kp ENTER>
         ;};
     };
 };
@@ -232,6 +238,9 @@ LAYER(TERTIARY,
 
 // No -> ESC
 TAP2(no_esc, &none, &kp ESC)
+#define NV_FPS LC(F9)
+#define NV_Swtch LC(F10)
+#define NV_Dshbd LC(F12)
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 // ┃         Gaming           ┃
@@ -244,7 +253,7 @@ TAP2(no_esc, &none, &kp ESC)
 //             ┃   CTRL    ┃     J     ┃     S     ┃     V     ┃     B     ┃   ┃     N     ┃     P     ┃           ┃           ┃           ┃
 //             ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //           ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓
-//           ┃ To Default┃ ┃     C     ┃     W     ┃     X     ┃   SPACE   ┃   ┃           ┃           ┃ ALT + TAB ┃    WIN    ┃ ┃           ┃
+//           ┃ To Default┃ ┃     C     ┃     W     ┃     X     ┃   SPACE   ┃   ┃NVidia FPS ┃NV Dashboad┃ ALT + TAB ┃    WIN    ┃ ┃           ┃
 //           ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛
 LAYER(GAMING,
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
@@ -255,6 +264,6 @@ LAYER(GAMING,
                                                                                 &kp FR_Y    &kp FR_U    &kp FR_I    &kp FR_O    no___       no___
                                                                                 &kp FR_H    &kp FR_M    &kp FR_K    &kp FR_L    no___       no___
                                                                                 &kp FR_N    &kp FR_P    no___       no___       no___
-                                                                                no___       no___       &kp LA(TAB) &kp LGUI    no___
+                                                                                &kp NV_FPS &kp NV_Dshbd &kp LA(TAB) &kp LGUI    no___
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
-, &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN)
+, &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp NV_Swtch NV_Swtch)
