@@ -161,11 +161,11 @@ LAYER(SECONDARY,
             tap-ms = <40>;
             bindings
                 = <&macro_press &kp LCTRL &kp LGUI>
-                , <&macro_tap &kp FR_V>
+                , <&macro_tap &none>
                 , <&macro_release &kp LCTRL &kp LGUI>
 
                 , <&macro_wait_time 500>
-                , <&macro_tap &kp FR_V>
+                , <&macro_tap &none>
                 , <&macro_tap &kp DOWN &kp ENTER &kp ESC>
         ;};
 
@@ -181,7 +181,7 @@ LAYER(SECONDARY,
                 , <&macro_release &kp LGUI>
 
                 , <&macro_wait_time 500>
-                , <&macro_tap &kp FR_P>
+                , <&macro_tap &none>
                 , <&macro_tap &kp DOWN &kp ENTER &kp ESC>
         ;};
 
@@ -197,7 +197,7 @@ LAYER(SECONDARY,
                 , <&macro_release &kp LGUI>
 
                 , <&macro_wait_time 500>
-                , <&macro_tap &kp FR_P>
+                , <&macro_tap &none>
                 , <&macro_tap &kp UP &kp ENTER &kp ESC>
         ;};
 
