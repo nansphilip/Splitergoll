@@ -88,7 +88,7 @@ ALT_CODE_4(fr_oeu, 0, 1, 4, 0) // Œ
 #define    FR_MINS    KP_MINUS    // -
 #define    FR_ASTR    KP_MULTIPLY // *
 #define    FR_DIVI    KP_SLASH    // /
-#define    FR_NUMB    LS(MINUS)   // º
+#define    FR_NUMB    LS(MINUS)   // °
 
 
 // Brackets
