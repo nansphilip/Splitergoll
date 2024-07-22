@@ -3,3 +3,9 @@ config SHIELD_SPLITERGOLL_LEFT
 
 config SHIELD_SPLITERGOLL_RIGHT
     def_bool $(shields_list_contains,splitergoll_right)
+
+config SHIELD_SPLITERGOLL_DONGLE
+	def_bool $(shields_list_contains,splitergoll_dongle)
+
+config SHIELD_DONGLE_SETTINGS_RESET
+	def_bool $(shields_list_contains,dongle_reset)

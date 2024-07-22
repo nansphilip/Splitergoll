@@ -3,38 +3,35 @@
 #include "../function.h"
 #include "windows.h"
 
-// Modifiers
-#define M_CTL  LCTRL
-#define M_OPN  LALT
-#define M_CMD  LGUI
+// MacOS keys
+#define MAC_CTL  LCTRL
+#define MAC_OPN  LALT
+#define MAC_CMD  LGUI
+
+// MacOS keys
+#define MAC_EXCL  N8              // !
+#define MAC_BSLASH  LS(RA(DOT))   // backslash
+
+// #define MAC_PLUS  LS(SLASH)     // +
+// #define MAC_MINUS EQUAL         // -
+// #define MAC_ASTR  LS(RBKT)      // *
+// #define MAC_EQUAL SLASH         // =
+
+// #define MAC_AT    GRAVE         // @
+// #define MAC_HASH  LS(GRAVE)     // #
+// #define MAC_PIPE  RA(L)         // |
+// #define MAC_UNDS  LS(EQUAL)     // _
+
+// #define MAC_APOS  LS(RA(N4))    // ’
+// #define MAC_MICR  RA(SEMI)      // µ
+
+// #define MAC_EURO  RA(RBKT)      // €
 
 
-// Ponctuation
-#define M_EXCL  N8              // !
-#define M_BSLASH  LS(RA(DOT))   // backslash
+// #define MAC_LCBR  RA(N5)        // {
+// #define MAC_RCBR  RA(MINUS)     // }
+// #define MAC_LBRC  LS(RA(N5))    // [
+// #define MAC_RBRC  LS(RA(MINUS)) // ]
 
-
-// Calculs
-// #define M_PLUS  LS(SLASH)     // +
-// #define M_MINUS EQUAL         // -
-// #define M_ASTR  LS(RBKT)      // *
-// #define M_EQUAL SLASH         // =
-
-// #define M_AT    GRAVE         // @
-// #define M_HASH  LS(GRAVE)     // #
-// #define M_PIPE  RA(L)         // |
-// #define M_UNDS  LS(EQUAL)     // _
-
-// #define M_APOS  LS(RA(N4))    // ’
-// #define M_MICR  RA(SEMI)      // µ
-
-// #define M_EURO  RA(RBKT)      // €
-
-
-// #define M_LCBR  RA(N5)        // {
-// #define M_RCBR  RA(MINUS)     // }
-// #define M_LBRC  LS(RA(N5))    // [
-// #define M_RBRC  LS(RA(MINUS)) // ]
-
-// #define M_GRAVD NUHS          // ` (dead)
-// #define M_ACUTE LS(RA(N1))    // ´ (dead)
+// #define MAC_GRAVD NUHS          // ` (dead)
+// #define MAC_ACUTE LS(RA(N1))    // ´ (dead)

@@ -61,20 +61,6 @@
     }; \
 };
 
-// Sticky key
-// STICKY_KEY(sticky, LSHIFT) // locks shift for the next key pressed, and release it, or release it after 1s
-#define STICKY_KEY(name, k1) \
-/ { \
-    behaviors { \
-        name: name { \
-            compatible = "zmk,behavior-sticky-key"; \
-            #binding-cells = <1>; \
-            bindings = <&kp>; \
-            release-after-ms = <1000>; \
-        }; \
-    }; \
-};
-
 
 // Macros
 #define MACRO(name, ...) \
@@ -82,18 +68,6 @@
     macros { \
         ZMK_MACRO(name, bindings \
             = <__VA_ARGS__> \
-        ;) \
-    }; \
-};
-
-#define ALT_CODE_2(name, d1, d2) \
-/ { \
-    macros { \
-        ZMK_MACRO(name, bindings \
-            = <&macro_press &kp LALT> \
-            , <&macro_tap &kp KP_N##d1> \
-            , <&macro_tap &kp KP_N##d2> \
-            , <&macro_release &kp LALT> \
         ;) \
     }; \
 };

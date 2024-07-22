@@ -1,3 +1,33 @@
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+
+if SHIELD_SPLITERGOLL_DONGLE
+
+config ZMK_KEYBOARD_NAME
+	default "splitergoll"
+	
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+	default y
+	
+config ZMK_USB
+	default y
+
+endif
+
+
+
+if SHIELD_SPLITERGOLL_LEFT || SHIELD_SPLITERGOLL_RIGHT || SHIELD_SPLITERGOLL_DONGLE 
+
+config ZMK_SPLIT
+	default y
+
+config ZMK_BLE
+	default y
+	
+endif
+
+
 if SHIELD_SPLITERGOLL_LEFT
 
 config ZMK_KEYBOARD_NAME
@@ -8,9 +38,21 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
+
 if SHIELD_SPLITERGOLL_LEFT || SHIELD_SPLITERGOLL_RIGHT
 
 config ZMK_SPLIT
     default y
+
+config ZMK_BLE
+	default y
+
+endif
+
+
+if SHIELD_DONGLE_SETTINGS_RESET
+
+config ZMK_KEYBOARD_NAME
+	default "SETTINGS RESET"
 
 endif
