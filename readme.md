@@ -22,10 +22,6 @@ In this repository, you will find:
         <img src="/Images/IMG_7670.webp" width="49.5%"/>
         <img src="/Images/IMG_7671.webp" width="49.5%"/> 
     </div>
-    <!-- <div style="display: flex; flex-direction: row; justify-content: space-between;">
-        <img src="/Images/IMG_7818.webp" width="49.5%"/>
-        <img src="/Images/IMG_7819.webp" width="49.5%"/> 
-    </div> -->
     <img src="/Images/IMG_7981.webp"/>
 </div>
 
@@ -233,6 +229,7 @@ The `CTRL`, `ALT`, and `L3` keys are replaced with non-modifier keys.
 
 > NVidia Shortcuts
 
+- `NV_Scrn` to take screenshot
 - `NV_FPS` to show performance panel
 - `NV_Swth` to toggle performance panel content
 - `NV_Strt` to start recording
@@ -241,7 +238,7 @@ The `CTRL`, `ALT`, and `L3` keys are replaced with non-modifier keys.
 
 ```keymap
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃     "     ┃           ┃           ┃           ┃           ┃           ┃
+┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃     "     ┃ NV Screen ┃           ┃           ┃           ┃           ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃     '     ┃NV StartRec┃ NV SaveRec┃           ┃           ┃           ┃
 ┗━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┛

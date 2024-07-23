@@ -334,6 +334,7 @@ LAYER(GAMING,
 , &inc_dec_kp C_VOL_DN C_VOL_UP                                                 &inc_dec_kp C_VOL_DN C_VOL_UP)
 
 // Alias
+#define NV_Scrn LC(F7) // "screenshot"
 #define NV_FPS LC(F8) // "show performance panel"
 #define NV_Swth LC(F9) // "toggle performance panel content"
 #define NV_Strt LC(F10) // "start recording"
@@ -342,7 +343,7 @@ LAYER(GAMING,
 
 LAYER(GAMING_2,
 // ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-// ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃     "     ┃           ┃           ┃           ┃           ┃           ┃
+// ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃     "     ┃ NV Screen ┃           ┃           ┃           ┃           ┃
 // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃     '     ┃NV StartRec┃ NV SaveRec┃           ┃           ┃           ┃
 // ┗━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┛
@@ -355,7 +356,7 @@ LAYER(GAMING_2,
     trs__       no___       no___       no___       no___       no___
                 no___       no___       no___       no___       no___
                 no___       &kp LCTRL   &kp LALT    no___       trs__
-                                                                                &kp   _QUOT no___       no___       no___       no___       trs__
+                                                                                &kp   _QUOT &kp NV_Scrn no___       no___       no___       trs__
                                                                                 &kp   _SQUO &kp NV_Strt &kp NV_Save no___       no___       trs__
                                                                                 &kp NV_FPS  &kp NV_Dsh  &kp NV_Swth no___       no___
                                                                                 trs__       trs__       trs__       trs__       no___
