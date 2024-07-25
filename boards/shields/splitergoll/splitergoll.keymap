@@ -146,7 +146,7 @@ LAYER(PRIMARY,
 // ╰───────╯ ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛ ╰───────╯
     no___       &kp WCDEL   &kp HOME    &kp WCSHW   &kp END     &kp WCNEW
     no___       &kp WCLEFT  &kp LEFT    &kp UP      &kp RIGHT   &kp WCRIGHT
-                no___       &kp CLEFT   &kp DOWN    &kp CRIGHT  &kp fr_tld
+                no___       &kp CLEFT   &kp DOWN    &kp CRIGHT  &fr_tld
                 no___       trs__       trs__       trs__       &kp LSHIFT
                                                                                 &kp _QUOT   &kp _LPAR   &kp _RPAR   &kp _LCRO   &kp _RCRO   trs__
                                                                                 &kp _SQUO   &kp _LACC   &kp _RACC   &kp _LCHE   &kp _RCHE   trs__
