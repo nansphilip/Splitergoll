@@ -110,6 +110,7 @@ ALT_CODE_4(fr_oeu, 0, 1, 4, 0)        // Œ
 #define    _QUOT    N3            // "
 #define    _SQUO    N4            // '
 MACRO(fr_grv, &kp _GRV &kp SPACE) // `
+MACRO(fr_tld, &kp _TLD &kp SPACE) // ~
 
 
 // Symbols
