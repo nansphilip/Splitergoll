@@ -1,6 +1,6 @@
 # Splitergoll keyboard
 
-Welcome to the Splitergoll Project: a column-staggered split keyboard working with the ZMK firmware..
+Welcome to the Splitergoll Project: a column staggered split keyboard working with the ZMK Fiemware.
 
 - `split` : A split keyboard, one part for each hand
 - `ergo` : An ergonomic keyboard with a column staggered layout
