@@ -78,7 +78,7 @@ During your reading, you will find these symbols:
 
 The default layer contains all letters and the most frequent punctuation symbols. This main layer can be shifted to access uppercase letters and shift-morphed symbols.
 
-The modifiers `SHIFT`, `L1`, and `L2` can be locked (toggle → press modifier) by tap dance patterns (follow the `Lock usage` section below).
+The modifiers `SHIFT` key and `NUMPAD` layer can be locked (toggle → press modifier) by tap dance patterns (follow the `Lock usage` section below).
 You can easily unlock them (toggle → release modifier) by a single tap on the respective keys.
 
 > Shortcuts
@@ -88,6 +88,9 @@ You can easily unlock them (toggle → release modifier) by a single tap on the 
 - `SHIFT` to shift layer
 - `L1` to layer 1
 - `L2` to layer 2
+
+#### Combo usage
+
 - `L1` + `L2` to layer 3
 
 #### Alternative usage
@@ -100,11 +103,8 @@ You can easily unlock them (toggle → release modifier) by a single tap on the 
 - `SHIFT` + `SHIFT` to LOCK shift layer
 - `SHIFT` to UNLOCK shift layer
 
-- `L1` + `L1` + `L1` to LOCK layer 1
-- `L1` to UNLOCK layer 1
-
-- `L2` + `L2` + `L2` to LOCK layer 2
-- `L2` to UNLOCK layer 2
+- `L1` + `L1` + `L1` to LOCK numpad layer
+- `L1` to UNLOCK numpad layer
 
 ```keymap
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -200,6 +200,24 @@ The third layer is used for complex shortcuts, arrow characters, and still conta
 │ DOWN  │ ┃ Bootloader┃ ┃   CTRL    ┃    ALT    ┃     L3    ┃           ┃   ┃   SHIFT   ┃     L3    ┃           ┃   To L8   ┃ ┃Del BT link┃ │ RIGHT │
 ╰───────╯ ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛ ╰───────╯
 ```
+
+### Numpad layer
+
+> Philosophy
+
+The numpad layer is usefull for editing a calculation sheet, conception entering values, etc...
+This layer is a hybrid between the main layer and the secondary layer: you have every number and calculation symbols, but you have also arrows, and essentials keys for the common shortcuts (copy, paste, undo, redo, etc).
+
+┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃    ESC    ┃     A     ┃     Z     ┃     ↑     ┃     -     ┃     +     ┃   ┃     =     ┃     7     ┃     8     ┃     9     ┃   € + £   ┃   BSPACE  ┃
+┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
+┃    TAB    ┃     Y     ┃     ←     ┃     ↓     ┃     →     ┃     *     ┃   ┃     0     ┃     4     ┃     5     ┃     6     ┃     $     ┃    DEL    ┃
+┗━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┛
+            ┃           ┃     X     ┃     C     ┃     V     ┃     /     ┃   ┃     .     ┃     1     ┃     2     ┃     3     ┃     %     ┃
+╭───────╮   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ╭───────╮
+│ LEFT  │ ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓ │ UP    │
+│ RIGHT │ ┃           ┃ ┃   CTRL    ┃    ALT    ┃           ┃   SHIFT   ┃   ┃   SPACE   ┃           ┃   ENTER   ┃    WIN    ┃ ┃           ┃ │ DOWN  │
+╰───────╯ ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛ ╰───────╯
 
 ### Gaming layer
 
