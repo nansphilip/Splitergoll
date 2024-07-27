@@ -35,7 +35,7 @@ MORPH(shift_unlock, LSFT, &kp LSHIFT, &kt LSHIFT)      // | Shift     | Shft unl
 // -------------------------------------------------------------- | --------- | --------- | --------- |
 TAP_DANCE_2(shift_lock, &shift_unlock, &kt LSHIFT)             // | Shift     | Shft lock |           |
 TAP_DANCE_3(priSec, &mo PRIMARY, &mo SECONDARY, &to NUMPAD)    // | Primary   | Secondary |Numpad lock|
-TAP_DANCE_3(secPri, &mo SECONDARY, &mo PRIMARY)                // | Secondary | Primary   |           |
+TAP_DANCE_2(secPri, &mo SECONDARY, &mo PRIMARY)                // | Secondary | Primary   |           |
 
 /* Shortcuts
 Basic usage
