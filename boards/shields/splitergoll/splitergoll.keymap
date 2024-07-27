@@ -319,16 +319,16 @@ LAYER(NUMPAD,
 //             ┃           ┃     X     ┃     C     ┃     V     ┃     /     ┃   ┃     .     ┃     1     ┃     2     ┃     3     ┃     %     ┃
 // ╭───────╮   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ╭───────╮
 // │ LEFT  │ ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓ │ UP    │
-// │ RIGHT │ ┃           ┃ ┃   CTRL    ┃    ALT    ┃   BSPACE  ┃   SHIFT   ┃   ┃   SPACE   ┃           ┃   ENTER   ┃    WIN    ┃ ┃           ┃ │ DOWN  │
+// │ RIGHT │ ┃           ┃ ┃   CTRL    ┃           ┃   BSPACE  ┃    DEL    ┃   ┃   SPACE   ┃           ┃   ENTER   ┃    WIN    ┃ ┃           ┃ │ DOWN  │
 // ╰───────╯ ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛ ╰───────╯
-    trs__       trs__       trs__       &kp UP      &kp _MINS   &kp _PLUS
+    trs__       &kp _A      &kp _Z      &kp UP      &kp _MINS   &kp _PLUS
     trs__       &kp _Y      &kp LEFT    &kp DOWN    &kp RIGHT   &kp _ASTR
-                no___       trs__       trs__       trs__       &kp _DIVI
-                no___       trs__       trs__       &kp BSPC    &kp LSHIFT
+                no___       &kp _X      &kp _C      &kp _V      &kp _DIVI
+                no___       &kp LCTRL   no___       &kp BSPC    &kp DEL
                                                                                 &kp _EQAL   &kp _7      &kp _8      &kp _9      &eu_li      trs__
                                                                                 &kp _0      &kp _4      &kp _5      &kp _6      &kp _DOLR   trs__
                                                                                 &kp KP_DOT  &kp _1      &kp _2      &kp _3      &kp _PERC
-                                                                                &kp SPACE   trs__       trs__       trs__       no___
+                                                                                &kp SPACE   &to 0       &kp ENTER   &kp LGUI    no___
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 , &inc_dec_kp LEFT RIGHT                                                        &inc_dec_kp UP DOWN)
 
