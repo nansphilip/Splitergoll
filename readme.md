@@ -208,6 +208,7 @@ The third layer is used for complex shortcuts, arrow characters, and still conta
 The numpad layer is usefull for editing a calculation sheet, conception entering values, etc...
 This layer is a hybrid between the main layer and the secondary layer: you have every number and calculation symbols, but you have also arrows, and essentials keys for the common shortcuts (copy, paste, undo, redo, etc).
 
+```keymap
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 ┃    ESC    ┃     A     ┃     Z     ┃     ↑     ┃     -     ┃     +     ┃   ┃     =     ┃     7     ┃     8     ┃     9     ┃   € + £   ┃   BSPACE  ┃
 ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
@@ -216,8 +217,9 @@ This layer is a hybrid between the main layer and the secondary layer: you have 
             ┃           ┃     X     ┃     C     ┃     V     ┃     /     ┃   ┃     .     ┃     1     ┃     2     ┃     3     ┃     %     ┃
 ╭───────╮   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ╭───────╮
 │ LEFT  │ ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓ │ UP    │
-│ RIGHT │ ┃           ┃ ┃   CTRL    ┃    ALT    ┃   BSPACE  ┃   SHIFT   ┃   ┃   SPACE   ┃           ┃   ENTER   ┃    WIN    ┃ ┃           ┃ │ DOWN  │
+│ RIGHT │ ┃           ┃ ┃   CTRL    ┃           ┃   BSPACE  ┃    DEL    ┃   ┃   SPACE   ┃           ┃   ENTER   ┃    WIN    ┃ ┃           ┃ │ DOWN  │
 ╰───────╯ ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛ ╰───────╯
+```
 
 ### Gaming layer
 

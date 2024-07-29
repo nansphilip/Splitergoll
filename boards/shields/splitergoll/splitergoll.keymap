@@ -185,6 +185,19 @@ LAYER(PRIMARY_MACOS,
 // ┃                                                                     Secondary                                                                     ┃
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
+// Shift mod to release default shift morph    |  Default  |   Shift    |
+// ------------------------------------------- | --------- | ---------- |
+MORPH(n_0, LSFT, &kp _0, &kp _0)            // | 0         | 0          |
+MORPH(n_1, LSFT, &kp _1, &kp _1)            // | 1         | 1          |
+MORPH(n_2, LSFT, &kp _2, &kp _2)            // | 2         | 2          |
+MORPH(n_3, LSFT, &kp _3, &kp _3)            // | 3         | 3          |
+MORPH(n_4, LSFT, &kp _4, &kp _4)            // | 4         | 4          |
+MORPH(n_5, LSFT, &kp _5, &kp _5)            // | 5         | 5          |
+MORPH(n_6, LSFT, &kp _6, &kp _6)            // | 6         | 6          |
+MORPH(n_7, LSFT, &kp _7, &kp _7)            // | 7         | 7          |
+MORPH(n_8, LSFT, &kp _8, &kp _8)            // | 8         | 8          |
+MORPH(n_9, LSFT, &kp _9, &kp _9)            // | 9         | 9          |
+
 // Tap dance                                                |   1 tap   |   2 taps   |   3 taps   |
 // -------------------------------------------------------- | --------- | ---------- | ---------- |
 TAP_DANCE_3(ag_agu_ac, &kp _AG,  &fr_ac, &fr_agu)        // | à         | â          | À          |
@@ -227,9 +240,9 @@ LAYER(SECONDARY,
     &kp DEL     &oc_ocu     &ea_eau     &ec_ecu     &eg_et      &kp _ASTR
                 &ic_it      &ug_uc      &cc_ccu     &ag_agu_ac  &kp _DIVI
                 no___       trs__       trs__       trs__       &kp ENTER
-                                                                                &kp _EQAL   &kp _7      &kp _8      &kp _9      &eu_li      trs__
-                                                                                &kp _0      &kp _4      &kp _5      &kp _6      &kp _DOLR   trs__
-                                                                                &kp KP_DOT  &kp _1      &kp _2      &kp _3      &kp _PERC
+                                                                                &kp _EQAL   &n_7        &n_8        &n_9        &eu_li      trs__
+                                                                                &n_0        &n_4        &n_5        &n_6        &kp _DOLR   trs__
+                                                                                &kp KP_DOT  &n_1        &n_2        &n_3        &kp _PERC
                                                                                 &kp SPACE   trs__       trs__       trs__       no___
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 , &inc_dec_kp LEFT RIGHT                                                        &inc_dec_kp UP DOWN)
