@@ -161,7 +161,7 @@ LAYER(PRIMARY,
                 no___       &kp CLEFT   &kp DOWN    &kp CRIGHT  no___
                 no___       trs__       trs__       trs__       &kp LSHIFT
                                                                                 &quot       &lpar       &rpar       &lcro       &rcro      trs__
-                                                                                &squar      &lacc       &racc       &lche       &rche      trs__
+                                                                                &squo       &lacc       &racc       &lche       &rche      trs__
                                                                                 &fr_grv     &hash       &and        &pipe       &at
                                                                                 &kp LSHIFT  trs__       trs__       trs__       &win
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
