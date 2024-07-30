@@ -268,7 +268,7 @@ LAYER(SECONDARY,
                 no___       trs__       trs__       trs__       &kp ENTER
                                                                                 &eqal       &n_7        &n_8        &n_9        &eu_li      trs__
                                                                                 &n_0        &n_4        &n_5        &n_6        &dolr       trs__
-                                                                                &dt         &n_1        &n_2        &n_3        &prct
+                                                                                &n_dt       &n_1        &n_2        &n_3        &prct
                                                                                 &kp SPACE   trs__       trs__       trs__       no___
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 , &inc_dec_kp LEFT RIGHT                                                        &inc_dec_kp UP DOWN)
