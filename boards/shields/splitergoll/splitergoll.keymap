@@ -373,7 +373,7 @@ LAYER(NUMPAD,
                 no___       &kp LCTRL   no___       &kp BSPC    &kp DEL
                                                                                 &eqal       &n_7        &n_8        &n_9        &eu_li      trs__
                                                                                 &n_0        &n_4        &n_5        &n_6        &dolr       trs__
-                                                                                &n_dot      &n_1        &n_2        &n_3        &perc
+                                                                                &n_dt       &n_1        &n_2        &n_3        &perc
                                                                                 &kp SPACE   &to 0       &kp ENTER   &kp LGUI    no___
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 , &inc_dec_kp LEFT RIGHT                                                        &inc_dec_kp UP DOWN)
