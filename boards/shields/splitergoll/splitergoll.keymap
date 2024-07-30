@@ -124,6 +124,10 @@ MORPH(lcro, LSFT, &kp _LCRO, &kp _LCRO)     // | [         | [          |
 MORPH(rcro, LSFT, &kp _RCRO, &kp _RCRO)     // | ]         | ]          |
 MORPH(lche, LSFT, &kp _LCHE, &kp _LCHE)     // | <         | <          |
 MORPH(rche, LSFT, &kp _RCHE, &kp _RCHE)     // | >         | >          |
+MORPH(hash, LSFT, &kp _HASH, &kp _HASH)     // | #         | #          |
+MORPH(and, LSFT, &kp _AND, &kp _AND)        // | &         | &          |
+MORPH(pipe, LSFT, &kp _PIPE, &kp _PIPE)     // | |         | |          |
+MORPH(at, LSFT, &kp _AT, &kp _AT)           // | @         | @          |
 
 // Alias
 #define CLEFT LC(LEFT)
