@@ -112,6 +112,19 @@ LAYER(MACOS,
 // ┃                                                                      Primary                                                                      ┃
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
+// Shift mod to release default shift morph    |  Default  |   Shift    |
+// ------------------------------------------- | --------- | ---------- |
+MORPH(quot, LSFT, &kp _QUOT, &kp _QUOT)     // | "         | "          |
+MORPH(squo, LSFT, &kp _SQUO, &kp _SQUO)     // | '         | '          |
+MORPH(lpar, LSFT, &kp _LPAR, &kp _LPAR)     // | (         | (          |
+MORPH(rpar, LSFT, &kp _RPAR, &kp _RPAR)     // | )         | )          |
+MORPH(lacc, LSFT, &kp _LACC, &kp _LACC)     // | {         | {          |
+MORPH(racc, LSFT, &kp _RACC, &kp _RACC)     // | }         | }          |
+MORPH(lcro, LSFT, &kp _LCRO, &kp _LCRO)     // | [         | [          |
+MORPH(rcro, LSFT, &kp _RCRO, &kp _RCRO)     // | ]         | ]          |
+MORPH(lche, LSFT, &kp _LCHE, &kp _LCHE)     // | <         | <          |
+MORPH(rche, LSFT, &kp _RCHE, &kp _RCHE)     // | >         | >          |
+
 // Alias
 #define CLEFT LC(LEFT)
 #define CRIGHT LC(RIGHT)
@@ -138,18 +151,18 @@ LAYER(PRIMARY,
 // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 // ┃           ┃Left desktp┃     ←     ┃     ↑     ┃     →     ┃Right deskp┃   ┃     '     ┃     {     ┃     }     ┃     <     ┃     >     ┃           ┃
 // ┗━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┛
-//             ┃           ┃  CTRL ←   ┃     ↓     ┃   CTRL →  ┃     ~     ┃   ┃     `     ┃     #     ┃     &     ┃     |     ┃     @     ┃
+//             ┃           ┃  CTRL ←   ┃     ↓     ┃   CTRL →  ┃           ┃   ┃     `     ┃     #     ┃     &     ┃     |     ┃     @     ┃
 // ╭───────╮   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ╭───────╮
 // │ LEFT  │ ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓ │ UP    │
 // │ RIGHT │ ┃           ┃ ┃           ┃           ┃           ┃   SHIFT²  ┃   ┃   SHIFT   ┃     L1    ┃           ┃           ┃ ┃ "Windows" ┃ │ DOWN  │
 // ╰───────╯ ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛ ╰───────╯
     no___       &kp WCDEL   &kp HOME    &kp WCSHW   &kp END     &kp WCNEW
     no___       &kp WCLEFT  &kp LEFT    &kp UP      &kp RIGHT   &kp WCRIGHT
-                no___       &kp CLEFT   &kp DOWN    &kp CRIGHT  &fr_tld
+                no___       &kp CLEFT   &kp DOWN    &kp CRIGHT  no___
                 no___       trs__       trs__       trs__       &kp LSHIFT
-                                                                                &kp _QUOT   &kp _LPAR   &kp _RPAR   &kp _LCRO   &kp _RCRO   trs__
-                                                                                &kp _SQUO   &kp _LACC   &kp _RACC   &kp _LCHE   &kp _RCHE   trs__
-                                                                                &fr_grv     &kp _HASH   &kp _AND    &kp _PIPE   &kp _AT
+                                                                                &quot       &lpar       &rpar       &lcro       &rcro      trs__
+                                                                                &squar      &lacc       &racc       &lche       &rche      trs__
+                                                                                &fr_grv     &hash       &and        &pipe       &at
                                                                                 &kp LSHIFT  trs__       trs__       trs__       &win
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 , &inc_dec_kp LEFT RIGHT                                                        &inc_dec_kp UP DOWN)
@@ -187,6 +200,15 @@ LAYER(PRIMARY_MACOS,
 
 // Shift mod to release default shift morph    |  Default  |   Shift    |
 // ------------------------------------------- | --------- | ---------- |
+MORPH(plus, LSFT, &kp _PLUS, &kp _PLUS)     // | +         | +          |
+MORPH(mins, LSFT, &kp _MINS, &kp _MINS)     // | -         | -          |
+MORPH(astr, LSFT, &kp _ASTR, &kp _ASTR)     // | *         | *          |
+MORPH(divi, LSFT, &kp _DIVI, &kp _DIVI)     // | /         | /          |
+MORPH(eqal, LSFT, &kp _EQAL, &kp _EQAL)     // | =         | =          |
+MORPH(udsc, LSFT, &kp _UDSC, &kp _UDSC)     // | _         | _          |
+MORPH(dolr, LSFT, &kp _DOLR, &kp _DOLR)     // | $         | $          |
+MORPH(prct, LSFT, &kp _PERC, &kp _PERC)     // | %         | %          |
+MORPH(n_dt, LSFT, &kp KP_DOT, &kp KP_DOT)   // | .         | .          |
 MORPH(n_0, LSFT, &kp _0, &kp _0)            // | 0         | 0          |
 MORPH(n_1, LSFT, &kp _1, &kp _1)            // | 1         | 1          |
 MORPH(n_2, LSFT, &kp _2, &kp _2)            // | 2         | 2          |
@@ -236,13 +258,13 @@ LAYER(SECONDARY,
 // │ LEFT  │ ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓ │ UP    │
 // │ RIGHT │ ┃           ┃ ┃           ┃           ┃     L2    ┃   ENTER   ┃   ┃   SPACE   ┃           ┃           ┃           ┃ ┃           ┃ │ DOWN  │
 // ╰───────╯ ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛ ╰───────╯
-    &kp BSPC    &oe_oeu     &nb_2_3     &kp _UDSC   &kp _MINS   &kp _PLUS
-    &kp DEL     &oc_ocu     &ea_eau     &ec_ecu     &eg_et      &kp _ASTR
-                &ic_it      &ug_uc      &cc_ccu     &ag_agu_ac  &kp _DIVI
+    &kp BSPC    &oe_oeu     &nb_2_3     &udsc       &mins       &plus
+    &kp DEL     &oc_ocu     &ea_eau     &ec_ecu     &eg_et      &astr
+                &ic_it      &ug_uc      &cc_ccu     &ag_agu_ac  &divi
                 no___       trs__       trs__       trs__       &kp ENTER
-                                                                                &kp _EQAL   &n_7        &n_8        &n_9        &eu_li      trs__
-                                                                                &n_0        &n_4        &n_5        &n_6        &kp _DOLR   trs__
-                                                                                &kp KP_DOT  &n_1        &n_2        &n_3        &kp _PERC
+                                                                                &eqal       &n_7        &n_8        &n_9        &eu_li      trs__
+                                                                                &n_0        &n_4        &n_5        &n_6        &dolr       trs__
+                                                                                &dt         &n_1        &n_2        &n_3        &prct
                                                                                 &kp SPACE   trs__       trs__       trs__       no___
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 , &inc_dec_kp LEFT RIGHT                                                        &inc_dec_kp UP DOWN)
@@ -274,11 +296,18 @@ LAYER(SECONDARY_MACOS,
 // ┃                                                                     Tertiary                                                                      ┃
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
+// Shift mod to release default shift morph    |  Default  |   Shift    |
+// ------------------------------------------- | --------- | ---------- |
+MORPH(grv, LSFT, &kp _GRV, &kp _GRV)        // | `         | `          |
+MORPH(cir, LSFT, &kp _CIR, &kp _CIR)        // | ^         | ^          |
+MORPH(tre, LSFT, &kp _TRE, &kp _TRE)        // | ¨         | ¨          |
+MORPH(tld, LSFT, &kp _TLD, &kp _TLD)        // | ~         | ~          |
+
 LAYER(TERTIARY,
 // ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 // ┃    F1     ┃    F2     ┃    F3     ┃    F4     ┃    F5     ┃    F6     ┃   ┃    F7     ┃    F8     ┃    F9     ┃    F10    ┃    F11    ┃    F12    ┃
 // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-// ┃   Reset   ┃           ┃     ←     ┃     ↑     ┃     →     ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃ ALT + F4  ┃
+// ┃   Reset   ┃           ┃     ←     ┃     ↑     ┃     →     ┃           ┃   ┃     `     ┃     ^     ┃     ¨     ┃     ~     ┃           ┃ ALT + F4  ┃
 // ┗━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┛
 //             ┃           ┃           ┃     ↓     ┃           ┃Print Scree┃   ┃           ┃           ┃           ┃           ┃           ┃
 // ╭───────╮   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ╭───────╮
@@ -290,7 +319,7 @@ LAYER(TERTIARY,
                 no___       no___       &arw_dwn    no___       &kp PSCRN
                 &bootloader &kp LCTRL   &kp LALT    trs__       no___
                                                                                 &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
-                                                                                no___       no___       no___       no___       no___       &kp LA(F4)
+                                                                                &kp _GRV    &kp _CIR    &kp _TRE    &kp _TLD    no___       &kp LA(F4)
                                                                                 no___       no___       no___       no___       no___
                                                                                 &kp LSHIFT  trs__       no___       &to 9       &bt BT_CLR_ALL
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
@@ -334,13 +363,13 @@ LAYER(NUMPAD,
 // │ LEFT  │ ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓ │ UP    │
 // │ RIGHT │ ┃           ┃ ┃   CTRL    ┃           ┃   BSPACE  ┃    DEL    ┃   ┃   SPACE   ┃           ┃   ENTER   ┃    WIN    ┃ ┃           ┃ │ DOWN  │
 // ╰───────╯ ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛ ╰───────╯
-    trs__       &kp _A      &kp _Z      &kp UP      &kp _MINS   &kp _PLUS
-    trs__       &kp _Y      &kp LEFT    &kp DOWN    &kp RIGHT   &kp _ASTR
-                no___       &kp _X      &kp _C      &kp _V      &kp _DIVI
+    trs__       &kp _A      &kp _Z      &kp UP      &mins       &plus
+    trs__       &kp _Y      &kp LEFT    &kp DOWN    &kp RIGHT   &astr
+                no___       &kp _X      &kp _C      &kp _V      &divi
                 no___       &kp LCTRL   no___       &kp BSPC    &kp DEL
-                                                                                &kp _EQAL   &kp _7      &kp _8      &kp _9      &eu_li      trs__
-                                                                                &kp _0      &kp _4      &kp _5      &kp _6      &kp _DOLR   trs__
-                                                                                &kp KP_DOT  &kp _1      &kp _2      &kp _3      &kp _PERC
+                                                                                &eqal       &n_7        &n_8        &n_9        &eu_li      trs__
+                                                                                &n_0        &n_4        &n_5        &n_6        &dolr       trs__
+                                                                                &n_dot      &n_1        &n_2        &n_3        &perc
                                                                                 &kp SPACE   &to 0       &kp ENTER   &kp LGUI    no___
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 , &inc_dec_kp LEFT RIGHT                                                        &inc_dec_kp UP DOWN)
@@ -395,8 +424,8 @@ LAYER(GAMING_2,
     trs__       no___       no___       no___       no___       no___
                 no___       no___       no___       no___       no___
                 no___       &kp LCTRL   &kp LALT    no___       trs__
-                                                                                &kp   _QUOT &kp NV_Scrn no___       no___       no___       trs__
-                                                                                &kp   _SQUO &kp NV_Strt &kp NV_Save no___       no___       trs__
+                                                                                &quot       &kp NV_Scrn no___       no___       no___       trs__
+                                                                                &squo       &kp NV_Strt &kp NV_Save no___       no___       trs__
                                                                                 &kp NV_FPS  &kp NV_Dsh  &kp NV_Swth no___       no___
                                                                                 trs__       trs__       trs__       trs__       no___
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃

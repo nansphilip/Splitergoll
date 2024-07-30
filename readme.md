@@ -42,6 +42,7 @@ Details coming soon...
 - [x] Layer inheritance and conditions
 - [x] Accents, symbols, movements
 - [x] Gaming compatibility
+- [x] Release default shift morph behavior
 
 - [ ] macOS compatibility
 - [ ] Dongle mode
