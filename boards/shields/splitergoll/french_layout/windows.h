@@ -2,7 +2,7 @@
 
 #include "../function.h"
 
-// Lettres
+// Letters
 #define    _A    Q       // A
 #define    _B    B       // B
 #define    _C    C       // C
@@ -39,27 +39,28 @@
 #define    _TLD    RA(N2)       // ~ (dead)
 
 
-// Lettres with accents
-#define    _AG     N0                 // à
-MACRO(fr_ac, &kp _CIR &kp _A)         // â
-MACRO(fr_agu, &kp _GRV &kp LS(_A))    // À
-#define    _CC     N9                 // ç
-ALT_CODE_3(fr_ccu, 1, 2, 8)           // Ç
-#define    _EA     N2                 // é
-ALT_CODE_3(fr_eau, 1, 4, 4)           // É
-MACRO(fr_ec, &kp _CIR &kp _E)         // ê
-MACRO(fr_ecu, &kp _CIR &kp LS(_E))    // Ê
-#define    _EG     N7                 // è
-MACRO(fr_et, &kp _TRE &kp _E)         // ë
-MACRO(fr_ic, &kp _CIR &kp _I)         // î
-MACRO(fr_it, &kp _TRE &kp _I)         // ï
-MACRO(fr_oc, &kp _CIR &kp _O)         // ô
-MACRO(fr_ocu, &kp _CIR &kp LS(_O))    // Ô
-#define    _UG     SQT                // ù
-MACRO(fr_uc, &kp _CIR &kp _U)         // û
-#define    _MU     LS(NUHS)           // µ
-ALT_CODE_4(fr_oe, 0, 1, 5, 6)         // œ
-ALT_CODE_4(fr_oeu, 0, 1, 4, 0)        // Œ
+// Letters with accents
+#define       _AG         N0        // à
+MACRO(fr_ac, &kp _CIR &kp _A)       // â
+MACRO(fr_agu, &kp _GRV &kp LS(_A))  // À
+#define       _CC         N9        // ç
+ALT_CODE_3(fr_ccu, 1, 2, 8)         // Ç
+#define       _EA         N2        // é
+ALT_CODE_3(fr_eau, 1, 4, 4)         // É
+MACRO(fr_ec, &kp _CIR &kp _E)       // ê
+MACRO(fr_ecu, &kp _CIR &kp LS(_E))  // Ê
+#define       _EG         N7        // è
+MACRO(fr_et, &kp _TRE &kp _E)       // ë
+MACRO(fr_ic, &kp _CIR &kp _I)       // î
+MACRO(fr_it, &kp _TRE &kp _I)       // ï
+MACRO(fr_oc, &kp _CIR &kp _O)       // ô
+MACRO(fr_ocu, &kp _CIR &kp LS(_O))  // Ô
+#define       _UG         SQT       // ù
+MACRO(fr_uc, &kp _CIR &kp _U)       // û
+#define       _MU         LS(NUHS)  // µ
+
+ALT_CODE_4(fr_oe, 0, 1, 5, 6)       // œ
+ALT_CODE_4(fr_oeu, 0, 1, 4, 0)      // Œ
 
 
 // Numbers
@@ -75,7 +76,7 @@ ALT_CODE_4(fr_oeu, 0, 1, 4, 0)        // Œ
 #define    _0    KP_N0     // 0
 
 
-// Ponctuation
+// Punctuation
 #define    _COMMA     M         // ,
 #define    _DOT       LS(COMMA) // .
 #define    _SEMI      COMMA     // ;
@@ -125,7 +126,7 @@ MACRO(fr_tld, &kp _TLD &kp SPACE) // ~
 #define    _UDSC     N8         // _
 
 
-// Exposants
+// Exponents
 #define    _EX2  GRAVE         // ²
 ALT_CODE_3(fr_ex3, 2, 5, 2)    // ³
 

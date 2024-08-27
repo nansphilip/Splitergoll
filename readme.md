@@ -44,8 +44,9 @@ Details coming soon...
 - [x] Gaming compatibility
 - [x] Release default shift morph behavior
 
-- [ ] macOS compatibility
-- [ ] Dongle mode
+- [ ] macOS compatibility (work in progress...)
+- [ ] Dongle mode (work in progress...)
+
 - [ ] Switch Bluetooth device
 - [ ] Bluetooth Low Energy?
 
