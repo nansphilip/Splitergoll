@@ -211,7 +211,7 @@ MORPH(divi, LSFT, &kp _DIVI, &kp _DIVI)     // | /         | /          |
 MORPH(eqal, LSFT, &kp _EQAL, &kp _EQAL)     // | =         | =          |
 MORPH(udsc, LSFT, &kp _UDSC, &kp _UDSC)     // | _         | _          |
 MORPH(dolr, LSFT, &kp _DOLR, &kp _DOLR)     // | $         | $          |
-MORPH(prct, LSFT, &kp _PERC, &kp _PERC)     // | %         | %          |
+MORPH(perc, LSFT, &kp _PERC, &kp _PERC)     // | %         | %          |
 MORPH(n_dt, LSFT, &kp KP_DOT, &kp KP_DOT)   // | .         | .          |
 MORPH(n_0, LSFT, &kp _0, &kp _0)            // | 0         | 0          |
 MORPH(n_1, LSFT, &kp _1, &kp _1)            // | 1         | 1          |
@@ -268,7 +268,7 @@ LAYER(SECONDARY,
                 no___       trs__       trs__       trs__       &kp ENTER
                                                                                 &eqal       &n_7        &n_8        &n_9        &eu_li      trs__
                                                                                 &n_0        &n_4        &n_5        &n_6        &dolr       trs__
-                                                                                &n_dt       &n_1        &n_2        &n_3        &prct
+                                                                                &n_dt       &n_1        &n_2        &n_3        &perc
                                                                                 &kp SPACE   trs__       trs__       trs__       no___
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 , &inc_dec_kp LEFT RIGHT                                                        &inc_dec_kp UP DOWN)

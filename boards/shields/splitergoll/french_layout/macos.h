@@ -9,12 +9,12 @@
 #define M_CMD  LGUI
 
 
-// Ponctuation
+// Punctuation
 #define M_EXCL  N8              // !
 #define M_BSLASH  LS(RA(DOT))   // backslash
 
 
-// Calculs
+// Calculus
 // #define M_PLUS  LS(SLASH)     // +
 // #define M_MINUS EQUAL         // -
 // #define M_ASTR  LS(RBKT)      // *

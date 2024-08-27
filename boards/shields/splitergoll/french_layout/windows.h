@@ -87,7 +87,7 @@ ALT_CODE_4(fr_oeu, 0, 1, 4, 0)      // Œ
 #define    _BSLASH    RA(N8)    // backslash
 
 
-// Calculs
+// Calculus
 #define    _EQAL    EQUAL       // =
 #define    _PLUS    KP_PLUS     // +
 #define    _MINS    KP_MINUS    // -
