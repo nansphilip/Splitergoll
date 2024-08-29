@@ -1,0 +1,17 @@
+#include "splitergoll.dtsi"
+
+/ {
+    chosen {
+        zmk,kscan = &mock_kscan;
+    };
+
+    // https://deploy-preview-2401--zmk.netlify.app/docs/features/dongle#dongle-overlay-file
+
+    mock_kscan: kscan_1 {
+        compatible = "zmk,kscan-mock";
+        
+        columns = <0>;
+        rows = <0>;
+        events = <0>;
+    };
+};
