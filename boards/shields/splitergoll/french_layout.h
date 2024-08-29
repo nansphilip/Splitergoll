@@ -34,3 +34,7 @@
 #define    _DOT       LS(COMMA) // .
 #define    _SEMI      COMMA     // ;
 #define    _COLON     DOT       // :
+#define    _EXCL      SLASH     // !
+#define    _QMARK     LS(M)     // ?
+#define    _SLASH     LS(DOT)   // slash
+#define    _BSLASH    RA(N8)    // backslash

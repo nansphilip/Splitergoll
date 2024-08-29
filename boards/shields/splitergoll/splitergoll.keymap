@@ -6,6 +6,29 @@
 // Includes
 #include "french_layout.h"
 
+
+// Behaviors
+#define MORPH(name, mod, k1, k2) \
+/ { \
+    behaviors { \
+        name: name { \
+            compatible = "zmk,behavior-mod-morph"; \
+            #binding-cells = <0>; \
+            bindings = <k1>, <k2>; \
+            mods = <(MOD_##mod)>; \
+        }; \
+    }; \
+};
+
+
+// Shift mod                                              |  Default  |   Shift    |
+// ------------------------------------------------------ | --------- | ---------- |
+MORPH(comm_qmark, LSFT, &kp _COMMA, &kp _QMARK)        // | ,         | ?          |
+MORPH(dot_excl, LSFT, &kp _DOT, &kp _EXCL)             // | .         | !          |
+MORPH(semi_slsh, LSFT, &kp _SEMI, &kp _SLASH)          // | ;         | /          |
+MORPH(colon_bsls, LSFT, &kp _COLON, &kp _BSLASH)       // | :         | backslash  |
+
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -17,18 +40,18 @@
 // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 // ┃    TAB    ┃     Q     ┃     S     ┃     D     ┃     F     ┃     G     ┃   ┃     H     ┃     J     ┃     K     ┃     L     ┃     M     ┃    DEL    ┃
 // ┗━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┛
-//             ┃     W     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃     ,     ┃     .     ┃     ;     ┃     :     ┃
+//             ┃     W     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃  , or ?   ┃  . or !   ┃  ; or /   ┃  : or \   ┃
 // ╭───────╮   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ╭───────╮
 // │       │ ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓ │       │
-// │       │ ┃           ┃ ┃   CTRL    ┃    ALT    ┃           ┃   SPACE   ┃   ┃   SHIFT   ┃           ┃   ENTER   ┃    WIN    ┃ ┃           ┃ │       │
+// │       │ ┃   Reset   ┃ ┃   CTRL    ┃    ALT    ┃           ┃   SPACE   ┃   ┃   SHIFT   ┃           ┃   ENTER   ┃    WIN    ┃ ┃           ┃ │       │
 // ╰───────╯ ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛ ╰───────╯
     &kp ESC     &kp _A      &kp _Z      &kp _E      &kp _R      &kp _T 
     &kp TAB     &kp _Q      &kp _S      &kp _D      &kp _F      &kp _G
                 &kp _W      &kp _X      &kp _C      &kp _V      &kp _B
-                &none       &kp LCTRL   &kp LALT    &none       &kp SPACE
+                &sys_reset  &kp LCTRL   &kp LALT    &none       &kp SPACE
                                                                                 &kp _Y      &kp _U      &kp _I      &kp _O      &kp _P      &kp BSPC
                                                                                 &kp _H      &kp _J      &kp _K      &kp _L      &kp _M      &kp DEL
-                                                                                &kp _N      &kp _COMMA  &kp _DOT    &kp _SEMI   &kp _COLON
+                                                                                &kp _N      &comm_qmark &dot_excl   &semi_slsh  &colon_bsls
                                                                                 &kp LSHIFT  &none       &kp ENTER   &kp LGUI    &none
             >;
         };
