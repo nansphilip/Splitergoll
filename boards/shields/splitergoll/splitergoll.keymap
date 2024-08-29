@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 // Includes
+#include "functions.h"
 #include "french_layout.h"
 
 // Shift morphs
