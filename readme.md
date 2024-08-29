@@ -17,3 +17,7 @@ This dongle version of the Splitergoll keyboard is currently under development.
 
 - A recent pull request about [Dongle Keyboard](https://github.com/zmkfirmware/zmk/pull/2401) documentation is pending.
 - Here is the [preview](https://deploy-preview-2401--zmk.netlify.app/docs/features/dongle) of the **Dongle Keyboard** documentation.
+
+## Ressources
+
+- [Here are](https://github.com/wdtamagi/slice-zmk/tree/v20220204-dactyl/app/boards/arm/nordic_nrf52840_dongle_official) board folders for the `Nordic nRF52840 Dongle` is available.
