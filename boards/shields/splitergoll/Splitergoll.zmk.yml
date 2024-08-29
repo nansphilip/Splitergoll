@@ -9,5 +9,6 @@ features:
   - keys
   - encoder
 siblings:
+  - splitergoll_dongle
   - splitergoll_left
   - splitergoll_right
