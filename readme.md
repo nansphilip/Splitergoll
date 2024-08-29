@@ -19,4 +19,4 @@ This dongle version of the Splitergoll keyboard is currently under development.
 
 ## Ressources
 
-- [Nordic nRF52840 Dongle](https://github.com/wdtamagi/slice-zmk/tree/v20220204-dactyl/app/boards/arm/nordic_nrf52840_dongle_official) board folders.
+- [Nordic nRF52840 Dongle](https://github.com/zephyrproject-rtos/zephyr/tree/main/boards/nordic/nrf52840dongle) board folders.
