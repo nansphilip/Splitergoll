@@ -4,8 +4,8 @@ This dongle version of the Splitergoll keyboard is currently under development.
 
 ## Inspirations
 
-- The [Aroum's Dongle Keyboard](https://github.com/aroumi/dongle-keyboard) is based on a `SuperMini nRF52840` as a dongle.
-- The [Charlesmst's Dongle Keyboard](https://github.com/charlesmst/dongle-keyboard) is based on a `Makerdiary nRF52840 MDK Dongle` as a dongle.
+- The [Aroum's Dongle Keyboard](https://github.com/aroum/zmk-enki42-dongle) based on a `SuperMini nRF52840` as a dongle.
+- The [Charlesmst's Dongle Keyboard](https://github.com/charlesmst/zmk-enki42-dongle) based on a `Makerdiary nRF52840 MDK Dongle` as a dongle.
 - 
 
 ## Objectives
@@ -20,4 +20,4 @@ This dongle version of the Splitergoll keyboard is currently under development.
 
 ## Ressources
 
-- [Here are](https://github.com/wdtamagi/slice-zmk/tree/v20220204-dactyl/app/boards/arm/nordic_nrf52840_dongle_official) board folders for the `Nordic nRF52840 Dongle` is available.
+- [Nordic nRF52840 Dongle](https://github.com/wdtamagi/slice-zmk/tree/v20220204-dactyl/app/boards/arm/nordic_nrf52840_dongle_official) board folders.
