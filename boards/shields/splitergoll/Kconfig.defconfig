@@ -1,23 +1,23 @@
+if SHIELD_SPLITERGOLL_DONGLE || SHIELD_SPLITERGOLL_LEFT || SHIELD_SPLITERGOLL_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
+
 if SHIELD_SPLITERGOLL_DONGLE
 
 config ZMK_KEYBOARD_NAME
     default "splitergoll"
 
-config ZMK_SPLIT_BLE_ROLE_CENTRAL
-	default y
-	
-config ZMK_USB
-	default y
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
 
-endif
+config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+    default 2
 
-
-if SHIELD_SPLITERGOLL_DONGLE || SHIELD_SPLITERGOLL_LEFT || SHIELD_SPLITERGOLL_RIGHT
-
-config ZMK_SPLIT
-	default y
-
-config ZMK_BLE
-	default y
+choice BT_CTLR_TX_PWR
+    default BT_CTLR_TX_PWR_PLUS_8
+endchoice
 
 endif
