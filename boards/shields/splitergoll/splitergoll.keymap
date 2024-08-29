@@ -6,35 +6,14 @@
 // Includes
 #include "french_layout.h"
 
+// Shift morphs
+MORPH(comm_qmark, LSFT, &kp _COMMA, &kp _QMARK)   //     , or ?
+MORPH(dot_excl, LSFT, &kp _DOT, &kp _EXCL)        //     . or !
+MORPH(semi_slsh, LSFT, &kp _SEMI, &kp _SLASH)     //     ; or /
+MORPH(colon_bsls, LSFT, &kp _COLON, &kp _BSLASH)  //     : or \
 
-// Behaviors
-#define MORPH(name, mod, k1, k2) \
-/ { \
-    behaviors { \
-        name: name { \
-            compatible = "zmk,behavior-mod-morph"; \
-            #binding-cells = <0>; \
-            bindings = <k1>, <k2>; \
-            mods = <(MOD_##mod)>; \
-        }; \
-    }; \
-};
-
-
-// Shift mod                                              |  Default  |   Shift    |
-// ------------------------------------------------------ | --------- | ---------- |
-MORPH(comm_qmark, LSFT, &kp _COMMA, &kp _QMARK)        // | ,         | ?          |
-MORPH(dot_excl, LSFT, &kp _DOT, &kp _EXCL)             // | .         | !          |
-MORPH(semi_slsh, LSFT, &kp _SEMI, &kp _SLASH)          // | ;         | /          |
-MORPH(colon_bsls, LSFT, &kp _COLON, &kp _BSLASH)       // | :         | backslash  |
-
-
-/ {
-    keymap {
-        compatible = "zmk,keymap";
-
-        default_layer {
-            bindings = <
+// Layers definition
+LAYER(default,
 // ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 // ┃    ESC    ┃     A     ┃     Z     ┃     E     ┃     R     ┃     T     ┃   ┃     Y     ┃     U     ┃     I     ┃     O     ┃     P     ┃   BSPACE  ┃
 // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
@@ -53,7 +32,4 @@ MORPH(colon_bsls, LSFT, &kp _COLON, &kp _BSLASH)       // | :         | backslas
                                                                                 &kp _H      &kp _J      &kp _K      &kp _L      &kp _M      &kp DEL
                                                                                 &kp _N      &comm_qmark &dot_excl   &semi_slsh  &colon_bsls
                                                                                 &kp LSHIFT  &none       &kp ENTER   &kp LGUI    &none
-            >;
-        };
-    };
-};
+)
