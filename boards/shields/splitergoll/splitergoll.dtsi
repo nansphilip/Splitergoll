@@ -10,9 +10,6 @@
         compatible = "zmk,matrix-transform";
         columns = <12>;
         rows = <8>;
-
-//         |                               LEFT HALF                               |   |                               RIGHT HALF                              |
-//         |           |           |           |           |           |           |   |           |           |           |           |           |           |
         map = <
             RC(0,0)     RC(0,1)     RC(0,2)     RC(0,3)     RC(0,4)     RC(0,5)
             RC(1,0)     RC(1,1)     RC(1,2)     RC(1,3)     RC(1,4)     RC(1,5)
@@ -24,8 +21,6 @@
                                                                                         RC(6,6)     RC(6,7)     RC(6,8)     RC(6,9)     RC(6,10)
                                                                                         RC(7,6)     RC(7,7)     RC(7,8)     RC(7,9)     RC(7,10)
         >;
-//         |           |           |           |           |           |           |   |           |           |           |           |           |           |
-//         |                               LEFT HALF                               |   |                               RIGHT HALF                              |
     };
 
     kscan0: kscan {
