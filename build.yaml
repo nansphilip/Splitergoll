@@ -22,7 +22,7 @@ include:
     shield: splitergoll_left
   - board: nice_nano_v2
     shield: splitergoll_right
-  - board: nrf52840dongle
+  - board: nrf52840_mdk_usb_dongle
     shield: splitergoll_dongle
-  - board: nrf52840dongle
+  - board: nrf52840_mdk_usb_dongle
     shield: settings_reset
