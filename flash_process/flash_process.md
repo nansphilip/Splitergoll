@@ -2,114 +2,82 @@
 
 Before flashing the `keyboard firmware` and `dongle firmware`, you must flash the `reset file` to all devices.
 
+
+
+
 ## Prepare files
 
-- need the keyboard `firmware.zip` files
+Download your keyboard `firmware.zip` files and unzip it.
 
-### Unzip the firmware archive
+Convert RESET.bin file to RESET.uf2 file.
 
-```bash
-unzip firmware.zip
-```
-
-### Convert RESET.bin file to RESET.uf2 file
-
-- need [Python 9.0](https://www.python.org/downloads/release/python-390/) installed and added to the PATH
-- need [uf2conv](https://github.com/microsoft/uf2/blob/master/utils/uf2conv.py) and [uf2families](https://github.com/microsoft/uf2/blob/master/utils/uf2families.json) python scripts
-- locate python scripts and `reset file` in the same directory
+Required:
+- [Python 9.0](https://www.python.org/downloads/release/python-390/) installed and added to the PATH
+- [uf2conv](https://github.com/microsoft/uf2/blob/master/utils/uf2conv.py) `.py` script file
+- [uf2families](https://github.com/microsoft/uf2/blob/master/utils/uf2families.json) `.json` script file
+- `uf2conv`, `uf2families` and `RESET.bin` must be in the same directory
 
 ```bash
 py uf2conv.py RESET.bin --convert --output=RESET.uf2
 ```
 
-#### Convert RESET.bin and DONGLE.bin files to .hex files
+Convert RESET/DONGLE.bin files to RESET/DONGLE.hex files.
 
-- need [arm-none-eabi-objcopy](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads) installed and added to the PATH
+Required:
+- [arm-none-eabi-objcopy](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads) installed and added to the PATH
 
 ```bash
 arm-none-eabi-objcopy -I binary -O ihex RESET.bin RESET.hex
 arm-none-eabi-objcopy -I binary -O ihex DONGLE.bin DONGLE.hex
 ```
 
-### Encapsulate RESET.hex and DONGLE.hex files in .zip files
+Encapsulate RESET/DONGLE.hex files in RESET/DONGLE.zip files.
 
 ```bash
 nrfutil pkg generate --hw-version 52 --sd-req 0x00 --application RESET.hex --application-version 1 RESET.zip
 nrfutil pkg generate --hw-version 52 --sd-req 0x00 --application DONGLE.hex --application-version 1 DONGLE.zip
 ```
 
-### Delete RESET and DONGLE .bin and .hex files
-
-```bash
-del RESET.bin
-del DONGLE.bin
-del RESET.hex
-del DONGLE.hex
-```
 
 
 ## Dongle flashing
 
-- flash the reset file
-- flash the firmware file
+Required:
+- `nrfutil` python package, `pip install nrfutil` to install
 
-### Connect the dongle in DFU mode
-
+Connect the dongle in `DFU mode`:
 - hold the RESET button while connecting the dongle
 - the dongle led should blink slowly
 
-## Find the dongle's COM number
+Find the dongle's COM number:
+- use the `peripheral mangager` or use the `mode` command
+- replace the `COM5` with the correct COM number
 
-- use the peripheral mangager
-- or use the following command
-
-```bash
-mode
-```
-
-### Flash the RESET.zip file to the dongle
-
-- need `nrfutil` python package, install with `pip install nrfutil`
-- replace the `COM5` with the dongle's COM number
+Flash the `RESET.zip` file.
 
 ```bash
 nrfutil dfu usb-serial -pkg RESET.zip -p COM5
 ```
 
-### Reconnect dongle in DFU mode
-
-- disconnect the dongle
-- reconnect the dongle in DFU mode
-- check the dongle's led is blinking slowly
-- check the dongle's COM number
-
-### Flash the DONGLE.zip file to the dongle
+Repeat the above process a second time, then flash the `DONGLE.zip` file.
 
 ```bash
 nrfutil dfu usb-serial -pkg DONGLE.zip -p COM5
 ```
 
 
+
 ## Keyboard flashing
 
-- flash the reset file to both halves
-- flash the firmware file to both halves
-
-### Flash the RESET.uf2 and LEFT/RIGHT.uf2 files to both keyboard halves
-
-- connect a keyboard halve with an USB cable
-- put the keyboard halve in DFU mode
+- Connect a keyboard halve with an USB cable
+  
+- Put the keyboard halve in DFU mode:
   - double tap the reset button
   - a peripheral appear in explorer
-- drag and drop an .uf2 file to the peripheral
 
-- do this process one time with RESET.uf2 for both halves
-- repeat this process a second time with LEFT.uf2 and RIGHT.uf2 files for the corresponding halves
+- drag and drop an `.uf2` file to the peripheral
 
-### Delete RESET.uf2 and LEFT/RIGHT.uf2 files
+Do this process one time with `RESET.uf2` for both halves.
 
-```bash
-del RESET.uf2
-del LEFT.uf2
-del RIGHT.uf2
-```
+Repeat this process a second time with `LEFT.uf2` and `RIGHT.uf2` files for the corresponding halves.
+
