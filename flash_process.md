@@ -4,22 +4,9 @@ Before flashing the `keyboard firmware` and `dongle firmware`, you must flash th
 
 
 
-
 ## Prepare files
 
 Download your keyboard `firmware.zip` files and unzip it.
-
-Convert RESET.bin file to RESET.uf2 file.
-
-Required:
-- [Python 9.0](https://www.python.org/downloads/release/python-390/) installed and added to the PATH
-- [uf2conv](https://github.com/microsoft/uf2/blob/master/utils/uf2conv.py) `.py` script file
-- [uf2families](https://github.com/microsoft/uf2/blob/master/utils/uf2families.json) `.json` script file
-- `uf2conv`, `uf2families` and `RESET.bin` must be in the same directory
-
-```bash
-py uf2conv.py RESET.bin --convert --output=RESET.uf2
-```
 
 Convert RESET/DONGLE.bin files to RESET/DONGLE.hex files.
 
@@ -33,9 +20,12 @@ arm-none-eabi-objcopy -I binary -O ihex DONGLE.bin DONGLE.hex
 
 Encapsulate RESET/DONGLE.hex files in RESET/DONGLE.zip files.
 
+Required:
+- [nrfutil](https://www.nordicsemi.com/Products/Development-tools/nRF-Util) installed and added to the PATH
+
 ```bash
-nrfutil pkg generate --hw-version 52 --sd-req 0x00 --application RESET.hex --application-version 1 RESET.zip
-nrfutil pkg generate --hw-version 52 --sd-req 0x00 --application DONGLE.hex --application-version 1 DONGLE.zip
+nrfutil pkg generate --hw-version 52 --sd-req=0x00 --application RESET.hex --application-version 1 RESET.zip
+nrfutil pkg generate --hw-version 52 --sd-req=0x00 --application DONGLE.hex --application-version 1 DONGLE.zip
 ```
 
 
@@ -43,7 +33,7 @@ nrfutil pkg generate --hw-version 52 --sd-req 0x00 --application DONGLE.hex --ap
 ## Dongle flashing
 
 Required:
-- `nrfutil` python package, `pip install nrfutil` to install
+- `nrfutil device`, use `nrfutil install device` to install
 
 Connect the dongle in `DFU mode`:
 - hold the RESET button while connecting the dongle
@@ -56,13 +46,14 @@ Find the dongle's COM number:
 Flash the `RESET.zip` file.
 
 ```bash
-nrfutil dfu usb-serial -pkg RESET.zip -p COM5
+nrfutil device program --firmware RESET.zip --traits nordicDfu
 ```
 
 Repeat the above process a second time, then flash the `DONGLE.zip` file.
 
 ```bash
-nrfutil dfu usb-serial -pkg DONGLE.zip -p COM5
+nrfutil device program --firmware DONGLE.zip --traits nordicDfu
+
 ```
 
 
@@ -80,4 +71,3 @@ nrfutil dfu usb-serial -pkg DONGLE.zip -p COM5
 Do this process one time with `RESET.uf2` for both halves.
 
 Repeat this process a second time with `LEFT.uf2` and `RIGHT.uf2` files for the corresponding halves.
-
