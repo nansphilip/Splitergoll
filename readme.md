@@ -27,7 +27,28 @@ In this repository, you will find:
 
 ## Licenses and Inspirations
 
-Details coming soon...
+[KLOR Documentation](https://github.com/GEIGEIGEIST/KLOR) an INCREDIBLE documentation by GEIGEIGEIST:
+- Polydactyl keyboard layout
+- PCB design files
+- Electronic component references
+- Build guide
+
+[Aenyhm's ZMK config](https://github.com/Aenyhm/zmk-config) for:
+- French key layout correspondences (Q → A, W → Z...)
+- System key correspondences (Windows, MacOS...)
+- Layer system for "Windows" and "MacOS" compatibility
+
+Other great resources:
+- [temper](https://github.com/raeedcho/temper) by raeedcho
+- [nine-nano](https://github.com/bsag/nine-nano) by bsag
+- [urchin](https://github.com/duckyb/urchin) by duckyb
+- [LambBT](https://github.com/johnlamb/LambBT) by johnlamb
+- [Rolio46Keyboard](https://github.com/MickiusMousius/Rolio46Keyboard) by MickiusMousius
+- [SofleChocWireless](https://github.com/db-ok/SofleChocWireless) by db-ok
+- [KLOTZ](https://github.com/GEIGEIGEIST/KLOTZ) by GEIGEIGEIST
+- [pica40](https://github.com/zzeneg/pica40) by zzeneg
+- [karn-keyboard](https://github.com/robcmills/karn-keyboard) by robcmills
+- [SofleKeyboard](https://github.com/josefadamcik/SofleKeyboard) by josefadamcik
 
 ## Git Branches
 
@@ -49,6 +70,12 @@ Details coming soon...
 
 - [ ] Switch Bluetooth device
 - [ ] Bluetooth Low Energy?
+
+## Improvements
+
+- Hotswapable switches for an easier maintenance
+- Led indicators for connection status (bluetooth, usb...) and battery level
+- Keycap legends for each keys for a professional look
 
 ## Layout
 
