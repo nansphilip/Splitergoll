@@ -69,7 +69,10 @@ Other great resources:
 - [ ] Dongle mode (work in progress...)
 
 - [ ] Switch Bluetooth device
-- [ ] Bluetooth Low Energy?
+- [ ] Sleep mode ?
+- [ ] Bluetooth power ?
+- [ ] Battery reporting ?
+- [ ] Debouncing ?
 
 ## Improvements
 
