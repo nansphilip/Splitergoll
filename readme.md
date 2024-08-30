@@ -7,16 +7,12 @@ This dongle version of the Splitergoll keyboard is currently under development.
 - The [Aroum's Dongle Keyboard](https://github.com/aroum/zmk-enki42-dongle) based on a `SuperMini nRF52840` as a dongle.
 - The [Charlesmst's Dongle Keyboard](https://github.com/charlesmst/zmk-enki42-dongle) based on a `Makerdiary nRF52840 MDK Dongle` as a dongle.
 
-## Objectives
+## Materials
 
-- I want to use a `Nordic nRF52840 Dongle` as a dongle.
-- I will start with a low complexity layout and keymap.
+- [Nordic nRF52840 Dongle](https://github.com/zmkfirmware/zephyr/tree/v3.5.0%2Bzmk-fixes/boards/arm/nrf52840dongle_nrf52840) as a dongle.
+- [SuperMini nRF52840](https://github.com/zmkfirmware/zmk/tree/main/app/boards/arm/nice_nano) for each keyboard halve.
 
 ## Documentations
 
-- A recent pull request about [Dongle Keyboard](https://github.com/zmkfirmware/zmk/pull/2401) documentation is pending.
-- Here is the [preview](https://deploy-preview-2401--zmk.netlify.app/docs/features/dongle) of the **Dongle Keyboard** documentation.
-
-## Ressources
-
-- [Nordic nRF52840 Dongle](https://github.com/zephyrproject-rtos/zephyr/tree/main/boards/nordic/nrf52840dongle) board folders.
+- [SliceMK Docs](https://docs.slicemk.com/firmware/zmk/wireless/dongle/): a ZMK fork which inspired Arroum's Dongle Keyboard.
+- [PR#2401 Dongle Keyboard](https://github.com/zmkfirmware/zmk/pull/2401): a proposition for a dongle keyboard documentation [see preview](https://deploy-preview-2401--zmk.netlify.app/docs/features/dongle).
