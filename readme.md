@@ -6,6 +6,7 @@ This dongle version of the Splitergoll keyboard is currently under development.
 
 - The [Aroum's Dongle Keyboard](https://github.com/aroum/zmk-enki42-dongle) based on a `SuperMini nRF52840` as a dongle.
 - The [Charlesmst's Dongle Keyboard](https://github.com/charlesmst/zmk-enki42-dongle) based on a `Makerdiary nRF52840 MDK Dongle` as a dongle.
+- The [RasmusKoit's Dongle Keyboard](https://github.com/RasmusKoit/pipar) based on a `Seeed Studio Xiao nRF52840` as a dongle.
 
 ## Materials
 
