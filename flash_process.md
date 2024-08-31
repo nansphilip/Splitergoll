@@ -22,6 +22,7 @@ Encapsulate RESET/DONGLE.hex files in RESET/DONGLE.zip files.
 
 Required:
 - [nrfutil](https://www.nordicsemi.com/Products/Development-tools/nRF-Util) installed and added to the PATH
+- `nrnrfutil pkg` package needed, use `nrfutil install nrf5sdk-tools` to install
 
 ```bash
 nrfutil pkg generate --hw-version 52 --sd-req=0x00 --application RESET.hex --application-version 1 RESET.zip
@@ -33,7 +34,7 @@ nrfutil pkg generate --hw-version 52 --sd-req=0x00 --application DONGLE.hex --ap
 ## Dongle flashing
 
 Required:
-- `nrfutil device`, use `nrfutil install device` to install
+- `nrfutil device` package needed, use `nrfutil install device` to install
 
 Connect the dongle in `DFU mode`:
 - hold the RESET button while connecting the dongle
@@ -53,7 +54,6 @@ Repeat the above process a second time, then flash the `DONGLE.zip` file.
 
 ```bash
 nrfutil device program --firmware DONGLE.zip --traits nordicDfu
-
 ```
 
 
