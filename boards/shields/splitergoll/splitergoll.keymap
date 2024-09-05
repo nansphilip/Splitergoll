@@ -405,21 +405,13 @@ LAYER(GAMING,
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 , &inc_dec_kp C_VOL_DN C_VOL_UP                                                 &inc_dec_kp C_VOL_DN C_VOL_UP)
 
-// Alias
-#define NV_Scrn LC(F7) // "screenshot"
-#define NV_FPS LC(F8) // "show performance panel"
-#define NV_Swth LC(F9) // "toggle performance panel content"
-#define NV_Strt LC(F10) // "start recording"
-#define NV_Save LC(F11) // "save recording"
-#define NV_Dsh LC(F12) // "show dashboard"
-
 LAYER(GAMING_2,
 // ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-// ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃     "     ┃ NV Screen ┃           ┃           ┃           ┃           ┃
+// ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃     "     ┃NV ScrenSht┃           ┃           ┃           ┃           ┃
 // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-// ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃     '     ┃NV StartRec┃ NV SaveRec┃           ┃           ┃           ┃
+// ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃     '     ┃NV Save Rec┃NV StartRec┃           ┃           ┃           ┃
 // ┗━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┛
-//             ┃           ┃           ┃           ┃           ┃           ┃   ┃NVidia FPS ┃NV Dashboad┃ NV Switch ┃           ┃           ┃
+//             ┃           ┃           ┃           ┃           ┃           ┃   ┃NV Dashbrd ┃  NV FPS   ┃ NV Rotate ┃           ┃           ┃
 // ╭───────╮   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ╭───────╮
 // │ VOL+  │ ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓ │ VOL+  │
 // │ VOL-  │ ┃           ┃ ┃   CTRL    ┃    ALT    ┃           ┃           ┃   ┃           ┃    L10    ┃           ┃           ┃ ┃           ┃ │ VOL-  │
@@ -428,9 +420,9 @@ LAYER(GAMING_2,
     trs__       no___       no___       no___       no___       no___
                 no___       no___       no___       no___       no___
                 no___       &kp LCTRL   &kp LALT    no___       trs__
-                                                                                &quot       &kp NV_Scrn no___       no___       no___       trs__
-                                                                                &squo       &kp NV_Strt &kp NV_Save no___       no___       trs__
-                                                                                &kp NV_FPS  &kp NV_Dsh  &kp NV_Swth no___       no___
+                                                                                &quot       LC(F1)      LC(F2)      LC(F3)      LC(F4)      trs__
+                                                                                &squo       LC(F5)      LC(F6)      LC(F7)      LC(F8)      trs__
+                                                                                no___       LC(F9)      LC(F10)     LC(F11)     LC(F12)
                                                                                 trs__       trs__       trs__       trs__       no___
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 , &inc_dec_kp C_VOL_DN C_VOL_UP                                                 &inc_dec_kp C_VOL_DN C_VOL_UP)
