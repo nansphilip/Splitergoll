@@ -420,9 +420,9 @@ LAYER(GAMING_2,
     trs__       no___       no___       no___       no___       no___
                 no___       no___       no___       no___       no___
                 no___       &kp LCTRL   &kp LALT    no___       trs__
-                                                                                &quot       LC(F1)      LC(F2)      LC(F3)      LC(F4)      trs__
-                                                                                &squo       LC(F5)      LC(F6)      LC(F7)      LC(F8)      trs__
-                                                                                no___       LC(F9)      LC(F10)     LC(F11)     LC(F12)
+                                                                                &quot       &kp LC(F1)  &kp LC(F2)  &kp LC(F3)  &kp LC(F4)  trs__
+                                                                                &squo       &kp LC(F5)  &kp LC(F6)  &kp LC(F7)  &kp LC(F8)  trs__
+                                                                                no___       &kp LC(F9)  &kp LC(F10) &kp LC(F11) &kp LC(F12)
                                                                                 trs__       trs__       trs__       trs__       no___
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 , &inc_dec_kp C_VOL_DN C_VOL_UP                                                 &inc_dec_kp C_VOL_DN C_VOL_UP)
