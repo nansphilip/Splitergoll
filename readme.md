@@ -65,7 +65,8 @@ Other great resources:
 - [x] Gaming compatibility
 - [x] Release default shift morph behavior
 
-- [ ] macOS compatibility (work in progress...)
+- [ ] MacOS compatibility (work in progress...)
+- [ ] Linux compatibility (work in progress...)
 - [ ] Dongle mode (work in progress...)
 
 - [ ] Switch Bluetooth device
@@ -147,7 +148,7 @@ You can easily unlock them (toggle → release modifier) by a single tap on the 
             ┃     W     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃  , or ?   ┃  . or !   ┃  ; or /   ┃  : or \   ┃
 ╭───────╮   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ╭───────╮
 │ VOL+  │ ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓ │ LEFT  │
-│ VOL-  │ ┃ Play→Mute ┃ ┃   CTRL    ┃    ALT    ┃  L2 + L1  ┃   SPACE   ┃   ┃SHIFT+LOCK ┃  L1 + L2  ┃   ENTER   ┃    WIN    ┃ ┃ To MACOS  ┃ │ RIGHT │
+│ VOL-  │ ┃ Play→Mute ┃ ┃   CTRL    ┃    ALT    ┃     L2    ┃   SPACE   ┃   ┃SHIFT+LOCK ┃     L1    ┃   ENTER   ┃    WIN    ┃ ┃ To Linux  ┃ │ RIGHT │
 ╰───────╯ ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛ ╰───────╯
 ```
 
