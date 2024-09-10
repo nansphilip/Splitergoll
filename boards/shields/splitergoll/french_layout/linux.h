@@ -3,6 +3,7 @@
 #include "../function.h"
 
 #define L_GRV RA(N7) // `
+#define L_CCU LS(RA(N9))  // Ç
 
 // /*
 // ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐
@@ -170,7 +171,6 @@
 // #define FR_EMDASH  LS(RA(FR_SQT))   // —
 // #define FR_EGRV_UP LS(RA(FR_EGRV))  // È
 // #define FR_TM      LS(RA(FR_UNDS))  // ™
-// #define FR_CCED_UP LS(RA(FR_CCED))  // Ç
 // #define FR_AGRV_UP LS(RA(FR_AGRV))  // À
 // #define FR_DIFF    LS(RA(FR_RPRN))  // ≠
 // #define FR_PLUMI   LS(RA(FR_EQUAL)) // ±
