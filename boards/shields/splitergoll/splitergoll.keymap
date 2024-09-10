@@ -162,8 +162,7 @@ MORPH(at, LSFT, &kp _AT, &kp _AT)           // | @         | @          |
 #define WCDEL LG(LC(F4))
 
 // Macros
-MACRO(win, &kp LS(_W) &kp _I &kp _N &kp _D &kp _O &kp _W &kp _S \
-&macro_wait_time 1000 &kp BSPC &kp BSPC &kp BSPC &kp BSPC &kp BSPC &kp BSPC &kp BSPC)
+MACRO_OS(win, &kp LS(_W) &kp _I &kp _N &kp _D &kp _O &kp _W &kp _S, &kp BSPC &kp BSPC &kp BSPC &kp BSPC &kp BSPC &kp BSPC &kp BSPC)
 
 /* Shortcuts
 - `L1` + `SHIFT²` + `←, ↑, ↓ or →` to select text
@@ -195,8 +194,7 @@ LAYER(PRIMARY,
 , &inc_dec_kp LEFT RIGHT                                                        &inc_dec_kp UP DOWN)
 
 // Macros
-MACRO(linux, &kp LS(_L) &kp _I &kp _N &kp _U &kp _X \
-&macro_wait_time 1000 &kp BSPC &kp BSPC &kp BSPC &kp BSPC &kp BSPC)
+MACRO_OS(linux, &kp LS(_L) &kp _I &kp _N &kp _U &kp _X, &kp BSPC &kp BSPC &kp BSPC &kp BSPC &kp BSPC)
 
 LAYER(PRIMARY_LINUX,
 // ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -221,8 +219,7 @@ LAYER(PRIMARY_LINUX,
 , &inc_dec_kp C_VOL_DN C_VOL_UP                                                 &inc_dec_kp C_VOL_DN C_VOL_UP)
 
 // Macros
-MACRO(mac, &kp LS(_M) &kp _A &kp _C &kp LS(_O) &kp LS(_S) \
-&macro_wait_time 1000 &kp BSPC &kp BSPC &kp BSPC &kp BSPC &kp BSPC)
+MACRO_OS(mac, &kp LS(_M) &kp _A &kp _C &kp LS(_O) &kp LS(_S), &kp BSPC &kp BSPC &kp BSPC &kp BSPC &kp BSPC)
 
 LAYER(PRIMARY_MACOS,
 // ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -242,7 +239,7 @@ LAYER(PRIMARY_MACOS,
                                                                                 trs__       trs__       trs__       trs__       trs__       trs__
                                                                                 trs__       trs__       trs__       trs__       trs__       trs__
                                                                                 trs__       trs__       trs__       trs__       trs__
-                                                                                trs__       trs__       trs__       &kp M_CTL   &win
+                                                                                trs__       trs__       trs__       &kp M_CTL   &mac
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 , &inc_dec_kp C_VOL_DN C_VOL_UP                                                 &inc_dec_kp C_VOL_DN C_VOL_UP)
 

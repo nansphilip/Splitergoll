@@ -86,6 +86,17 @@
     }; \
 };
 
+#define MACRO_OS(name, d1, d2) \
+/ { \
+    macros { \
+        ZMK_MACRO(name, bindings \
+            = <&macro_tap d1> \
+            , <&macro_wait 500> \
+            , <&macro_tap d2> \
+        ;) \
+    }; \
+};
+
 #define ALT_CODE_2(name, d1, d2) \
 / { \
     macros { \
