@@ -69,6 +69,7 @@ Other great resources:
 - [ ] Dongle mode (work in progress...)
 
 - [ ] Switch Bluetooth device
+- [ ] Flying macro (record a macro, replay it, and repeat it)
 - [ ] Sleep mode ?
 - [ ] Bluetooth power ?
 - [ ] Battery reporting ?
