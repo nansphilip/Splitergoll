@@ -28,17 +28,24 @@ In this repository, you will find:
 ## Licenses and Inspirations
 
 [KLOR Documentation](https://github.com/GEIGEIGEIST/KLOR) an INCREDIBLE documentation by GEIGEIGEIST:
+
 - Polydactyl keyboard layout
 - PCB design files
 - Electronic component references
 - Build guide
 
 [Aenyhm's ZMK config](https://github.com/Aenyhm/zmk-config) for:
+
 - French key layout correspondences (Q → A, W → Z...)
 - System key correspondences (Windows, MacOS...)
 - Layer system for "Windows" and "MacOS" compatibility
 
+[Eigateck's ZMK config](https://github.com/eigatech/zmk-config) for:
+- His incredible [Youtube channel](https://www.youtube.com/@EIGAtech)
+- The nice documentaion of its keyboards
+
 Other great resources:
+
 - [temper](https://github.com/raeedcho/temper) by raeedcho
 - [nine-nano](https://github.com/bsag/nine-nano) by bsag
 - [urchin](https://github.com/duckyb/urchin) by duckyb
