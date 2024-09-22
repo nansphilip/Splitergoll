@@ -27,7 +27,7 @@ In this repository, you will find:
 
 ## Licenses and Inspirations
 
-### Wireless keyboards
+### Bluetooth wireless keyboards
 
 Huge thanks to these guys for their beautiful documentations about ZMK Wireless keyboards:
 
@@ -61,9 +61,9 @@ Other great resources:
 - [karn-keyboard](https://github.com/robcmills/karn-keyboard) by robcmills
 - [SofleKeyboard](https://github.com/josefadamcik/SofleKeyboard) by josefadamcik
 
-### Dongle keyboards
+### Dongle wireless keyboards
 
-Incredible resources about ZMK Dongles:
+Incredible resources about ZMK keyboards dongles:
 
 - [Aroum's Dongle Keyboard](https://github.com/aroum/zmk-enki42-dongle) based on a `SuperMini nRF52840` as a dongle.
 - [Charlesmst's Dongle Keyboard](https://github.com/charlesmst/zmk-enki42-dongle) based on a `Makerdiary nRF52840 MDK Dongle` as a dongle.
@@ -88,8 +88,13 @@ Hardware resources about the dongle keyboards:
 
 ## Git Branches
 
+Classique version:
 - [main](https://github.com/nansphilip/Splitergoll/tree/main) → Bluetooth wireless keyboard
-- [dongle](https://github.com/nansphilip/Splitergoll/tree/dongle) → Dongle wireless keyboard (work in progress...)
+- [dongle](https://github.com/nansphilip/Splitergoll/tree/dongle) → Dongle wireless keyboard
+
+Minimalist version (to learn ZMK):
+- [main (minimalist)](https://github.com/nansphilip/Splitergoll/tree/main-minimal) → Minimalist bluetooth wireless keyboard
+- [dongle (minimalist)](https://github.com/nansphilip/Splitergoll/tree/dongle-minimal) → Minimalist dongle wireless keyboard
 
 ## Todo
 
