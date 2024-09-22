@@ -4,23 +4,21 @@
 #include <dt-bindings/zmk/keys.h>
 
 // Includes
-#include "functions.h"
 #include "french_layout.h"
 
-// Shift morphs
-MORPH(comm_qmark, LSFT, &kp _COMMA, &kp _QMARK)   //     , or ?
-MORPH(dot_excl, LSFT, &kp _DOT, &kp _EXCL)        //     . or !
-MORPH(semi_slsh, LSFT, &kp _SEMI, &kp _SLASH)     //     ; or /
-MORPH(colon_bsls, LSFT, &kp _COLON, &kp _BSLASH)  //     : or \
+// Layers
+/ {
+    keymap {
+        compatible = "zmk,keymap";
 
-// Layers definition
-LAYER(default,
+        default_layer {
+            bindings = <
 // ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 // ┃    ESC    ┃     A     ┃     Z     ┃     E     ┃     R     ┃     T     ┃   ┃     Y     ┃     U     ┃     I     ┃     O     ┃     P     ┃   BSPACE  ┃
 // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 // ┃    TAB    ┃     Q     ┃     S     ┃     D     ┃     F     ┃     G     ┃   ┃     H     ┃     J     ┃     K     ┃     L     ┃     M     ┃    DEL    ┃
 // ┗━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┛
-//             ┃     W     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃  , or ?   ┃  . or !   ┃  ; or /   ┃  : or \   ┃
+//             ┃     W     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃           ┃           ┃           ┃           ┃
 // ╭───────╮   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ╭───────╮
 // │       │ ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓ │       │
 // │       │ ┃   Reset   ┃ ┃   CTRL    ┃    ALT    ┃           ┃   SPACE   ┃   ┃   SHIFT   ┃           ┃   ENTER   ┃    WIN    ┃ ┃           ┃ │       │
@@ -28,9 +26,12 @@ LAYER(default,
     &kp ESC     &kp _A      &kp _Z      &kp _E      &kp _R      &kp _T 
     &kp TAB     &kp _Q      &kp _S      &kp _D      &kp _F      &kp _G
                 &kp _W      &kp _X      &kp _C      &kp _V      &kp _B
-                &sys_reset  &kp LCTRL   &kp LALT    &none       &kp SPACE
+                &sys_reset  &kp LCTRL   &kp LALT           &kp SPACE
                                                                                 &kp _Y      &kp _U      &kp _I      &kp _O      &kp _P      &kp BSPC
                                                                                 &kp _H      &kp _J      &kp _K      &kp _L      &kp _M      &kp DEL
-                                                                                &kp _N      &comm_qmark &dot_excl   &semi_slsh  &colon_bsls
+                                                                                &kp _N      &none       &none       &none       &none
                                                                                 &kp LSHIFT  &none       &kp ENTER   &kp LGUI    &none
-)
+            >;
+        };
+    };
+};
