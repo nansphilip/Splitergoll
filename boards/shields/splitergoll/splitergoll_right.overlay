@@ -6,8 +6,6 @@
 };
 
 &kscan0 {
-    compatible = "zmk,kscan-gpio-matrix";
-
     col-gpios
         = <&pro_micro 10 GPIO_ACTIVE_HIGH>
         , <&pro_micro 16 GPIO_ACTIVE_HIGH>
