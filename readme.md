@@ -82,9 +82,10 @@ Documentation about the dongle keyboards:
 
 Hardware resources about the dongle keyboards:
 
-- [Nordic nRF52840 Dongle](https://github.com/zmkfirmware/zephyr/tree/v3.5.0%2Bzmk-fixes/boards/arm/nrf52840dongle_nrf52840) as a dongle.
-- [SuperMini nRF52840](https://github.com/zmkfirmware/zmk/tree/main/app/boards/arm/nice_nano) for each keyboard halve.
-
+- [Seeed Studio Xiao BLE](https://github.com/zmkfirmware/zmk/blob/main/app/boards/arm/seeeduino_xiao_ble/seeeduino_xiao_ble.zmk.yml)
+- [Nice!Nano V2](https://github.com/zmkfirmware/zmk/blob/main/app/boards/arm/nice_nano/nice_nano_v2.yaml) (or SuperMini nRF52840) for each keyboard halve.
+- [Makerdiary nRF52840 Dongle](https://github.com/zmkfirmware/zephyr/blob/v3.5.0%2Bzmk-fixes/boards/arm/nrf52840_mdk_usb_dongle/nrf52840_mdk_usb_dongle.yaml)
+- [Nordic nRF52840 Dongle](https://github.com/zmkfirmware/zmk/blob/main/app/boards/arm/nrf52840dk_nrf52840/nrf52840dk_nrf52840.zmk.yml) as a dongle.
 
 ## Git Branches
 
