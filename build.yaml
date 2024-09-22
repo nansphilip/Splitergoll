@@ -20,7 +20,7 @@ include:
   # - board: nice_nano_v2
   #   shield: settings_reset
 
-  Makerdiary nRF52840 Dongle
+  # Makerdiary nRF52840 Dongle
   - board: nrf52840_mdk_usb_dongle
     shield: splitergoll_dongle
   - board: nrf52840_mdk_usb_dongle
