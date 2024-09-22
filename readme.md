@@ -1,3 +1,3 @@
 # Splitergoll keyboard
 
-Minimalist wireless version of the Splitergoll keyboard.
+Minimalist bluetooth version of the Splitergoll keyboard.
