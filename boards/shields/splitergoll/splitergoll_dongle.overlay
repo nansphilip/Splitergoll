@@ -1,3 +1,4 @@
+// #include "splitergoll.dtsi" make an error
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
