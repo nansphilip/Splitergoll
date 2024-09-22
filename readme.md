@@ -1,3 +1,3 @@
 # Splitergoll keyboard
 
-Minimalist dongle version of the Splitergoll keyboard.
+Dongle version of the Splitergoll keyboard.
