@@ -1,6 +1,6 @@
 # Splitergoll keyboard
 
-Welcome to the Splitergoll Project: a column staggered split keyboard working with the ZMK Fiemware.
+Welcome to the Splitergoll Project: a column staggered split keyboard working with the ZMK Firmware.
 
 - `split` : A split keyboard, one part for each hand
 - `ergo` : An ergonomic keyboard with a column staggered layout
@@ -27,6 +27,10 @@ In this repository, you will find:
 
 ## Licenses and Inspirations
 
+### Wireless keyboards
+
+Huge thanks to these guys for their beautiful documentations about ZMK Wireless keyboards:
+
 [KLOR Documentation](https://github.com/GEIGEIGEIST/KLOR) an INCREDIBLE documentation by GEIGEIGEIST:
 
 - Polydactyl keyboard layout
@@ -42,7 +46,7 @@ In this repository, you will find:
 
 [Eigateck's ZMK config](https://github.com/eigatech/zmk-config) for:
 - His incredible [Youtube channel](https://www.youtube.com/@EIGAtech)
-- The nice documentaion of its keyboards
+- The nice documentation of its keyboards
 
 Other great resources:
 
@@ -57,6 +61,31 @@ Other great resources:
 - [karn-keyboard](https://github.com/robcmills/karn-keyboard) by robcmills
 - [SofleKeyboard](https://github.com/josefadamcik/SofleKeyboard) by josefadamcik
 
+### Dongle keyboards
+
+Incredible resources about ZMK Dongles:
+
+- [Aroum's Dongle Keyboard](https://github.com/aroum/zmk-enki42-dongle) based on a `SuperMini nRF52840` as a dongle.
+- [Charlesmst's Dongle Keyboard](https://github.com/charlesmst/zmk-enki42-dongle) based on a `Makerdiary nRF52840 MDK Dongle` as a dongle.
+- [RasmusKoit's Dongle Keyboard](https://github.com/RasmusKoit/pipar) based on a `Seeed Studio Xiao nRF52840` as a dongle.
+
+Eigateck's ZMK config:
+
+- [Totem Dongle](https://github.com/eigatech/zmk-config/tree/totem-dongle)
+- [Corne Dongle](https://github.com/eigatech/zmk-config/tree/corne-dongle)
+- [Charybdis Dongle](https://github.com/eigatech/zmk-config/tree/charybdis-dongle)
+
+Documentation about the dongle keyboards:
+
+- [SliceMK Docs](https://docs.slicemk.com/firmware/zmk/wireless/dongle/): a ZMK fork which inspired Aroum's Dongle Keyboard.
+- [PR#2401 Dongle Keyboard](https://github.com/zmkfirmware/zmk/pull/2401): a proposition for a dongle keyboard documentation [see preview](https://deploy-preview-2401--zmk.netlify.app/docs/features/dongle).
+
+Hardware resources about the dongle keyboards:
+
+- [Nordic nRF52840 Dongle](https://github.com/zmkfirmware/zephyr/tree/v3.5.0%2Bzmk-fixes/boards/arm/nrf52840dongle_nrf52840) as a dongle.
+- [SuperMini nRF52840](https://github.com/zmkfirmware/zmk/tree/main/app/boards/arm/nice_nano) for each keyboard halve.
+
+
 ## Git Branches
 
 - [main](https://github.com/nansphilip/Splitergoll/tree/main) → Bluetooth wireless keyboard
@@ -64,6 +93,7 @@ Other great resources:
 
 ## Todo
 
+Works:
 - [x] Global configuration: Bluetooth and USB
 - [x] Switches and encoders pin connections
 - [x] Battery level and sleep mode
@@ -72,10 +102,12 @@ Other great resources:
 - [x] Gaming compatibility
 - [x] Release default shift morph behavior
 
+Testing:
+- [ ] Dongle mode (work in progress...)
 - [ ] MacOS compatibility (work in progress...)
 - [ ] Linux compatibility (work in progress...)
-- [ ] Dongle mode (work in progress...)
 
+Incoming:
 - [ ] Switch Bluetooth device
 - [ ] Flying macro (record a macro, replay it, and repeat it)
 - [ ] Sleep mode ?
@@ -246,7 +278,7 @@ The third layer is used for complex shortcuts, arrow characters, and still conta
 
 > Philosophy
 
-The numpad layer is usefull for editing a calculation sheet, conception entering values, etc...
+The numpad layer is useful for editing a calculation sheet, conception entering values, etc...
 This layer is a hybrid between the main layer and the secondary layer: you have every number and calculation symbols, but you have also arrows, and essentials keys for the common shortcuts (copy, paste, undo, redo, etc).
 
 ```keymap
