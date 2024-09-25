@@ -397,7 +397,7 @@ LAYER(TERTIARY,
                                                                                 &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
                                                                                 &kp _GRV    &kp _CIR    &kp _TRE    &kp _TLD    no___       &kp LA(F4)
                                                                                 no___       no___       no___       no___       no___
-                                                                                &kp LSHIFT  trs__       no___       &to 9       &bt BT_CLR_ALL
+                                                                                &kp LSHIFT  trs__       no___       &to 13       &bt BT_CLR_ALL
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 , &inc_dec_kp UP DOWN                                                           &inc_dec_kp LEFT RIGHT)
 
