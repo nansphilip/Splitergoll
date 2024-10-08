@@ -107,11 +107,13 @@ Works:
 - [x] Accents, symbols, movements
 - [x] Gaming compatibility
 - [x] Release default shift morph behavior
+- [x] Dongle mode (needs improvements...)
+- [x] French layout (make sure you are using `Français (variante)` for Linux)
+- [x] Windows compatibility
+- [x] Linux compatibility (needs improvements...)
 
 Testing:
-- [ ] Dongle mode (work in progress...)
 - [ ] MacOS compatibility (work in progress...)
-- [ ] Linux compatibility (work in progress...)
 
 Incoming:
 - [ ] Switch Bluetooth device
@@ -254,7 +256,7 @@ Left hand on keyboard, and right hand on mouse:
 ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 ┃    DEL*   ┃   ô + Ô   ┃   é + É   ┃   ê + Ê   ┃   è + ë   ┃     *     ┃   ┃     0     ┃     4     ┃     5     ┃     6     ┃     $     ┃           ┃
 ┗━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┛
-            ┃   î + ï   ┃ ù + û + μ ┃   ç + Ç   ┃ à + À + â ┃     /     ┃   ┃     .     ┃     1     ┃     2     ┃     3     ┃     %     ┃
+            ┃   î + ï   ┃ ù + û + μ ┃   ç + Ç   ┃ à + â + À ┃     /     ┃   ┃     .     ┃     1     ┃     2     ┃     3     ┃     %     ┃
 ╭───────╮   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ╭───────╮
 │ LEFT  │ ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓ │ UP    │
 │ RIGHT │ ┃           ┃ ┃           ┃           ┃     L2    ┃   ENTER   ┃   ┃   SPACE   ┃           ┃           ┃           ┃ ┃           ┃ │ DOWN  │
