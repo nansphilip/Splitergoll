@@ -21,10 +21,10 @@ include:
   #   shield: settings_reset
 
   # Makerdiary nRF52840 Dongle
-  - board: nrf52840_mdk_usb_dongle
-    shield: splitergoll_dongle
-  - board: nrf52840_mdk_usb_dongle
-    shield: settings_reset
+  # - board: nrf52840_mdk_usb_dongle
+    # shield: splitergoll_dongle
+  # - board: nrf52840_mdk_usb_dongle
+    # shield: settings_reset
 
   # Nordic nRF52840 Dongle
   # - board: nrf52840dk_nrf52840
