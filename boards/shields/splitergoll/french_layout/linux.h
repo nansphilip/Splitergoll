@@ -2,8 +2,9 @@
 
 #include "../function.h"
 
-#define L_GRV RA(N7) // `
-#define L_CCU LS(RA(N9))  // Ç
+#define L_GRV RA(N7)      // `
+#define L_CC  N9          // ç
+#define L_CCU LC(LS(LA(N9)))  // Ç
 
 // /*
 // ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐
