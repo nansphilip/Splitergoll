@@ -2,8 +2,13 @@
 
 #include "../function.h"
 
-#define L_GRV RA(N7) // `
-#define L_CCU LS(RA(N9))  // Ç
+#define L_AGU      LS(RA(N0))  // À
+#define L_EAU      LS(RA(N2))  // É
+#define L_CCU      LS(RA(N9))  // Ç
+#define L_OE       RA(O)       // œ
+#define L_OEU      LS(RA(O))   // Œ
+#define L_EX3      LS(GRAVE)   // ³
+#define L_GRV      RA(N7)      // `
 
 // /*
 // ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐
@@ -85,7 +90,6 @@
 // └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
 // */
 // // Row 1
-// #define FR_3UP   LS(FR_2UP)   // ³
 // #define FR_1     LS(FR_AMPR)  // 1
 // #define FR_2     LS(FR_EACU)  // 2
 // #define FR_3     LS(FR_DQT)   // 3
@@ -138,7 +142,6 @@
 // #define FR_RCBR  RA(FR_EQUAL) // }
 // // Row 2
 // #define FR_EURO  RA(FR_E)     // €
-// #define FR_OE    RA(FR_O)     // œ
 // #define FR_TILDD RA(FR_CARET) // ~ (dead)
 // // Row 3
 // #define FR_APOS  RA(FR_G)     // ’
@@ -167,15 +170,12 @@
 // └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
 // */
 // // Row 1
-// #define FR_EACU_UP LS(RA(FR_EACU))  // É
 // #define FR_EMDASH  LS(RA(FR_SQT))   // —
 // #define FR_EGRV_UP LS(RA(FR_EGRV))  // È
 // #define FR_TM      LS(RA(FR_UNDS))  // ™
-// #define FR_AGRV_UP LS(RA(FR_AGRV))  // À
 // #define FR_DIFF    LS(RA(FR_RPRN))  // ≠
 // #define FR_PLUMI   LS(RA(FR_EQUAL)) // ±
 // // Row 2
-// #define FR_OE_UP   LS(RA(FR_O))     // Œ
 // // Row 4
 // #define FR_GTE     LS(RA(FR_GT))    // ≥
 // #define FR_RGHTS   LS(RA(FR_C))     // ®
