@@ -51,7 +51,7 @@
 
 #define TAP_DANCE_3(name, k1, k2, k3) \
 / { \
-    behaviors { \³²²°²²°°²
+    behaviors { \
         name: name { \
             compatible = "zmk,behavior-tap-dance"; \
             #binding-cells = <0>; \
