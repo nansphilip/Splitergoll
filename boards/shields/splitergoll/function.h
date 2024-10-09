@@ -43,7 +43,7 @@
         name: name { \
             compatible = "zmk,behavior-tap-dance"; \
             #binding-cells = <0>; \
-            tapping-term-ms = <150>; \
+            tapping-term-ms = <200>; \
             bindings = <k1>, <k2>; \
         }; \
     }; \
@@ -51,11 +51,11 @@
 
 #define TAP_DANCE_3(name, k1, k2, k3) \
 / { \
-    behaviors { \
+    behaviors { \³²²°²²°°²
         name: name { \
             compatible = "zmk,behavior-tap-dance"; \
             #binding-cells = <0>; \
-            tapping-term-ms = <300>; \
+            tapping-term-ms = <200>; \
             bindings = <k1>, <k2>, <k3>; \
         }; \
     }; \
