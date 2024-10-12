@@ -69,7 +69,7 @@ LAYER(WINDOWS,
 //             ┃     W     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃  , or ?   ┃  . or !   ┃  ; or /   ┃  : or \   ┃
 // ╭───────╮   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ╭───────╮
 // │ VOL+  │ ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓ │ LEFT  │
-// │ VOL-  │ ┃ Play→Mute ┃ ┃   CTRL    ┃    ALT    ┃     L2    ┃   SPACE   ┃   ┃SHIFT+LOCK ┃     L1    ┃   ENTER   ┃    WIN    ┃ ┃ To Linux  ┃ │ RIGHT │
+// │ VOL-  │ ┃ Play→Mute ┃ ┃   CTRL    ┃    ALT    ┃     L2    ┃   SPACE   ┃   ┃SHIFT+LOCK ┃     L1    ┃   ENTER   ┃    WIN    ┃ ┃ "Windows" ┃ │ RIGHT │
 // ╰───────╯ ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛ ╰───────╯
     &kp ESC     &kp _A      &kp _Z      &kp _E      &kp _R      &kp _T 
     &kp TAB     &kp _Q      &kp _S      &kp _D      &kp _F      &kp _G
@@ -78,7 +78,7 @@ LAYER(WINDOWS,
                                                                                 &kp _Y      &kp _U      &kp _I      &kp _O      &kp _P      &kp BSPC
                                                                                 &kp _H      &kp _J      &kp _K      &kp _L      &kp _M      &kp DEL
                                                                                 &kp _N      &comm_qmark &dot_excl   &semi_slsh  &colon_bsls
-                                                                                &shift_lock &priSec     &kp ENTER   &kp LGUI    &to LINUX
+                                                                                &shift_lock &priSec     &kp ENTER   &kp LGUI    &win
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 , &inc_dec_kp C_VOL_DN C_VOL_UP                                                 &inc_dec_kp LEFT RIGHT)
 
@@ -96,7 +96,7 @@ LAYER(LINUX,
 //             ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃
 // ╭───────╮   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ╭───────╮
 // │ VOL+  │ ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓ │ VOL+  │
-// │ VOL-  │ ┃           ┃ ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃ ┃ To MacOS  ┃ │ VOL-  │
+// │ VOL-  │ ┃           ┃ ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃ ┃  "Linux"  ┃ │ VOL-  │
 // ╰───────╯ ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛ ╰───────╯
     trs__       trs__       trs__       trs__       trs__       trs__
     trs__       trs__       trs__       trs__       trs__       trs__
@@ -105,7 +105,7 @@ LAYER(LINUX,
                                                                                 trs__       trs__       trs__       trs__       trs__       trs__
                                                                                 trs__       trs__       trs__       trs__       trs__       trs__
                                                                                 trs__       trs__       trs__       trs__       trs__
-                                                                                trs__       trs__       trs__       trs__       &to MACOS
+                                                                                trs__       trs__       trs__       trs__       &linux
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 , &inc_dec_kp C_VOL_DN C_VOL_UP                                                 &inc_dec_kp C_VOL_DN C_VOL_UP)
 
@@ -118,7 +118,7 @@ LAYER(MACOS,
 //             ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃  . or !   ┃           ┃  : or \   ┃
 // ╭───────╮   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ╭───────╮
 // │ VOL+  │ ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓ │ VOL+  │
-// │ VOL-  │ ┃           ┃ ┃  COMMAND  ┃  OPTION   ┃           ┃           ┃   ┃           ┃           ┃           ┃  CONTROL  ┃ ┃To WINDOWS ┃ │ VOL-  │
+// │ VOL-  │ ┃           ┃ ┃  COMMAND  ┃  OPTION   ┃           ┃           ┃   ┃           ┃           ┃           ┃  CONTROL  ┃ ┃  "MacOS"  ┃ │ VOL-  │
 // ╰───────╯ ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛ ╰───────╯
     trs__       trs__       trs__       trs__       trs__       trs__
     trs__       trs__       trs__       trs__       trs__       trs__
@@ -127,7 +127,7 @@ LAYER(MACOS,
                                                                                 trs__       trs__       trs__       trs__       trs__       trs__
                                                                                 trs__       trs__       trs__       trs__       trs__       trs__
                                                                                 trs__       trs__       &m_dot_excl trs__       &m_colon_bsls
-                                                                                trs__       trs__       trs__       &kp M_CTL   &to WINDOWS
+                                                                                trs__       trs__       trs__       &kp M_CTL   &mac
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 , &inc_dec_kp C_VOL_DN C_VOL_UP                                                 &inc_dec_kp C_VOL_DN C_VOL_UP)
 
@@ -163,7 +163,7 @@ MORPH(at, LSFT, &kp _AT, &kp _AT)           // | @         | @          |
 #define WCDEL LG(LC(F4))
 
 // Macros
-MACRO_OS(win, &kp LS(_W) &kp _I &kp _N &kp _D &kp _O &kp _W &kp _S, &kp BSPC &kp BSPC &kp BSPC &kp BSPC &kp BSPC &kp BSPC &kp BSPC)
+MACRO_WRITE(win, &kp LS(_W) &kp _I &kp _N &kp _D &kp _O &kp _W &kp _S, &kp BSPC &kp BSPC &kp BSPC &kp BSPC &kp BSPC &kp BSPC &kp BSPC)
 
 /* Shortcuts
 - `L1` + `SHIFT²` + `←, ↑, ↓ or →` to select text
@@ -181,7 +181,7 @@ LAYER(PRIMARY,
 //             ┃           ┃  CTRL ←   ┃     ↓     ┃   CTRL →  ┃           ┃   ┃     `     ┃     #     ┃     &     ┃     |     ┃     @     ┃
 // ╭───────╮   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ╭───────╮
 // │ LEFT  │ ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓ │ UP    │
-// │ RIGHT │ ┃           ┃ ┃           ┃           ┃           ┃   SHIFT²  ┃   ┃   SHIFT   ┃     L1    ┃           ┃           ┃ ┃ "Windows" ┃ │ DOWN  │
+// │ RIGHT │ ┃           ┃ ┃           ┃           ┃           ┃   SHIFT²  ┃   ┃   SHIFT   ┃     L1    ┃           ┃           ┃ ┃ To Linux  ┃ │ DOWN  │
 // ╰───────╯ ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛ ╰───────╯
     no___       &kp WCDEL   &kp HOME    &kp WCSHW   &kp END     &kp WCNEW
     no___       &kp WCLEFT  &kp LEFT    &kp UP      &kp RIGHT   &kp WCRIGHT
@@ -190,12 +190,12 @@ LAYER(PRIMARY,
                                                                                 &quot       &lpar       &rpar       &lcro       &rcro      trs__
                                                                                 &squo       &lacc       &racc       &lche       &rche      trs__
                                                                                 &fr_grv     &hash       &and        &pipe       &at
-                                                                                &kp LSHIFT  trs__       trs__       trs__       &win
+                                                                                &kp LSHIFT  trs__       trs__       trs__       &to LINUX
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 , &inc_dec_kp LEFT RIGHT                                                        &inc_dec_kp UP DOWN)
 
 // Macros
-MACRO_OS(linux, &kp LS(_L) &kp _I &kp _N &kp _U &kp _X, &kp BSPC &kp BSPC &kp BSPC &kp BSPC &kp BSPC)
+MACRO_WRITE(linux, &kp LS(_L) &kp _I &kp _N &kp _U &kp _X, &kp BSPC &kp BSPC &kp BSPC &kp BSPC &kp BSPC)
 
 LAYER(PRIMARY_LINUX,
 // ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -206,7 +206,7 @@ LAYER(PRIMARY_LINUX,
 //             ┃           ┃           ┃           ┃           ┃           ┃   ┃     `     ┃           ┃           ┃           ┃           ┃
 // ╭───────╮   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ╭───────╮
 // │ VOL+  │ ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓ │ VOL+  │
-// │ VOL-  │ ┃           ┃ ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃ ┃  "Linux"  ┃ │ VOL-  │
+// │ VOL-  │ ┃           ┃ ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃ ┃ To MacOS  ┃ │ VOL-  │
 // ╰───────╯ ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛ ╰───────╯
     trs__       trs__       trs__       trs__       trs__       trs__
     trs__       trs__       trs__       trs__       trs__       trs__
@@ -215,12 +215,12 @@ LAYER(PRIMARY_LINUX,
                                                                                 trs__       trs__       trs__       trs__       trs__       trs__
                                                                                 trs__       trs__       trs__       trs__       trs__       trs__
                                                                                 &kp L_GRV   trs__       trs__       trs__       trs__
-                                                                                trs__       trs__       trs__       trs__       &linux
+                                                                                trs__       trs__       trs__       trs__       &to MACOS
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 , &inc_dec_kp C_VOL_DN C_VOL_UP                                                 &inc_dec_kp C_VOL_DN C_VOL_UP)
 
 // Macros
-MACRO_OS(mac, &kp LS(_M) &kp _A &kp _C &kp LS(_O) &kp LS(_S), &kp BSPC &kp BSPC &kp BSPC &kp BSPC &kp BSPC)
+MACRO_WRITE(mac, &kp LS(_M) &kp _A &kp _C &kp LS(_O) &kp LS(_S), &kp BSPC &kp BSPC &kp BSPC &kp BSPC &kp BSPC)
 
 LAYER(PRIMARY_MACOS,
 // ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -231,7 +231,7 @@ LAYER(PRIMARY_MACOS,
 //             ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃
 // ╭───────╮   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ╭───────╮
 // │ VOL+  │ ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓ │ VOL+  │
-// │ VOL-  │ ┃           ┃ ┃  COMMAND  ┃  OPTION   ┃           ┃           ┃   ┃           ┃     L1    ┃           ┃  CONTROL  ┃ ┃  "MacOS"  ┃ │ VOL-  │
+// │ VOL-  │ ┃           ┃ ┃  COMMAND  ┃  OPTION   ┃           ┃           ┃   ┃           ┃     L1    ┃           ┃  CONTROL  ┃ ┃ To Windows┃ │ VOL-  │
 // ╰───────╯ ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛ ╰───────╯
     trs__       trs__       trs__       trs__       trs__       trs__
     trs__       trs__       trs__       trs__       trs__       trs__
@@ -240,7 +240,7 @@ LAYER(PRIMARY_MACOS,
                                                                                 trs__       trs__       trs__       trs__       trs__       trs__
                                                                                 trs__       trs__       trs__       trs__       trs__       trs__
                                                                                 trs__       trs__       trs__       trs__       trs__
-                                                                                trs__       trs__       trs__       &kp M_CTL   &mac
+                                                                                trs__       trs__       trs__       &kp M_CTL   &to WINDOWS
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 , &inc_dec_kp C_VOL_DN C_VOL_UP                                                 &inc_dec_kp C_VOL_DN C_VOL_UP)
 
@@ -337,7 +337,7 @@ LAYER(SECONDARY_LINUX,
 //             ┃           ┃           ┃   ç + Ç   ┃ à + â + À ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃
 // ╭───────╮   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ╭───────╮
 // │ VOL+  │ ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓ │ VOL+  │
-// │ VOL-  │ ┃           ┃ ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃ ┃To WINDOWS ┃ │ VOL-  │
+// │ VOL-  │ ┃           ┃ ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃ ┃           ┃ │ VOL-  │
 // ╰───────╯ ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛ ╰───────╯
     trs__       &l_oe_oeu   &l_nb_2_3   trs__       trs__       trs__
     trs__       trs__       &l_ea_eau   trs__       trs__       trs__
@@ -415,7 +415,7 @@ LAYER(TERTIARY_LINUX,
 //             ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃
 // ╭───────╮   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ╭───────╮
 // │ VOL+  │ ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓ │ VOL+  │
-// │ VOL-  │ ┃           ┃ ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃ ┃To WINDOWS ┃ │ VOL-  │
+// │ VOL-  │ ┃           ┃ ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃ ┃           ┃ │ VOL-  │
 // ╰───────╯ ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛ ╰───────╯
     trs__       trs__       trs__       trs__       trs__       trs__
     trs__       trs__       trs__       trs__       trs__       trs__
@@ -456,7 +456,20 @@ LAYER(TERTIARY_MACOS,
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
 // Macros
-MACRO_OS(numpad, &kp LS(_N) &kp _U &kp _M &kp _P &kp _A &kp _D, &kp BSPC &kp BSPC &kp BSPC &kp BSPC &kp BSPC &kp BSPC)
+MACRO_WRITE(numpad, &kp LS(_N) &kp _U &kp _M &kp _P &kp _A &kp _D, &kp BSPC &kp BSPC &kp BSPC &kp BSPC &kp BSPC &kp BSPC)
+
+/* "Numpad lock and Fusion 360" shortcuts
+
+Common use case:
+- `NUMPAD` allways on to enter values
+
+Left hand on keyboard, and right hand on mouse (for Fusion 360):
+- `BSPACE` and `DEL` to delete elements selected with the mouse
+- `CTRL` + `X` / `C` / `V` to cut / copuy / paste elements
+- `CTRL` + `Z` / `Y` to undo / redo last action
+- `CTRL` + `A` to select all elements
+- `ARROW` to move the selected element
+*/
 
 LAYER(NUMPAD,
 // ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -486,7 +499,7 @@ LAYER(NUMPAD,
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
 // Macros
-MACRO_OS(gaming, &kp LS(_G) &kp _A &kp _M &kp _I &kp _N &kp _G, &kp BSPC &kp BSPC &kp BSPC &kp BSPC &kp BSPC &kp BSPC)
+MACRO_WRITE(gaming, &kp LS(_G) &kp _A &kp _M &kp _I &kp _N &kp _G, &kp BSPC &kp BSPC &kp BSPC &kp BSPC &kp BSPC &kp BSPC)
 
 LAYER(GAMING,
 // ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -497,16 +510,16 @@ LAYER(GAMING,
 //             ┃     W     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃  , or ?   ┃  . or !   ┃  ; or /   ┃  : or \   ┃
 // ╭───────╮   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ╭───────╮
 // │ VOL+  │ ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓ │ VOL+  │
-// │ VOL-  │ ┃   To L0   ┃ ┃     +     ┃     -     ┃     '     ┃   SPACE   ┃   ┃   SHIFT   ┃    L14    ┃   ENTER   ┃    WIN    ┃ ┃           ┃ │ VOL-  │
+// │ VOL-  │ ┃           ┃ ┃     +     ┃     -     ┃     '     ┃   SPACE   ┃   ┃   SHIFT   ┃    L14    ┃   ENTER   ┃    WIN    ┃ ┃ "Gaming"  ┃ │ VOL-  │
 // ╰───────╯ ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛ ╰───────╯
     &mt ESC TAB &kp _A     &kp _Z      &kp _E      &kp _R      &kp _T 
     &kp TAB     &kp _Q     &kp _S      &kp _D      &kp _F      &kp _G
                 &kp _W     &kp _X      &kp _C      &kp _V      &kp _B
-                &to 0      &kp _PLUS   &kp _MINS   &kp _SQUO   &kp SPACE
+                no___      &kp _PLUS   &kp _MINS   &kp _SQUO   &kp SPACE
                                                                                 &kp _Y      &kp _U      &kp _I      &kp _O      &kp _P      &kp BSPC
                                                                                 &kp _H      &kp _J      &kp _K      &kp _L      &kp _M      &kp DEL
                                                                                 &kp _N      &comm_qmark &dot_excl   &semi_slsh  &colon_bsls
-                                                                                &kp LSHIFT  &mo 14      &kp ENTER   &kp LGUI    no___
+                                                                                &kp LSHIFT  &mo 14      &kp ENTER   &kp LGUI    &gaming
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 , &inc_dec_kp C_VOL_DN C_VOL_UP                                                 &inc_dec_kp C_VOL_DN C_VOL_UP)
 
@@ -519,7 +532,7 @@ LAYER(GAMING_2,
 //             ┃           ┃           ┃ Mouse Down┃           ┃           ┃   ┃     `     ┃NV Dashbrd ┃  NV FPS   ┃ NV Rotate ┃           ┃
 // ╭───────╮   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ╭───────╮
 // │ VOL+  │ ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓ │ VOL+  │
-// │ VOL-  │ ┃           ┃ ┃   CTRL    ┃    ALT    ┃           ┃           ┃   ┃           ┃    L14    ┃           ┃           ┃ ┃ "Gaming"  ┃ │ VOL-  │
+// │ VOL-  │ ┃           ┃ ┃   CTRL    ┃    ALT    ┃           ┃           ┃   ┃           ┃    L14    ┃           ┃           ┃ ┃ To Windows┃ │ VOL-  │
 // ╰───────╯ ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛ ╰───────╯
     no___       no___       no___       no___       no___       no___
     // trs__       no___ &mmv MOVE_LEFT &mmv MOVE_UP &mmv MOVE_RIGHT no___
@@ -530,6 +543,6 @@ LAYER(GAMING_2,
                                                                                 &quot       &kp LC(F1)  &kp LC(F2)  &kp LC(F3)  &kp LC(F4)  trs__
                                                                                 &squo       &kp LC(F5)  &kp LC(F6)  &kp LC(F7)  &kp LC(F8)  trs__
                                                                                 &fr_grv     &kp LC(F9)  &kp LC(F10) &kp LC(F11) &kp LC(F12)
-                                                                                trs__       trs__       trs__       trs__       &gaming
+                                                                                trs__       trs__       trs__       trs__       &to 0
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 , &inc_dec_kp C_VOL_DN C_VOL_UP                                                 &inc_dec_kp C_VOL_DN C_VOL_UP)
