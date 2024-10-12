@@ -535,9 +535,9 @@ LAYER(GAMING_2,
 // │ VOL-  │ ┃           ┃ ┃   CTRL    ┃    ALT    ┃           ┃           ┃   ┃           ┃    L14    ┃           ┃           ┃ ┃ To Windows┃ │ VOL-  │
 // ╰───────╯ ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛ ╰───────╯
     no___       no___       no___       no___       no___       no___
-    trs__   no___   &mmv MOVE_LEFT   &mmv MOVE_UP   &mmv MOVE_RIGHT   no___
+    trs__   no___   &msc MOVE_LEFT   &msc MOVE_UP   &msc MOVE_RIGHT   no___
     // trs__       no___       no___       no___       no___       no___
-                no___       no___    &mmv MOVE_DOWN  no___      no___
+                no___       no___    &msc MOVE_DOWN  no___      no___
                 // no___       no___       no___       no___       no___
                 no___       &kp LCTRL   &kp LALT    no___       trs__
                                                                                 &quot       &kp LC(F1)  &kp LC(F2)  &kp LC(F3)  &kp LC(F4)  trs__
