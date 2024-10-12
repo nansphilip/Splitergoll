@@ -2,6 +2,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 
 // Includes
 #include "function.h"
@@ -389,7 +390,7 @@ LAYER(TERTIARY,
 // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 // ┃   Reset   ┃           ┃     ←     ┃     ↑     ┃     →     ┃           ┃   ┃     `     ┃     ^     ┃     ¨     ┃     ~     ┃           ┃ ALT + F4  ┃
 // ┗━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┛
-//             ┃           ┃           ┃     ↓     ┃           ┃Print Scree┃   ┃           ┃           ┃           ┃           ┃           ┃
+//             ┃           ┃           ┃     ↓     ┃           ┃Print Scree┃   ┃ Clic left ┃ Clic right┃           ┃           ┃           ┃
 // ╭───────╮   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ╭───────╮
 // │ UP    │ ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓ │ LEFT  │
 // │ DOWN  │ ┃ Bootloader┃ ┃   CTRL    ┃    ALT    ┃     L3    ┃           ┃   ┃   SHIFT   ┃     L3    ┃           ┃   To L9   ┃ ┃Del BT link┃ │ RIGHT │
@@ -400,7 +401,7 @@ LAYER(TERTIARY,
                 &bootloader &kp LCTRL   &kp LALT    trs__       no___
                                                                                 &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
                                                                                 &kp _GRV    &kp _CIR    &kp _TRE    &kp _TLD    no___       &kp LA(F4)
-                                                                                no___       no___       no___       no___       no___
+                                                                                &mkp LCLK   &mkp RCLK   no___       no___       no___
                                                                                 &kp LSHIFT  trs__       no___       &to 13       &bt BT_CLR_ALL
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 , &inc_dec_kp UP DOWN                                                           &inc_dec_kp LEFT RIGHT)
