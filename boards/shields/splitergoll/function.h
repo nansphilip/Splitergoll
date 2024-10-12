@@ -75,7 +75,7 @@
 / { \
     macros { \
         ZMK_MACRO(name, bindings \
-            = <&macro_wait_time 80> \
+            = <&macro_wait_time 50> \
             , <&macro_tap d1> \
             , <&macro_tap d2> \
         ;) \
