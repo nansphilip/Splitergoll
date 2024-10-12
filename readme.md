@@ -8,7 +8,7 @@ Dongle version of the Splitergoll keyboard.
 
 - Led for low battery ?
     
-    - Write percentage with a macro ?
+    - Write percentage with a macro ? Like MacroOS
     - Bluetooth connection halve by halve to see battery
 
 - Defconfig conditions :

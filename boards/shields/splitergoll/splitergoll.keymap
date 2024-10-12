@@ -455,6 +455,9 @@ LAYER(TERTIARY_MACOS,
 // ┃                                                                      Numpad                                                                       ┃
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
+// Macros
+MACRO_OS(numpad, &kp LS(_N) &kp _U &kp _M &kp _P &kp _A &kp _D, &kp BSPC &kp BSPC &kp BSPC &kp BSPC &kp BSPC &kp BSPC)
+
 LAYER(NUMPAD,
 // ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 // ┃    ESC    ┃     A     ┃     Z     ┃     ↑     ┃     -     ┃     +     ┃   ┃     =     ┃     7     ┃     8     ┃     9     ┃   € + £   ┃   BSPACE  ┃
@@ -464,7 +467,7 @@ LAYER(NUMPAD,
 //             ┃           ┃     X     ┃     C     ┃     V     ┃     /     ┃   ┃     .     ┃     1     ┃     2     ┃     3     ┃     %     ┃
 // ╭───────╮   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ╭───────╮
 // │ LEFT  │ ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓ │ UP    │
-// │ RIGHT │ ┃           ┃ ┃   CTRL    ┃           ┃   BSPACE  ┃    DEL    ┃   ┃   SPACE   ┃           ┃   ENTER   ┃    WIN    ┃ ┃           ┃ │ DOWN  │
+// │ RIGHT │ ┃           ┃ ┃   CTRL    ┃           ┃   BSPACE  ┃    DEL    ┃   ┃   SPACE   ┃           ┃   ENTER   ┃    WIN    ┃ ┃  "numpad" ┃ │ DOWN  │
 // ╰───────╯ ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛ ╰───────╯
     trs__       &kp _A      &kp _Z      &kp UP      &mins       &plus
     trs__       &kp _Y      &kp LEFT    &kp DOWN    &kp RIGHT   &astr
@@ -473,7 +476,7 @@ LAYER(NUMPAD,
                                                                                 &eqal       &n_7        &n_8        &n_9        &eu_li      trs__
                                                                                 &n_0        &n_4        &n_5        &n_6        &dolr       trs__
                                                                                 &n_dt       &n_1        &n_2        &n_3        &perc
-                                                                                &kp SPACE   &to 0       &kp ENTER   &kp LGUI    no___
+                                                                                &kp SPACE   &to 0       &kp ENTER   &kp LGUI    &numpad
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 , &inc_dec_kp LEFT RIGHT                                                        &inc_dec_kp UP DOWN)
 
@@ -481,6 +484,7 @@ LAYER(NUMPAD,
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 // ┃                                                                      Gaming                                                                       ┃
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
 // Macros
 MACRO_OS(gaming, &kp LS(_G) &kp _A &kp _M &kp _I &kp _N &kp _G, &kp BSPC &kp BSPC &kp BSPC &kp BSPC &kp BSPC &kp BSPC)
 
@@ -518,8 +522,10 @@ LAYER(GAMING_2,
 // │ VOL-  │ ┃           ┃ ┃   CTRL    ┃    ALT    ┃           ┃           ┃   ┃           ┃    L14    ┃           ┃           ┃ ┃ "Gaming"  ┃ │ VOL-  │
 // ╰───────╯ ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛ ╰───────╯
     no___       no___       no___       no___       no___       no___
-    trs__       no___ &mmv MOVE_LEFT &mmv MOVE_UP &mmv MOVE_RIGHT no___
-                no___       no___    &mmv MOVE_DOWN  no___      no___
+    // trs__       no___ &mmv MOVE_LEFT &mmv MOVE_UP &mmv MOVE_RIGHT no___
+    trs__       no___       no___       no___       no___       no___
+                // no___       no___    &mmv MOVE_DOWN  no___      no___
+                no___       no___       no___       no___       no___
                 no___       &kp LCTRL   &kp LALT    no___       trs__
                                                                                 &quot       &kp LC(F1)  &kp LC(F2)  &kp LC(F3)  &kp LC(F4)  trs__
                                                                                 &squo       &kp LC(F5)  &kp LC(F6)  &kp LC(F7)  &kp LC(F8)  trs__
