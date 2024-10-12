@@ -43,7 +43,7 @@
         name: name { \
             compatible = "zmk,behavior-tap-dance"; \
             #binding-cells = <0>; \
-            tapping-term-ms = <200>; \
+            tapping-term-ms = <250>; \
             bindings = <k1>, <k2>; \
         }; \
     }; \
@@ -55,26 +55,11 @@
         name: name { \
             compatible = "zmk,behavior-tap-dance"; \
             #binding-cells = <0>; \
-            tapping-term-ms = <200>; \
+            tapping-term-ms = <250>; \
             bindings = <k1>, <k2>, <k3>; \
         }; \
     }; \
 };
-
-// Sticky key
-// STICKY_KEY(sticky, LSHIFT) // locks shift for the next key pressed, and release it, or release it after 1s
-#define STICKY_KEY(name, k1) \
-/ { \
-    behaviors { \
-        name: name { \
-            compatible = "zmk,behavior-sticky-key"; \
-            #binding-cells = <1>; \
-            bindings = <&kp>; \
-            release-after-ms = <1000>; \
-        }; \
-    }; \
-};
-
 
 // Macros
 #define MACRO(name, ...) \
@@ -90,7 +75,7 @@
 / { \
     macros { \
         ZMK_MACRO(name, bindings \
-            = <&macro_wait_time 100> \
+            = <&macro_wait_time 80> \
             , <&macro_tap d1> \
             , <&macro_tap d2> \
         ;) \
