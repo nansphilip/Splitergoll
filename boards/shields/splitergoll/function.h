@@ -62,14 +62,14 @@
 };
 
 // Macros
-#define MACRO(name, ...) \
+#define MACRO(name, d1) \
 / { \
     macros { \
         name: name { \
             compatible = "zmk,behavior-macro"; \
             #binding-cells = <0>;
             bindings \
-                = <__VA_ARGS__> \
+                = <d1> \
             ; \
         }; \
     }; \
