@@ -65,71 +65,81 @@
 #define MACRO(name, ...) \
 / { \
     macros { \
-        compatible = "zmk,behavior-macro"; \
-        #binding-cells = <0>;
-        bindings \
-            = <__VA_ARGS__> \
-        ; \
+        name: name { \
+            compatible = "zmk,behavior-macro"; \
+            #binding-cells = <0>;
+            bindings \
+                = <__VA_ARGS__> \
+            ; \
+        }; \
     }; \
 };
 
 #define MACRO_WRITE(name, d1, d2) \
 / { \
     macros { \
-        compatible = "zmk,behavior-macro"; \
-        #binding-cells = <0>;
-        bindings \
-            = <&macro_tap d1> \
-            , <&macro_tap &kp SPACE> \
-            , <&macro_wait_time 500> \
-            , <&macro_tap &kp BSPC> \
-            , <&macro_wait_time 0> \
-            , <&macro_tap d2> \
-        ; \
+        name: name { \
+            compatible = "zmk,behavior-macro"; \
+            #binding-cells = <0>;
+            bindings \
+                = <&macro_tap d1> \
+                , <&macro_tap &kp SPACE> \
+                , <&macro_wait_time 500> \
+                , <&macro_tap &kp BSPC> \
+                , <&macro_wait_time 0> \
+                , <&macro_tap d2> \
+            ; \
+        }; \
     }; \
 };
 
 #define ALT_CODE_2(name, d1, d2) \
 / { \
     macros { \
-        compatible = "zmk,behavior-macro"; \
-        #binding-cells = <0>;
-        bindings \
-            = <&macro_press &kp LALT> \
-            , <&macro_tap &kp KP_N##d1> \
-            , <&macro_tap &kp KP_N##d2> \
-            , <&macro_release &kp LALT> \
-        ; \
+            name: name { \
+            compatible = "zmk,behavior-macro"; \
+            #binding-cells = <0>;
+            bindings \
+                = <&macro_press &kp LALT> \
+                , <&macro_tap &kp KP_N##d1> \
+                , <&macro_tap &kp KP_N##d2> \
+                , <&macro_release &kp LALT> \
+            ; \
+        }; \
     }; \
 };
 
 #define ALT_CODE_3(name, d1, d2, d3) \
 / { \
     macros { \
-        compatible = "zmk,behavior-macro"; \
-        #binding-cells = <0>;
-        bindings \
-            = <&macro_press &kp LALT> \
-            , <&macro_tap &kp KP_N##d1> \
-            , <&macro_tap &kp KP_N##d2> \
-            , <&macro_tap &kp KP_N##d3> \
-            , <&macro_release &kp LALT> \
-        ; \
+        name: name { \
+            compatible = "zmk,behavior-macro"; \
+            #binding-cells = <0>;
+            bindings \
+                = <&macro_press &kp LALT> \
+                , <&macro_tap &kp KP_N##d1> \
+                , <&macro_tap &kp KP_N##d2> \
+                , <&macro_tap &kp KP_N##d3> \
+                , <&macro_release &kp LALT> \
+            ; \
+        }; \
     }; \
 };
 
 #define ALT_CODE_4(name, d1, d2, d3, d4) \
 / { \
     macros { \
-        compatible = "zmk,behavior-macro"; \
-        #binding-cells = <0>;
-        bindings \
-            = <&macro_press &kp LALT> \
-            , <&macro_tap &kp KP_N##d1> \
-            , <&macro_tap &kp KP_N##d2> \
-            , <&macro_tap &kp KP_N##d3> \
-            , <&macro_tap &kp KP_N##d4> \
-            , <&macro_release &kp LALT> \
-        ; \
+        name: name { \
+            compatible = "zmk,behavior-macro"; \
+            #binding-cells = <0>;
+            bindings \
+                = <&macro_press &kp LALT> \
+                , <&macro_tap &kp KP_N##d1> \
+                , <&macro_tap &kp KP_N##d2> \
+                , <&macro_tap &kp KP_N##d3> \
+                , <&macro_tap &kp KP_N##d4> \
+                , <&macro_release &kp LALT> \
+            ; \
+        }; \
     }; \
 };
