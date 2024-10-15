@@ -1,25 +1,19 @@
-if SHIELD_SPLITERGOLL_DONGLE
-
-config ZMK_KEYBOARD_NAME
-    default "Splitergoll"
+if SHIELD_SPLITERGOLL_DONGLE || SHIELD_SPLITERGOLL_LEFT || SHIELD_SPLITERGOLL_RIGHT
 
 config ZMK_SPLIT
     default y
+
+endif
+
+if SHIELD_SPLITERGOLL_DONGLE
+
+config ZMK_KEYBOARD_NAME
+    default "splitergoll"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
     default 2
-
-endif
-
-if SHIELD_SPLITERGOLL_LEFT || SHIELD_SPLITERGOLL_RIGHT
-
-config ZMK_SPLIT
-    default y
-
-config ZMK_SPLIT_ROLE_CENTRAL
-    default n
 
 endif
