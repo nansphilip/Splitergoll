@@ -67,7 +67,7 @@
     macros { \
         name: name { \
             compatible = "zmk,behavior-macro"; \
-            #binding-cells = <0>;
+            #binding-cells = <0>; \
             bindings \
                 = <d1> \
             ; \
@@ -80,7 +80,7 @@
     macros { \
         name: name { \
             compatible = "zmk,behavior-macro"; \
-            #binding-cells = <0>;
+            #binding-cells = <0>; \
             bindings \
                 = <&macro_tap d1> \
                 , <&macro_tap &kp SPACE> \
@@ -98,7 +98,7 @@
     macros { \
             name: name { \
             compatible = "zmk,behavior-macro"; \
-            #binding-cells = <0>;
+            #binding-cells = <0>; \
             bindings \
                 = <&macro_press &kp LALT> \
                 , <&macro_tap &kp KP_N##d1> \
@@ -114,7 +114,7 @@
     macros { \
         name: name { \
             compatible = "zmk,behavior-macro"; \
-            #binding-cells = <0>;
+            #binding-cells = <0>; \
             bindings \
                 = <&macro_press &kp LALT> \
                 , <&macro_tap &kp KP_N##d1> \
@@ -131,7 +131,7 @@
     macros { \
         name: name { \
             compatible = "zmk,behavior-macro"; \
-            #binding-cells = <0>;
+            #binding-cells = <0>; \
             bindings \
                 = <&macro_press &kp LALT> \
                 , <&macro_tap &kp KP_N##d1> \
