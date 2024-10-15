@@ -43,7 +43,7 @@
         name: name { \
             compatible = "zmk,behavior-tap-dance"; \
             #binding-cells = <0>; \
-            tapping-term-ms = <250>; \
+            tapping-term-ms = <200>; \
             bindings = <k1>, <k2>; \
         }; \
     }; \
@@ -55,7 +55,7 @@
         name: name { \
             compatible = "zmk,behavior-tap-dance"; \
             #binding-cells = <0>; \
-            tapping-term-ms = <250>; \
+            tapping-term-ms = <200>; \
             bindings = <k1>, <k2>, <k3>; \
         }; \
     }; \
@@ -75,13 +75,11 @@
 / { \
     macros { \
         ZMK_MACRO(name, bindings \
-            = <&macro_wait_time 5> \
-            , <&macro_tap_time 5> \
             , <&macro_tap d1> \
             , <&macro_tap &kp SPACE> \
             , <&macro_wait_time 500> \
             , <&macro_tap &kp BSPC> \
-            , <&macro_wait_time 5> \
+            , <&macro_wait_time 0> \
             , <&macro_tap d2> \
         ;) \
     }; \
