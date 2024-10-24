@@ -132,8 +132,8 @@ ALT_CODE_3(fr_ex3, 2, 5, 2)    // ³
 
 
 // Coding arrows
-MACRO(fr_arw_s, &kp _AGU &kp _A)    // ->
-MACRO(fr_arw_d, &kp _TLD &kp SPACE) // =>
+MACRO(fr_arw_s, &kp _MINS &kp _RCHE) // ->
+MACRO(fr_arw_d, &kp _EQAL &kp _RCHE) // =>
 
 
 // Arrows
