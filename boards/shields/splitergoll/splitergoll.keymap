@@ -181,7 +181,7 @@ LAYER(PRIMARY,
 //             ┃           ┃  CTRL ←   ┃     ↓     ┃   CTRL →  ┃     =>    ┃   ┃     `     ┃     #     ┃     &     ┃     |     ┃     @     ┃
 // ╭───────╮   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ╭───────╮
 // │ LEFT  │ ┏━━━━━━━━━━━┓ ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓ ┏━━━━━━━━━━━┓ │ UP    │
-// │ RIGHT │ ┃           ┃ ┃           ┃           ┃           ┃   SHIFT²  ┃   ┃   SHIFT   ┃     L1    ┃           ┃           ┃ ┃ "Windows" ┃ │ DOWN  │
+// │ RIGHT │ ┃           ┃ ┃           ┃           ┃           ┃   SHIFT²  ┃   ┃   SHIFT   ┃     L1    ┃           ┃           ┃ ┃ To Linux  ┃ │ DOWN  │
 // ╰───────╯ ┗━━━━━━━━━━━┛ ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛ ┗━━━━━━━━━━━┛ ╰───────╯
     no___       no___       &kp HOME    no___       &kp END     no___
     no___       no___       &kp LEFT    &kp UP      &kp RIGHT   &fr_arw_s
@@ -190,7 +190,7 @@ LAYER(PRIMARY,
                                                                                 &quot       &lpar       &rpar       &lcro       &rcro      trs__
                                                                                 &squo       &lacc       &racc       &lche       &rche      trs__
                                                                                 &fr_grv     &hash       &and        &pipe       &at
-                                                                                &kp LSHIFT  trs__       trs__       trs__       &win
+                                                                                &kp LSHIFT  trs__       trs__       trs__       &to LINUX
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 , &inc_dec_kp LEFT RIGHT                                                        &inc_dec_kp UP DOWN)
 
