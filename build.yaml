@@ -5,14 +5,14 @@ include:
     shield: splitergoll_left
   - board: nice_nano_v2
     shield: splitergoll_right
-  # - board: nice_nano_v2
-  #   shield: settings_reset
+  - board: nice_nano_v2
+    shield: settings_reset
 
   # Seeed Studio as Dongle
   - board: seeeduino_xiao_ble
     shield: splitergoll_dongle
-  # - board: seeeduino_xiao_ble
-  #   shield: settings_reset
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
 
   # Nice!Nano v2 as Dongle
   # - board: nice_nano_v2
